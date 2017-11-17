@@ -1,4 +1,4 @@
-
+o
 html, body {
   background: black;
   height: 100%;
@@ -17,15 +17,16 @@ html, body {
 /*-SIDE 1-*/
 /*-Scene 1-*/
 #artikkelContainer{
-  background-color: cornsilk;
+  background-color: MediumAquaMarine;
 
   overflow-y: scroll;
 }
 #artikkelBilde1, #artikkelBilde2{
   position: absolute;
   display: inline;
+  padding: 20px;
 
-
+  height: 300px;
 }
 #artikkelBilde1{
    background-color:blue;
@@ -33,11 +34,8 @@ html, body {
 #artikkelBilde2{
   background-color: red;
 
-  top: 1250px;
-  left: 900px;
-
-  height: 250px;
-  width: 200px;
+  top: 1050px;
+  left: 300px;
 }
 /*-END, Scene 1-*/
 /*-Scene 2-*/
@@ -237,20 +235,15 @@ html, body {
   left: 740px;
   bottom: 75px;
   background-color: black;
+  z-index: 108;
   border: 1px solid black;
   border-radius: 20px;
-  z-index: 108;
 }
 #leverPart2 {
   position: absolute;
   width: 90px;
-  height: 160px;
-  left: 740px;
-  bottom: 50px;
-  background-color: red;
-  border: 1px solid black;
-  border-radius: 20px;
-  z-index: 109;
+  height: 40px;
+  bottom: 25px;
 }
 /*-END, controlPanel-*/
 

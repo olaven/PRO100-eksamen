@@ -60,7 +60,7 @@ html, body {
 
   border-radius: 15%;
   border-style: solid;
-  border-color: rgba(0,0,0,0.8); 
+  border-color: rgba(0,0,0,0.8);
 }
 #artikkelTekst1{
   top: 300px;
@@ -127,7 +127,7 @@ html, body {
   height: 50px;
   bottom: 20px;
   left: 100px;
-  z-index:
+  z-index: 102;
 }
 #sau{
   position: absolute;
@@ -135,6 +135,7 @@ html, body {
   height: 50px;
   bottom: 20px;
   left: 100px;
+  z-index: 103;
 }
 #gris{
   position: absolute;
@@ -142,6 +143,7 @@ html, body {
   height: 50px;
   bottom: 20px;
   left: 100px;
+  z-index: 104;
 }
 
 /*-END, Scene 2-*/

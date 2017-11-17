@@ -1,0 +1,183 @@
+
+html, body {
+  background: black;
+}
+
+.mainContainer {
+  position: relative;
+  width: 1000px;
+  height: 700px;
+  margin: auto;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+/*-SCENE 1-*/
+
+/*-SIDE 1-*/
+/*-END, SIDE 1-*/
+
+/*-SIDE 2-*/
+/*-END, SIDE 2-*/
+
+/*-END, SCENE 1-*/
+
+/*-SCENE 2-*/
+/*-SIDE 3-*/
+#animContainer2  {
+  background-color: lightskyblue;
+  z-index: 50;
+}
+
+/*-text-*/
+#fremtidensArkText {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  font-family: Impact;
+  left: 333px;
+  top: -15px;
+  z-index: 200;
+}
+/*-END, text-*/
+
+/*-windowFrame-*/
+.windowFrame {
+  position: absolute;
+  background-color: grey;
+}
+#topFrame {
+  width: 1000px;
+  height: 100px;
+  left:0px;
+  top:0px;
+  border-bottom: 2px solid black;
+  z-index: 103;
+}
+#bottomFrame {
+  width: 1000px;
+  height: 50px;
+  top: 375px;
+  border-top: 2px solid black;
+  z-index: 104;
+}
+#windowFrameRight {
+  width: 35px;
+  height: 400px;
+  left: 750px;
+  top: 40px;
+  border: 2px solid black;
+  transform: rotate(-30deg);
+  z-index: 101;
+}
+/*-Ta en titt på left px-*/
+#windowFrameLeft {
+  width: 35px;
+  height: 400px;
+  left: 210px;
+  top: 40px;
+  border: 2px solid black;
+  transform: rotate(30deg);
+  z-index: 102;
+}
+#windowShine {
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  height: 500px;
+  left: 900px;
+  bottom: 300px;
+  transform: rotate(-20deg);
+  opacity: 0.2;
+  z-index: 98;
+}
+/*-END, windowControlpanel-*/
+
+/*-controlPanel-*/
+#controlPanel {
+  position: absolute;
+  background-color: lightgrey;
+  width: 1000px;
+  height: 280px;
+  bottom: 0px;
+  z-index: 105;
+}
+#display {
+  position: absolute;
+  background-color: rgb(70, 70, 70);
+  width: 400px;
+  height: 150px;
+  left: 295px;
+  bottom: 75px;
+  border: 5px solid;
+  border-color: black;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 106;
+}
+#displayShine {
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  height: 250px;
+  left: 330px;
+  bottom: 5px;
+  transform: rotate(-20deg);
+  opacity: 0.2;
+}
+/*-END, controlPanel-*/
+
+/*-background-*/
+#mountainLeft {
+  position: absolute;
+  background-color: darkgrey;
+  width: 500px;
+  height: 500px;
+  left: 90px;
+  top: 250px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  z-index: 100;
+}
+#mountainLeftTop  {
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  left: -50px;
+  top: -50px;
+  transform: rotate(-45deg);
+}
+#mountainRight  {
+  position: absolute;
+  background-color: darkgrey;
+  width: 500px;
+  height: 500px;
+  left: 450px;
+  top: 300px;
+  transform: rotate(35deg);
+  overflow: hidden;
+  z-index: 99;
+}
+#mountainRightTop {
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  left: -45px;
+  top: -65px;
+  transform: rotate(-35deg);
+}
+/*-END, background-*/
+/*-END, SIDE 3-*/
+/*-END, SCENE 2-*/
+
+/*-SCENE 3-*/
+
+/*-SIDE 4-*/
+/*-END, SIDE 4-*/
+
+/*-SIDE 5-*/
+/*-END, SIDE 5-*/
+
+/*-END, SCENE 3-*/

@@ -13,7 +13,9 @@ html, body {
 }
 
 /*-SCENE 1-*/
-
+#test{
+  background-color: red; 
+}
 /*-END, SCENE 1-*/
 
 /*-SCENE 2-*/

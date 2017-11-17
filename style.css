@@ -16,7 +16,8 @@ html, body {
 /*-SIDE 1-*/
 /*-Scene 1-*/
 #artikkelContainer{
-  background-color: MediumAquaMarine;
+  /*farge som gammelt papir*/
+  background-color: rgb(243,236,226);
 
   overflow-y: scroll;
 }
@@ -26,6 +27,8 @@ html, body {
   display: inline;
   padding: 20px;
 
+  background-color: rgb(243,236,226);
+
   height: 400px;
 
   transition-duration: 0.5s;
@@ -33,15 +36,13 @@ html, body {
 .artikkelBilder:hover{
   /*"pop"-effekt*/
   transform: scale(1.01);
-  padding: 10px;
+  padding: 15px;
+  background-color: rgba(143,136,126,1);
 }
 #artikkelBilde1{
-   background-color:blue;
    margin: 25px;
 }
 #artikkelBilde2{
-  background-color: red;
-
   top: 650px;
   left: 550px;
 }
@@ -52,6 +53,8 @@ html, body {
   display: block;
   width: 250px;
 
+  border-radius: 10%;
+
   transition-duration: 1s;
 }
 .artikkelTekster:hover{
@@ -60,14 +63,18 @@ html, body {
 
   border-radius: 15%;
   border-style: solid;
-  border-color: rgba(0,0,0,0.8); 
+  border-color: rgba(0,0,0,0.8);
+}
+.artikkelTekster h1, .artikkelTekster h2, .artikkelTekster p{
+  margin-left: 10px;
 }
 #artikkelTekst1{
-  top: 300px;
+  top: 150px;
+  left: 600px;
 }
 #artikkelTekst2{
-  left: 100px;
-  top: 600px;
+  bottom: -350px;
+  left: 150px;
 }
 /*END, tekster til artikkel*/
 

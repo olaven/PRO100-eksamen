@@ -1,6 +1,8 @@
 
 html, body {
   background: black;
+  height: 100%;
+  body: 100%;
 }
 
 .mainContainer {
@@ -43,9 +45,9 @@ html, body {
 
 /*-SIDE 2-*/
 /*-Scene 3-*/
-#animContainer2  {
+#controlPanelContainer  {
   background-color: lightskyblue;
-  z-index: 50;
+  z-index: 98;
 }
 
 /*-text-*/
@@ -56,7 +58,7 @@ html, body {
   font-family: Impact;
   left: 333px;
   top: -15px;
-  z-index: 200;
+  z-index: 150;
 }
 /*-END, text-*/
 
@@ -153,6 +155,48 @@ html, body {
   bottom: 5px;
   transform: rotate(-20deg);
   opacity: 0.2;
+}
+.usableButtons {
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  bottom: 25px;
+  border: 2px solid black;
+  border-radius: 10px;
+  z-index: 107;
+}
+#buttonBensin {
+  background-color: yellow;
+  left: 295px;
+}
+#buttonReise {
+  background-color: lightblue;
+  left: 400px;
+}
+#buttonNASA {
+  background-color: orange;
+  left: 505px;
+}
+#buttonDyr {
+  background-color: lightgreen;
+  left: 610px;
+}
+#leverPart1 {
+  position: absolute;
+  width: 10px;
+  height: 160px;
+  left: 740px;
+  bottom: 75px;
+  background-color: black;
+  z-index: 108;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+#leverPart2 {
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  bottom: 25px;
 }
 /*-END, controlPanel-*/
 

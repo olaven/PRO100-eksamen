@@ -101,6 +101,16 @@ html, body {
   bottom: 0px;
   z-index: 105;
 }
+#controlPanelText {
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  font-family: Impact;
+  letter-spacing: 5px;
+  left: 375px;
+  top: 400px;
+  z-index: 200;
+}
 #display {
   position: absolute;
   background-color: rgb(70, 70, 70);
@@ -149,7 +159,7 @@ html, body {
 }
 #mountainRight  {
   position: absolute;
-  background-color: darkgrey;
+  background-color: rgb(150, 150, 150);
   width: 500px;
   height: 500px;
   left: 450px;

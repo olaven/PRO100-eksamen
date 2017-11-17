@@ -15,15 +15,16 @@ html, body {
 /*-SIDE 1-*/
 /*-Scene 1-*/
 #artikkelContainer{
-  background-color: cornsilk;
+  background-color: MediumAquaMarine;
 
   overflow-y: scroll;
 }
 #artikkelBilde1, #artikkelBilde2{
   position: absolute;
   display: inline;
+  padding: 20px;
 
-
+  height: 300px;
 }
 #artikkelBilde1{
    background-color:blue;
@@ -31,11 +32,8 @@ html, body {
 #artikkelBilde2{
   background-color: red;
 
-  top: 1250px;
-  left: 900px; 
-
-  height: 250px;
-  width: 200px;
+  top: 1050px;
+  left: 300px;
 }
 /*-END, Scene 1-*/
 /*-Scene 2-*/

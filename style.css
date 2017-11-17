@@ -237,15 +237,20 @@ html, body {
   left: 740px;
   bottom: 75px;
   background-color: black;
-  z-index: 108;
   border: 1px solid black;
   border-radius: 20px;
+  z-index: 108;
 }
 #leverPart2 {
   position: absolute;
   width: 90px;
-  height: 40px;
-  bottom: 25px;
+  height: 160px;
+  left: 740px;
+  bottom: 50px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 20px;
+  z-index: 109;
 }
 /*-END, controlPanel-*/
 

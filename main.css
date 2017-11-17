@@ -3,9 +3,6 @@ html, body {
   background: black;
 }
 
-#test2 {
-  background-color: blue;
-}
 .mainContainer {
   position: relative;
   width: 1000px;
@@ -16,9 +13,12 @@ html, body {
 }
 
 /*-SCENE 1-*/
-#test{
-  background-color: red; 
-}
+/*-Side1*/
+
+/*-END, Side1*/
+/*-Side2-*/
+
+/*END, Side2*/
 /*-END, SCENE 1-*/
 
 /*-SCENE 2-*/
@@ -170,5 +170,10 @@ html, body {
 /*-END, SCENE 2-*/
 
 /*-SCENE 3-*/
+/*-Scene 4*/
 
+/*-END, Scene 4*/
+/*-Scene 5*/
+
+/*-END, Scene 5*/
 /*-END, SCENE 3-*/

@@ -69,7 +69,7 @@ html, body {
   transform: rotate(-30deg);
   z-index: 101;
 }
-/*-Ta en titt på left px-*/
+
 #windowFrameLeft {
   width: 35px;
   height: 400px;

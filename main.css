@@ -3,7 +3,7 @@ html, body {
   background: black;
 }
 
-.mainContainter {
+.mainContainer {
   position: relative;
   width: 1000px;
   height: 700px;

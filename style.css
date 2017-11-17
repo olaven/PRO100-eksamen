@@ -1,6 +1,8 @@
 
 html, body {
   background: black;
+  height: 100%;
+  body: 100%;
 }
 
 .mainContainer {
@@ -13,67 +15,41 @@ html, body {
 }
 
 /*-SIDE 1-*/
-
 /*-Scene 1-*/
+#artikkelContainer{
+  background-color: cornsilk;
 
+  overflow-y: scroll;
+}
+#artikkelBilde1, #artikkelBilde2{
+  position: absolute;
+  display: inline;
+
+
+}
+#artikkelBilde1{
+   background-color:blue;
+}
+#artikkelBilde2{
+  background-color: red;
+
+  top: 1250px;
+  left: 900px; 
+
+  height: 250px;
+  width: 200px;
+}
 /*-END, Scene 1-*/
 /*-Scene 2-*/
-#boardingContainer{
-  background-color: lightskyblue;
-  z-index: 200px;
-}
 
-#mountainLeft1 {
-  position: absolute;
-  background-color: darkgrey;
-  width: 600px;
-  height: 600px;
-  left: 90px;
-  top: 250px;
-  transform: rotate(45deg);
-  overflow: hidden;
-  z-index: 100;
-}
-#mountainLeftTop1  {
-  position: absolute;
-  background-color: white;
-  width: 100px;
-  height: 100px;
-  left: -50px;
-  top: -50px;
-  transform: rotate(-45deg);
-}
-#mountainRight1  {
-  position: absolute;
-  background-color: darkgrey;
-  width: 600px;
-  height: 600px;
-  left: 450px;
-  top: 50px;
-  transform: rotate(35deg);
-  overflow: hidden;
-  z-index: 99;
-}
-#mountainRightTop1 {
-  position: absolute;
-  background-color: white;
-  width: 100px;
-  height: 100px;
-  left: -45px;
-  top: -65px;
-  transform: rotate(-35deg);
-}
-#grass {
-  
-}
 /*-END, Scene 2-*/
 /*-END, SIDE 1-*/
 
 /*-SIDE 2-*/
 /*-Scene 3-*/
-#animContainer2  {
+#controlPanelContainer  {
   background-color: lightskyblue;
-  z-index: 50;
+  z-index: 98;
 }
 
 /*-text-*/
@@ -84,7 +60,7 @@ html, body {
   font-family: Impact;
   left: 333px;
   top: -15px;
-  z-index: 200;
+  z-index: 150;
 }
 /*-END, text-*/
 
@@ -149,6 +125,16 @@ html, body {
   bottom: 0px;
   z-index: 105;
 }
+#controlPanelText {
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  font-family: Impact;
+  letter-spacing: 5px;
+  left: 375px;
+  top: 400px;
+  z-index: 200;
+}
 #display {
   position: absolute;
   background-color: rgb(70, 70, 70);
@@ -171,6 +157,48 @@ html, body {
   bottom: 5px;
   transform: rotate(-20deg);
   opacity: 0.2;
+}
+.usableButtons {
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  bottom: 25px;
+  border: 2px solid black;
+  border-radius: 10px;
+  z-index: 107;
+}
+#buttonBensin {
+  background-color: yellow;
+  left: 295px;
+}
+#buttonReise {
+  background-color: lightblue;
+  left: 400px;
+}
+#buttonNASA {
+  background-color: orange;
+  left: 505px;
+}
+#buttonDyr {
+  background-color: lightgreen;
+  left: 610px;
+}
+#leverPart1 {
+  position: absolute;
+  width: 10px;
+  height: 160px;
+  left: 740px;
+  bottom: 75px;
+  background-color: black;
+  z-index: 108;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+#leverPart2 {
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  bottom: 25px;
 }
 /*-END, controlPanel-*/
 
@@ -197,7 +225,7 @@ html, body {
 }
 #mountainRight  {
   position: absolute;
-  background-color: darkgrey;
+  background-color: rgb(150, 150, 150);
   width: 500px;
   height: 500px;
   left: 450px;

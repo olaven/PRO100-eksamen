@@ -20,7 +20,8 @@ html, body {
 
   overflow-y: scroll;
 }
-#artikkelBilde1, #artikkelBilde2{
+/*bilder til artikkel*/
+.artikkelBilder{
   position: absolute;
   display: inline;
   padding: 20px;
@@ -36,6 +37,24 @@ html, body {
   top: 1050px;
   left: 300px;
 }
+/*END, bilder til artikkel*/
+/*tekster til artikkel*/
+.artikkelTekster{
+  position: absolute;
+  display: block;
+  padding: 50px;
+  margin: 1px; 
+  border-style: solid;
+}
+#artikkelTekst1{
+  top: 300px;
+}
+#artikkelTekst2{
+  left: 400px;
+  top:200px;
+}
+/*END, tekster til artikkel*/
+
 /*-END, Scene 1-*/
 /*-Scene 2-*/
 #boardingContainer{

@@ -3,6 +3,9 @@ html, body {
   background: black;
 }
 
+#test2 {
+  background-color: blue;
+}
 .mainContainer {
   position: relative;
   width: 1000px;

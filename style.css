@@ -34,14 +34,61 @@ html, body {
   background-color: red;
 
   top: 1250px;
-  left: 900px; 
+  left: 900px;
 
   height: 250px;
   width: 200px;
 }
 /*-END, Scene 1-*/
 /*-Scene 2-*/
+#boardingContainer{
+  background-color: lightskyblue;
+  z-index: 200px;
+}
 
+#mountainLeft1 {
+  position: absolute;
+  background-color: darkgrey;
+  width: 600px;
+  height: 600px;
+  left: 90px;
+  top: 250px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  z-index: 100;
+}
+#mountainLeftTop1  {
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  left: -50px;
+  top: -50px;
+  transform: rotate(-45deg);
+}
+#mountainRight1  {
+  position: absolute;
+  background-color: darkgrey;
+  width: 600px;
+  height: 600px;
+  left: 450px;
+  top: 50px;
+  transform: rotate(35deg);
+  overflow: hidden;
+  z-index: 99;
+}
+#mountainRightTop1 {
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  left: -45px;
+  top: -65px;
+  transform: rotate(-35deg);
+}
+#grass {
+
+}
 /*-END, Scene 2-*/
 /*-END, SIDE 1-*/
 

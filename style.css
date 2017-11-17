@@ -14,7 +14,29 @@ html, body {
 
 /*-SIDE 1-*/
 /*-Scene 1-*/
+#artikkelContainer{
+  background-color: cornsilk;
 
+  overflow-y: scroll;
+}
+#artikkelBilde1, #artikkelBilde2{
+  position: absolute;
+  display: inline;
+
+
+}
+#artikkelBilde1{
+   background-color:blue;
+}
+#artikkelBilde2{
+  background-color: red;
+
+  top: 1250px;
+  left: 900px; 
+
+  height: 250px;
+  width: 200px;
+}
 /*-END, Scene 1-*/
 /*-Scene 2-*/
 

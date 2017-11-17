@@ -12,16 +12,17 @@ html, body {
   overflow: hidden;
 }
 
-/*-SCENE 1-*/
-/*-Side1*/
+/*-SIDE 1-*/
+/*-Scene 1-*/
 
-/*-END, Side1*/
-/*-Side2-*/
+/*-END, Scene 1-*/
+/*-Scene 2-*/
 
-/*END, Side2*/
-/*-END, SCENE 1-*/
+/*-END, Scene 2-*/
+/*-END, SIDE 1-*/
 
-/*-SCENE 2-*/
+/*-SIDE 2-*/
+/*-Scene 3-*/
 #animContainer2  {
   background-color: lightskyblue;
   z-index: 50;
@@ -167,13 +168,15 @@ html, body {
   transform: rotate(-35deg);
 }
 /*-END, background-*/
-/*-END, SCENE 2-*/
+/*-END, Scene 3-*/
 
-/*-SCENE 3-*/
+/*-END, SIDE 2-*/
+
+/*-SIDE 3-*/
 /*-Scene 4*/
 
 /*-END, Scene 4*/
 /*-Scene 5*/
 
 /*-END, Scene 5*/
-/*-END, SCENE 3-*/
+/*-END, SIDE 3-*/

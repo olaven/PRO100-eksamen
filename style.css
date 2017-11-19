@@ -167,7 +167,56 @@ z-index: 100;
   height: 300px;
   bottom: 20px;
   left: 500px;
-  z-index: 101;
+  z-index: 102;
+  animation-name: animationGirrafe;
+  animation-duration: 15s;
+}
+@keyframes animationGirrafe {
+    0%{
+      left: 500px;
+      bottom: 20px;
+
+     }
+    10%{
+      bottom: 20px;
+    }
+
+    20%{
+      bottom: 20px;
+    }
+
+    30%{
+      bottom: 70px;
+    }
+
+    40%{
+      bottom: 90px;
+    }
+
+    50%{
+      bottom: 140px;
+      transform: rotate(20deg);
+      height:
+    }
+
+    60%{
+      bottom: 140x;
+    }
+
+    70%{
+      bottom: 140px;
+    }
+    80%{
+      bottom: 145px;
+    }
+
+    90%{
+       left:
+    }
+    100%{
+      left:70px;
+      bottom: 150px;
+    }
 }
 #sheep{
   position: absolute;
@@ -175,7 +224,7 @@ z-index: 100;
   height: 70px;
   bottom: 20px;
   left: 700px;
-  z-index: 102;
+  z-index: 103;
 }
 #pig{
   position: absolute;
@@ -183,23 +232,23 @@ z-index: 100;
   height: 70px;
   bottom: 20px;
   left: 860px;
-  z-index: 103;
+  z-index: 104;
 }
 #rakett-full{
   position: absolute;
   width: 400px;
   height: 610px;
   bottom: 10px;
-  left: 5px;
-  z-index: 105;
+  left: 11px;
+  z-index: 100;
 }
 #rakett-halv{
   position: absolute;
-  width: 250px;
-  height: 590px;
-  bottom: 20px;
-  left: 5px;
-  z-index: 104;
+  width: 270px;
+  height: 600px;
+  bottom: 18px;
+  left: 0px;
+  z-index: 105;
 }
 
 #skrift{
@@ -214,8 +263,8 @@ z-index: 100;
 }
 
 #skrift:hover{
-  color:green;
-}
+  color:yellow;
+
 
 
 
@@ -435,7 +484,7 @@ z-index: 100;
 
 /*-solarsystem-*/
 .rotation {
-  
+
 }
 #sun {
 

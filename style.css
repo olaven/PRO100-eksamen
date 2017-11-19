@@ -14,25 +14,43 @@ html, body {
 }
 
 /*-SIDE 1-*/
-/*-Scene 1-*/
+/*-Scene 1--*/
 #artikkelContainer{
   /*farge som gammelt papir*/
   background-color: rgb(243,236,226);
 
   overflow-y: scroll;
 }
-/*bilder til artikkel*/
+/*--dato--*/
+#dato{
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10%;
+
+  /*samme farge som ramme, men svakt*/
+  background-color: rgba(143,136,126,0.5);
+
+  text-decoration: underline;
+}
+/*END, dato*/
+/*--bilder til artikkel--*/
 .artikkelBilder{
   position: absolute;
   display: inline;
 
   /*ramme rundt*/
-  background-color: rgba(143,136,126,1);
+  background-color: rgb(143,136,126);
   padding: 15px;
 
   border-radius: 2.5%;
 
-  height: 400px;
+  height: 450px;
+  width: 450px;
 
   transition-duration: 0.5s;
 }
@@ -43,19 +61,64 @@ html, body {
 
   padding: 10px;/*minske bakgrunnsfarge/ramme rundt når størrelsen økes*/
 }
+/*tegning av bilde 1s innhold under
+-> logisk å ha bilde1 og bilde 2 ved hverandre*/
 #artikkelBilde1{
    margin: 25px;
 }
 #artikkelBilde2{
   bottom: -320px;
-  left: 540px;
+  left: 500px;
 }
-/*END, bilder til artikkel*/
-/*tekster til artikkel*/
+/*tegning av bilde1*/
+#artikkelBilde1-container{
+  position: relative;
+
+  background-color: darkblue;
+
+  height: inherit;
+  width: inherit;
+
+  overflow: hidden;
+}
+#jord{
+  position: absolute;
+
+  width: 700px;
+  height: 700px;
+
+  background-color: lightskyblue;
+
+  top: 300px;
+  left: -200px;
+
+  border-radius: 50%;
+}
+.continents{
+  position: absolute;
+  background-color: green;
+}
+#continent1{
+  width: 80px;
+  height: 120px;
+
+  left: 500px;
+  top: 60px;
+
+  transform: rotate(120deg);
+
+  border-top-left-radius: 40%;
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 90%;
+  border-bottom-left-radius: 100%;
+}
+/*END, tegning av bilde1*/
+/*--END, bilder til artikkel--*/
+/*--tekster til artikkel--*/
 .artikkelTekster{
   position: absolute;
   display: block;
-  width: 450px;
+  width: 400px;
 
   border-radius: 2.5%;
 
@@ -76,12 +139,15 @@ html, body {
 .artikkelTekster h1, .artikkelTekster h2, .artikkelTekster p{
   margin-left:40px;
 }
+.artikkelTekster:hover > h2{
+  text-decoration: underline;
+}
 #artikkelTekst1{
   top: 70px;
-  left: 500px;
+  left: 540px;
 }
 #artikkelTekst2{
-  bottom: -350px;
+  bottom: -200px;
   left: 50px;
 }
 /*END, tekster til artikkel*/
@@ -99,10 +165,10 @@ html, body {
   width: 600px;
   height: 600px;
   left: 90px;
-  top: 250px;
+  top: 300px;
   transform: rotate(45deg);
   overflow: hidden;
-  z-index: 100;
+  z-index: 99;
 }
 #mountainLeftTop1  {
   position: absolute;
@@ -118,11 +184,11 @@ html, body {
   background-color: darkgrey;
   width: 600px;
   height: 600px;
-  left: 450px;
-  top: 50px;
+  left: 500px;
+  top: 350px;
   transform: rotate(35deg);
   overflow: hidden;
-  z-index: 100;
+  z-index: 99;
 }
 #mountainRightTop1 {
   position: absolute;
@@ -143,41 +209,69 @@ z-index: 100;
 }
 #girrafe{
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 300px;
   bottom: 20px;
-  left: 100px;
-  z-index: 102;
+  left: 500px;
+  z-index: 101;
 }
 #sheep{
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 120px;
+  height: 70px;
   bottom: 20px;
-  left: 100px;
-  z-index: 103;
+  left: 700px;
+  z-index: 102;
 }
 #pig{
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 70px;
   bottom: 20px;
-  left: 700px;
-  z-index: 104;
+  left: 860px;
+  z-index: 103;
 }
 #rakett-full{
   position: absolute;
   width: 400px;
-  height: 400px;
-  bottom: 20px;
-  left: 50px;
+  height: 610px;
+  bottom: 10px;
+  left: 5px;
   z-index: 105;
 }
+#rakett-halv{
+  position: absolute;
+  width: 250px;
+  height: 590px;
+  bottom: 20px;
+  left: 5px;
+  z-index: 104;
+}
+
+#skrift{
+  position: absolute;
+  width: 200px;
+  height: 120px;
+  bottom: 250px;
+  left: 70px;
+  color: white;
+  font-family: "Bangers";
+  z-index:106;
+}
+
+#skrift:hover{
+  color:green;
+}
+
+
+
 /*-END, Scene 2-*/
 /*-END, SIDE 1-*/
 
 /*-SIDE 2-*/
 /*-Scene 3-*/
+
+/* forklar blabla hvorfor shake blabla.*/
 #controlPanelContainer  {
   background-color: lightskyblue;
   z-index: 98;
@@ -325,22 +419,93 @@ z-index: 100;
   border: 1px solid black;
   border-radius: 20px;
 }
-#leverPart2 {
-  position: absolute;
-  width: 90px;
-  height: 40px;
-  bottom: 25px;
+#launchHidden{
+    position: absolute;
+    z-index: 109;
+    width: 40px;
+    height: 170px;
+    left: 726px;
+    bottom: 69px;
 }
+
+/* HUSK: går i teorien ann å legge shake effekt på alt inni controlPanelContainer, men ikke controlPanelContainer i seg selv. */
+#launchHidden:hover ~ #nextSide{
+    z-index: 110;
+}
+#launchHidden:hover ~ #leverPart2{
+    bottom: 82px;
+}
+#launchHidden:hover ~ #mountains{
+    top: 700px;
+}
+
+#nextSide {
+    background-color: blue;
+    transition-property: all;
+    transition-delay: 1s;
+    transition-duration: 17s;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 726px;
+    bottom: 29px;
+    z-index: 106;
+    border-radius: 50%;
+}
+#leverPart2{
+    transition: all 5s ease-in-out 10s;
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    bottom: 210px;
+    left: 715px;
+    border-radius: 20px;
+    background-color: grey;
+    z-index: 108;
+}
+#launchButton {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 726px;
+  bottom: 29px;
+  background-color: red;
+  z-index: 108;
+  border-radius: 50%;
+}
+
+#leverPart2{
+    transition: all 1s;
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    bottom: 210px;
+    left: 716px;
+    border-radius: 20px;
+    background-color: grey;
+    z-index: 108;
+}
+
 /*-END, controlPanel-*/
 
 /*-background-*/
+#mountains{
+    transition-property: all;
+    transition-duration: 15s;
+    position: absolute;
+    width: 1000px;
+    height: 271px;
+    z-index: 100;
+    top: 104px;
+    overflow: hidden;
+}
 #mountainLeft {
   position: absolute;
-  background-color: darkgrey;
+  background-color: darkgreen;
   width: 500px;
   height: 500px;
   left: 90px;
-  top: 250px;
+  top: 139px;
   transform: rotate(45deg);
   overflow: hidden;
   z-index: 100;
@@ -356,11 +521,12 @@ z-index: 100;
 }
 #mountainRight  {
   position: absolute;
-  background-color: rgb(150, 150, 150);
+  /*background-color: rgb(150, 150, 150);*/
+  background-color: green;
   width: 500px;
   height: 500px;
   left: 450px;
-  top: 300px;
+  top: 198px;
   transform: rotate(35deg);
   overflow: hidden;
   z-index: 99;
@@ -375,6 +541,43 @@ z-index: 100;
   transform: rotate(-35deg);
 }
 /*-END, background-*/
+
+@keyframes shake{
+    0%{
+        left: 10px;
+    }
+    10%{
+        bottom: 10px;
+    }
+    20%{
+        left: 0px;
+    }
+    30%{
+        bottom:0px;
+    }
+    40%{
+        left: -10px;
+    }
+    50%{
+        bottom: -10px;
+    }
+    60%{
+        bottom: 10px;
+    }
+    70%{
+        left: 0px;
+    }
+    80%{
+        bottom:0px;
+    }
+    90%{
+        left: -10px;
+    }
+    100%{
+        left: 0px;
+        bottom: 0px;
+    }
+}
 /*-END, Scene 3-*/
 
 /*-END, SIDE 2-*/

@@ -14,25 +14,42 @@ html, body {
 }
 
 /*-SIDE 1-*/
-/*-Scene 1-*/
+/*-Scene 1--*/
 #artikkelContainer{
   /*farge som gammelt papir*/
   background-color: rgb(243,236,226);
 
   overflow-y: scroll;
 }
-/*bilder til artikkel*/
+/*--dato--*/
+#dato{
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10%;
+
+  /*samme farge som ramme, men svakt*/
+  background-color: rgba(143,136,126,0.5);
+
+  text-decoration: underline;
+}
+/*END, dato*/
+/*--bilder til artikkel--*/
 .artikkelBilder{
   position: absolute;
   display: inline;
 
   /*ramme rundt*/
-  background-color: rgba(143,136,126,1);
+  background-color: rgb(143,136,126);
   padding: 15px;
 
   border-radius: 2.5%;
 
-  height: 400px;
+  height: 450px;
 
   transition-duration: 0.5s;
 }
@@ -48,14 +65,14 @@ html, body {
 }
 #artikkelBilde2{
   bottom: -320px;
-  left: 540px;
+  left: 500px;
 }
-/*END, bilder til artikkel*/
-/*tekster til artikkel*/
+/*--END, bilder til artikkel--*/
+/*--tekster til artikkel--*/
 .artikkelTekster{
   position: absolute;
   display: block;
-  width: 450px;
+  width: 400px;
 
   border-radius: 2.5%;
 
@@ -76,12 +93,15 @@ html, body {
 .artikkelTekster h1, .artikkelTekster h2, .artikkelTekster p{
   margin-left:40px;
 }
+.artikkelTekster:hover > h2{
+  text-decoration: underline;
+}
 #artikkelTekst1{
   top: 70px;
-  left: 500px;
+  left: 540px;
 }
 #artikkelTekst2{
-  bottom: -350px;
+  bottom: -200px;
   left: 50px;
 }
 /*END, tekster til artikkel*/

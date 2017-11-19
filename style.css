@@ -79,8 +79,8 @@ html, body {
 
   overflow: hidden;
 }
-/*--earth--*/
-#earth{
+/*--planetEarth--*/
+#planetEarth{
   position: absolute;
   /*continenter "går over" horisonten*/
   overflow: hidden;
@@ -95,7 +95,7 @@ html, body {
 
   border-radius: 50%;
 }
-/*--END, earth--*/
+/*--END, planetEarth--*/
 /*--continents--*/
 .continents{
   position: absolute;

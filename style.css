@@ -50,6 +50,7 @@ html, body {
   border-radius: 2.5%;
 
   height: 450px;
+  width: 450px; 
 
   transition-duration: 0.5s;
 }
@@ -67,6 +68,76 @@ html, body {
   bottom: -320px;
   left: 500px;
 }
+/*tegning av bilde1*/
+#artikkelBilde1-container{
+  position: relative;
+
+  background-color: darkblue;
+
+  height: inherit;
+  width: inherit;
+
+  overflow: hidden;
+}
+/*--jorden--*/
+#jord{
+  position: absolute;
+  /*kontinenter "går over" horisonten*/
+  overflow: hidden;
+
+  width: 700px;
+  height: 700px;
+
+  background-color: lightskyblue;
+
+  top: 300px;
+  left: -200px;
+
+  border-radius: 50%;
+}
+/*--END, jorden--*/
+.kontinents{
+  position: absolute;
+  background-color: green;
+}
+#kontinent1{
+  width: 80px;
+  height: 120px;
+
+  left: 545px;
+  top: 60px;
+
+  transform: rotate(120deg);
+
+  border-top-right-radius: 20%;
+  border-top-left-radius: 40%;
+  border-bottom-right-radius: 90%;
+  border-bottom-left-radius: 100%;
+}
+#kontinent2{
+  width: 200px;
+  height: 100px;
+
+  left: 120px;
+  top: 10px;
+
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 80%;
+}
+#kontinent3{
+  width: 250px;
+  height: 60px;
+
+  left: 300px;
+  top: 0;
+
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 80%;
+}
+
+/*END, tegning av bilde1*/
 /*--END, bilder til artikkel--*/
 /*--tekster til artikkel--*/
 .artikkelTekster{
@@ -595,10 +666,31 @@ z-index: 100;
 
 /*-solarsystem-*/
 .rotation {
+<<<<<<< HEAD
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: 200px;
+  top: 50px;
+}
+#sun {
+  position: absolute;
+  background-color: yellow;
+  width: 70px;
+  height: 70px;
+  left: 265px;
+  top: 265px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#sunDiv {
+  z-index: 50;
+=======
 
 }
 #sun {
 
+>>>>>>> 4c043387628c295ee1bac553d9d884c563f7a9ea
 }
 #mercury {
 

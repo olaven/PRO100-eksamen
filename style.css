@@ -50,7 +50,7 @@ html, body {
   border-radius: 2.5%;
 
   height: 450px;
-  width: 450px; 
+  width: 450px;
 
   transition-duration: 0.5s;
 }
@@ -555,8 +555,8 @@ z-index: 100;
 
 /*-solarsystem-*/
 .rotation {
-<<<<<<< HEAD
   position: absolute;
+  background-color: red;
   width: 600px;
   height: 600px;
   left: 200px;
@@ -574,36 +574,71 @@ z-index: 100;
 }
 #sunDiv {
   z-index: 50;
-=======
-
-}
-#sun {
-
->>>>>>> 4c043387628c295ee1bac553d9d884c563f7a9ea
 }
 #mercury {
-
+  position: absolute;
+}
+#mercuryDiv {
+  animation: rotateSolarsystem 5s linear infinite;
+  z-index: 49;
 }
 #venus {
-
+  position: absolute;
+}
+#venusDiv {
+  animation: rotateSolarsystem 10s linear infinite;
+  z-index: 48;
 }
 #earth {
-
+  position: absolute;
+}
+#earthDiv {
+  animation: rotateSolarsystem 15s linear infinite;
+  z-index: 47;
 }
 #mars {
-
+  position: absolute;
+}
+#marsDiv {
+  animation: rotateSolarsystem 20s linear infinite;
+  z-index: 46;
 }
 #jupiter {
-
+  position: absolute;
+}
+#jupiterDiv {
+  animation: rotateSolarsystem 25s linear infinite;
+  z-index: 45;
 }
 #saturn {
-
+  position: absolute;
+}
+#saturnDiv {
+  animation: rotateSolarsystem 30s linear infinite;
+  z-index: 44;
 }
 #uranus {
-
+  position: absolute;
+}
+#uranusDiv {
+  animation: rotateSolarsystem 35s linear infinite;
+  z-index: 43;
 }
 #neptune {
+  position: absolute;
+}
+#neptuneDiv {
+  animation: rotateSolarsystem 40s linear infinite;
+  z-index: 42;
+}
 
+@keyframes rotateSolarsystem {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /*-END, solarsystem-*/
 /*-END, Scene 4*/

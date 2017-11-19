@@ -91,10 +91,10 @@ html, body {
   width: 600px;
   height: 600px;
   left: 90px;
-  top: 250px;
+  top: 300px;
   transform: rotate(45deg);
   overflow: hidden;
-  z-index: 100;
+  z-index: 99;
 }
 #mountainLeftTop1  {
   position: absolute;
@@ -110,11 +110,11 @@ html, body {
   background-color: darkgrey;
   width: 600px;
   height: 600px;
-  left: 450px;
-  top: 50px;
+  left: 500px;
+  top: 350px;
   transform: rotate(35deg);
   overflow: hidden;
-  z-index: 100;
+  z-index: 99;
 }
 #mountainRightTop1 {
   position: absolute;
@@ -135,36 +135,62 @@ z-index: 100;
 }
 #girrafe{
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 300px;
   bottom: 20px;
-  left: 100px;
-  z-index: 102;
+  left: 500px;
+  z-index: 101;
 }
 #sheep{
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 120px;
+  height: 70px;
   bottom: 20px;
-  left: 100px;
-  z-index: 103;
+  left: 700px;
+  z-index: 102;
 }
 #pig{
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 70px;
   bottom: 20px;
-  left: 700px;
-  z-index: 104;
+  left: 860px;
+  z-index: 103;
 }
 #rakett-full{
   position: absolute;
   width: 400px;
-  height: 400px;
-  bottom: 20px;
-  left: 50px;
+  height: 610px;
+  bottom: 10px;
+  left: 5px;
   z-index: 105;
 }
+#rakett-halv{
+  position: absolute;
+  width: 250px;
+  height: 590px;
+  bottom: 20px;
+  left: 5px;
+  z-index: 104;
+}
+
+#skrift{
+  position: absolute;
+  width: 200px;
+  height: 120px;
+  bottom: 250px;
+  left: 70px;
+  color: white;
+  font-family: "Bangers";
+  z-index:106;
+}
+
+#skrift:hover{
+  color:green;
+}
+
+
+
 /*-END, Scene 2-*/
 /*-END, SIDE 1-*/
 

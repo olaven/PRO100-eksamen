@@ -50,6 +50,7 @@ html, body {
   border-radius: 2.5%;
 
   height: 450px;
+  width: 450px;
 
   transition-duration: 0.5s;
 }
@@ -67,6 +68,76 @@ html, body {
   bottom: -320px;
   left: 500px;
 }
+/*tegning av bilde1*/
+#artikkelBilde1-container{
+  position: relative;
+
+  background-color: darkblue;
+
+  height: inherit;
+  width: inherit;
+
+  overflow: hidden;
+}
+/*--jorden--*/
+#jord{
+  position: absolute;
+  /*kontinenter "går over" horisonten*/
+  overflow: hidden;
+
+  width: 700px;
+  height: 700px;
+
+  background-color: lightskyblue;
+
+  top: 300px;
+  left: -200px;
+
+  border-radius: 50%;
+}
+/*--END, jorden--*/
+.kontinents{
+  position: absolute;
+  background-color: green;
+}
+#kontinent1{
+  width: 80px;
+  height: 120px;
+
+  left: 545px;
+  top: 60px;
+
+  transform: rotate(120deg);
+
+  border-top-right-radius: 20%;
+  border-top-left-radius: 40%;
+  border-bottom-right-radius: 90%;
+  border-bottom-left-radius: 100%;
+}
+#kontinent2{
+  width: 200px;
+  height: 100px;
+
+  left: 120px;
+  top: 10px;
+
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 80%;
+}
+#kontinent3{
+  width: 250px;
+  height: 60px;
+
+  left: 300px;
+  top: 0;
+
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 80%;
+}
+
+/*END, tegning av bilde1*/
 /*--END, bilder til artikkel--*/
 /*--tekster til artikkel--*/
 .artikkelTekster{
@@ -295,6 +366,8 @@ z-index: 100;
 
 /*-SIDE 2-*/
 /*-Scene 3-*/
+
+/* forklar blabla hvorfor shake blabla.*/
 #controlPanelContainer  {
   background-color: lightskyblue;
   z-index: 98;
@@ -442,22 +515,93 @@ z-index: 100;
   border: 1px solid black;
   border-radius: 20px;
 }
-#leverPart2 {
-  position: absolute;
-  width: 90px;
-  height: 40px;
-  bottom: 25px;
+#launchHidden{
+    position: absolute;
+    z-index: 109;
+    width: 40px;
+    height: 170px;
+    left: 726px;
+    bottom: 69px;
 }
+
+/* HUSK: går i teorien ann å legge shake effekt på alt inni controlPanelContainer, men ikke controlPanelContainer i seg selv. */
+#launchHidden:hover ~ #nextSide{
+    z-index: 110;
+}
+#launchHidden:hover ~ #leverPart2{
+    bottom: 82px;
+}
+#launchHidden:hover ~ #mountains{
+    top: 700px;
+}
+
+#nextSide {
+    background-color: blue;
+    transition-property: all;
+    transition-delay: 1s;
+    transition-duration: 17s;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 726px;
+    bottom: 29px;
+    z-index: 106;
+    border-radius: 50%;
+}
+#leverPart2{
+    transition: all 5s ease-in-out 10s;
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    bottom: 210px;
+    left: 715px;
+    border-radius: 20px;
+    background-color: grey;
+    z-index: 108;
+}
+#launchButton {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 726px;
+  bottom: 29px;
+  background-color: red;
+  z-index: 108;
+  border-radius: 50%;
+}
+
+#leverPart2{
+    transition: all 1s;
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    bottom: 210px;
+    left: 716px;
+    border-radius: 20px;
+    background-color: grey;
+    z-index: 108;
+}
+
 /*-END, controlPanel-*/
 
 /*-background-*/
+#mountains{
+    transition-property: all;
+    transition-duration: 15s;
+    position: absolute;
+    width: 1000px;
+    height: 271px;
+    z-index: 100;
+    top: 104px;
+    overflow: hidden;
+}
 #mountainLeft {
   position: absolute;
-  background-color: darkgrey;
+  background-color: darkgreen;
   width: 500px;
   height: 500px;
   left: 90px;
-  top: 250px;
+  top: 139px;
   transform: rotate(45deg);
   overflow: hidden;
   z-index: 100;
@@ -473,11 +617,12 @@ z-index: 100;
 }
 #mountainRight  {
   position: absolute;
-  background-color: rgb(150, 150, 150);
+  /*background-color: rgb(150, 150, 150);*/
+  background-color: green;
   width: 500px;
   height: 500px;
   left: 450px;
-  top: 300px;
+  top: 198px;
   transform: rotate(35deg);
   overflow: hidden;
   z-index: 99;
@@ -492,6 +637,43 @@ z-index: 100;
   transform: rotate(-35deg);
 }
 /*-END, background-*/
+
+@keyframes shake{
+    0%{
+        left: 10px;
+    }
+    10%{
+        bottom: 10px;
+    }
+    20%{
+        left: 0px;
+    }
+    30%{
+        bottom:0px;
+    }
+    40%{
+        left: -10px;
+    }
+    50%{
+        bottom: -10px;
+    }
+    60%{
+        bottom: 10px;
+    }
+    70%{
+        left: 0px;
+    }
+    80%{
+        bottom:0px;
+    }
+    90%{
+        left: -10px;
+    }
+    100%{
+        left: 0px;
+        bottom: 0px;
+    }
+}
 /*-END, Scene 3-*/
 
 /*-END, SIDE 2-*/
@@ -506,34 +688,90 @@ z-index: 100;
 
 /*-solarsystem-*/
 .rotation {
-
+  position: absolute;
+  background-color: red;
+  width: 600px;
+  height: 600px;
+  left: 200px;
+  top: 50px;
 }
 #sun {
-
+  position: absolute;
+  background-color: yellow;
+  width: 70px;
+  height: 70px;
+  left: 265px;
+  top: 265px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#sunDiv {
+  z-index: 50;
 }
 #mercury {
-
+  position: absolute;
+}
+#mercuryDiv {
+  animation: rotateSolarsystem 5s linear infinite;
+  z-index: 49;
 }
 #venus {
-
+  position: absolute;
+}
+#venusDiv {
+  animation: rotateSolarsystem 10s linear infinite;
+  z-index: 48;
 }
 #earth {
-
+  position: absolute;
+}
+#earthDiv {
+  animation: rotateSolarsystem 15s linear infinite;
+  z-index: 47;
 }
 #mars {
-
+  position: absolute;
+}
+#marsDiv {
+  animation: rotateSolarsystem 20s linear infinite;
+  z-index: 46;
 }
 #jupiter {
-
+  position: absolute;
+}
+#jupiterDiv {
+  animation: rotateSolarsystem 25s linear infinite;
+  z-index: 45;
 }
 #saturn {
-
+  position: absolute;
+}
+#saturnDiv {
+  animation: rotateSolarsystem 30s linear infinite;
+  z-index: 44;
 }
 #uranus {
-
+  position: absolute;
+}
+#uranusDiv {
+  animation: rotateSolarsystem 35s linear infinite;
+  z-index: 43;
 }
 #neptune {
+  position: absolute;
+}
+#neptuneDiv {
+  animation: rotateSolarsystem 40s linear infinite;
+  z-index: 42;
+}
 
+@keyframes rotateSolarsystem {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /*-END, solarsystem-*/
 /*-END, Scene 4*/

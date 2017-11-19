@@ -126,9 +126,13 @@ html, body {
   transform: rotate(-35deg);
 }
 #grass {
-
+position: absolute;
+width:1000px;
+height: 100px;
+bottom: 0px;
+z-index: 101;
 }
-#giraff{
+#girrafe{
   position: absolute;
   width: 50px;
   height: 50px;
@@ -136,7 +140,7 @@ html, body {
   left: 100px;
   z-index: 102;
 }
-#sau{
+#sheep{
   position: absolute;
   width: 50px;
   height: 50px;
@@ -144,7 +148,7 @@ html, body {
   left: 100px;
   z-index: 103;
 }
-#gris{
+#pig{
   position: absolute;
   width: 50px;
   height: 50px;

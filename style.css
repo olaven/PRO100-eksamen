@@ -1,5 +1,5 @@
 html, body {
-  background: black;
+  background-color: black;
   height: 100%;
   body: 100%;
 }
@@ -15,7 +15,7 @@ html, body {
 
 /*-SIDE 1-*/
 /*-Scene 1--*/
-#artikkelContainer{
+#articleContainer{
   /*farge som gammelt papir*/
   background-color: rgb(243,236,226);
 
@@ -39,7 +39,7 @@ html, body {
 }
 /*END, dato*/
 /*--bilder til artikkel--*/
-.artikkelBilder{
+.articleImages{
   position: absolute;
   display: inline;
 
@@ -54,22 +54,22 @@ html, body {
 
   transition-duration: 0.5s;
 }
-.artikkelBilder:hover{
+.articleImages:hover{
   /*"pop"-effekt*/
   transform-origin: center;
   transform: scale(1.05);
 
   padding: 10px;/*minske bakgrunnsfarge/ramme rundt når størrelsen økes*/
 }
-#artikkelBilde1{
+#articleImage1{
    margin: 25px;
 }
-#artikkelBilde2{
+#articleImage2{
   bottom: -320px;
   left: 500px;
 }
-/*tegning av bilde1*/
-#artikkelBilde1-container{
+/*--tegning av bilde1--*/
+#articleImage1Container{
   position: relative;
 
   background-color: darkblue;
@@ -79,10 +79,10 @@ html, body {
 
   overflow: hidden;
 }
-/*--jorden--*/
-#jord{
+/*--planetEarth--*/
+#planetEarth{
   position: absolute;
-  /*kontinenter "går over" horisonten*/
+  /*continenter "går over" horisonten*/
   overflow: hidden;
 
   width: 700px;
@@ -95,12 +95,13 @@ html, body {
 
   border-radius: 50%;
 }
-/*--END, jorden--*/
-.kontinents{
+/*--END, planetEarth--*/
+/*--continents--*/
+.continents{
   position: absolute;
   background-color: green;
 }
-#kontinent1{
+#continent1{
   width: 80px;
   height: 120px;
 
@@ -114,7 +115,7 @@ html, body {
   border-bottom-right-radius: 90%;
   border-bottom-left-radius: 100%;
 }
-#kontinent2{
+#continent2{
   width: 200px;
   height: 100px;
 
@@ -125,7 +126,7 @@ html, body {
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 80%;
 }
-#kontinent3{
+#continent3{
   width: 250px;
   height: 60px;
 
@@ -136,8 +137,133 @@ html, body {
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 80%;
 }
+/*--END,continents--*/
+/*--meteor--*/
+#meteor{
+  position: absolute;
+  background-color: rgb(55, 26, 4);
 
-/*END, tegning av bilde1*/
+  width: 100px;
+  height: 100px;
+
+  top: 140px;
+  right: 150px;
+
+  border-radius: 50%;
+}
+.meteorTail{
+  position: absolute;
+
+  height: 100px;
+  width: 30px;
+
+  border-top-left-radius: 70%;
+  border-top-right-radius: 70%;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+.meteorTailGroup1{
+  background-color: rgb(223, 216, 46);
+
+  border-style: solid;
+  border-color: rgb(194, 40, 7);
+
+  animation-name: meteorTailGroup1Pulse;
+  animation-duration: 3s;
+}
+.meteorTailGroup2{
+  background-color: rgb(194, 40, 7);
+
+  animation-name: meteorTailGroup2Pulse;
+  animation-duration: 1s;
+}
+#meteorTail1{
+  top:70px;
+  left: 250px;
+}
+#meteorTail2{
+  top:55px;
+  left: 260px;
+
+  height:150px;
+}
+#meteorTail3{
+  top:55px;
+  left: 290px;
+
+  height: 150px;
+}
+#meteorTail4{
+  top:85px;
+  left: 300px;
+}
+@keyframes meteorTailGroup1Pulse {
+  from{
+    transform: scale(1.2) rotate(35deg);
+  }
+  to{
+    transform: scale(1) rotate(35deg);
+  }
+}
+@keyframes meteorTailGroup2Pulse {
+  from{
+    transform: scale(1) rotate(35deg);
+  }
+  to{
+    transform: scale(1.1) rotate(35deg);
+  }
+}
+/*--END, meteor--*/
+/*--stars--*/
+.stars{
+  position: absolute;
+
+  background-color: whitesmoke;
+
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  animation-name: starGlow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+#star1{
+  top: 20px;
+  left: 100px;
+}
+#star2{
+  top: 50px;
+  left: 400px;
+}
+#star3{
+  top: 240px;
+  left: 20px;
+}
+#star4{
+  top: 410px;
+  left: 435px;
+}
+#star5{
+  top: -10px;
+  left: 300px;
+}
+@keyframes starGlow {
+  from{
+    box-shadow: 0px 0px 30px whitesmoke;
+  }
+  to{
+    box-shadow: 0px 0px 50px whitesmoke: ;
+  }
+}
+/*--END, stars--*/
+
+/*--END, tegning av bilde1--*/
 /*--END, bilder til artikkel--*/
 /*--tekster til artikkel--*/
 .artikkelTekster{
@@ -186,7 +312,7 @@ html, body {
 
 #mountainLeft1 {
   position: absolute;
-  background-color: darkgrey;
+  background-color: grey;
   width: 600px;
   height: 600px;
   left: 90px;
@@ -239,56 +365,78 @@ z-index: 100;
   bottom: 20px;
   left: 500px;
   z-index: 102;
-  animation-name: animationGirrafe;
+  animation-name: boarding;
   animation-duration: 15s;
+  animation-fill-mode: forwards;
 }
-@keyframes animationGirrafe {
+@keyframes boarding {
     0%{
       left: 500px;
       bottom: 20px;
-
-     }
+      transform: rotate(0deg);
+    }
     10%{
+      left: 350px;
       bottom: 20px;
+      transform: rotate(0deg);
     }
-
     20%{
+      left:350px;
       bottom: 20px;
+      transform: rotate(35deg);
     }
-
     30%{
-      bottom: 70px;
+      left:350px;
+      bottom: 20px;
+      transform: rotate(35deg);
     }
-
+    /* vinkler her */
     40%{
-      bottom: 90px;
+      left:350px;
+      bottom:;
+      transform: rotate(35deg);
     }
-
+    /* deler opp til +5% */
     50%{
-      bottom: 140px;
-      transform: rotate(20deg);
-      height:
+      left:350px;
+      bottom:;
+      transform: rotate(35deg);
+      height:;
     }
-
     60%{
-      bottom: 140x;
+      left:350px;
+      bottom: ;
+      transform: rotate(35deg);
+      height:;
     }
-
     70%{
-      bottom: 140px;
+      left:350px;
+      bottom:;
+      transform: rotate(35deg);
+      height:;
     }
     80%{
-      bottom: 145px;
+      left:
+      bottom:;
+      transform: rotate(35deg);
+      height:;
     }
-
     90%{
-       left:
+      left:
+      bottom:;
+      transform: rotate(35deg);
+      height:;
     }
     100%{
-      left:70px;
-      bottom: 150px;
+      left:;
+      bottom:;
+      transform:;
+      height:300px;
+      width:150px;
     }
 }
+
+
 #sheep{
   position: absolute;
   width: 120px;
@@ -721,33 +869,144 @@ z-index: 100;
 }
 #sunDiv {
   z-index: 50;
+<<<<<<< HEAD
 }
 #sun {
 
+=======
+>>>>>>> 87876d58662f9cb7f0339806912d2ba276d45f40
 }
 #mercury {
-
+  position: absolute;
+  background-color: lightgrey;
+  width: 15px;
+  height: 15px;
+  left: 292.5px;
+  top: 345px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#mercuryDiv {
+  animation: rotateSolarsystem 5s linear infinite;
+  z-index: 49;
 }
 #venus {
-
+  position: absolute;
+  background-color: brown;
+  width: 20px;
+  height: 20px;
+  left: 290px;
+  top: 370px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#venusDiv {
+  animation: rotateSolarsystem 10s linear infinite;
+  z-index: 48;
 }
 #earth {
-
+  position: absolute;
+  background-color: lightgreen;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 400px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#earthDiv {
+  animation: rotateSolarsystem 15s linear infinite;
+  z-index: 47;
 }
 #mars {
-
+  position: absolute;
+  background-color: darkred;
+  width: 25px;
+  height: 25px;
+  left: 287.5px;
+  top: 440px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#marsDiv {
+  animation: rotateSolarsystem 20s linear infinite;
+  z-index: 46;
 }
 #jupiter {
-
+  position: absolute;
+  background-color: purple;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 510px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#jupiterDiv {
+  animation: rotateSolarsystem 25s linear infinite;
+  z-index: 45;
 }
 #saturn {
-
+  position: absolute;
+  background-color: lightyellow;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 550px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#saturnbelt {
+  position: absolute;
+  background-color: brown;
+  width: 5px;
+  height: 50px;
+  left: 11px;
+  top: -11px;
+  transform: rotate(45deg);
+  border: 0px solid white;
+  border-radius: 25%;
+}
+#saturnDiv {
+  animation: rotateSolarsystem 30s linear infinite;
+  z-index: 44;
 }
 #uranus {
-
+  position: absolute;
+  background-color: orange;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 590px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#uranusDiv {
+  animation: rotateSolarsystem 35s linear infinite;
+  z-index: 43;
 }
 #neptune {
+  position: absolute;
+  background-color: lightyellow;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 630px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#neptuneDiv {
+  animation: rotateSolarsystem 40s linear infinite;
+  z-index: 42;
+}
 
+@keyframes rotateSolarsystem {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /*-END, solarsystem-*/
 /*-END, Scene 4*/

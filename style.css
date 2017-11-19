@@ -81,8 +81,11 @@ html, body {
 
   overflow: hidden;
 }
+/*--jorden--*/
 #jord{
   position: absolute;
+  /*kontinenter "går over" horisonten*/
+  overflow: hidden;
 
   width: 700px;
   height: 700px;
@@ -94,24 +97,48 @@ html, body {
 
   border-radius: 50%;
 }
-.continents{
+/*--END, jorden--*/
+.kontinents{
   position: absolute;
   background-color: green;
 }
-#continent1{
+#kontinent1{
   width: 80px;
   height: 120px;
 
-  left: 500px;
+  left: 545px;
   top: 60px;
 
   transform: rotate(120deg);
 
-  border-top-left-radius: 40%;
   border-top-right-radius: 20%;
+  border-top-left-radius: 40%;
   border-bottom-right-radius: 90%;
   border-bottom-left-radius: 100%;
 }
+#kontinent2{
+  width: 200px;
+  height: 100px;
+
+  left: 120px;
+  top: 10px;
+
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 80%;
+}
+#kontinent3{
+  width: 250px;
+  height: 60px;
+
+  left: 300px;
+  top: 0;
+
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 80%;
+}
+
 /*END, tegning av bilde1*/
 /*--END, bilder til artikkel--*/
 /*--tekster til artikkel--*/

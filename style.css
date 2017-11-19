@@ -335,9 +335,7 @@ z-index: 100;
 
 #skrift:hover{
   color:yellow;
-
-
-
+}
 
 /*-END, Scene 2-*/
 /*-END, SIDE 1-*/
@@ -667,7 +665,6 @@ z-index: 100;
 /*-solarsystem-*/
 .rotation {
   position: absolute;
-  background-color: red;
   width: 600px;
   height: 600px;
   left: 200px;
@@ -688,6 +685,13 @@ z-index: 100;
 }
 #mercury {
   position: absolute;
+  background-color: lightgrey;
+  width: 15px;
+  height: 15px;
+  left: 292.5px;
+  top: 345px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #mercuryDiv {
   animation: rotateSolarsystem 5s linear infinite;
@@ -695,6 +699,13 @@ z-index: 100;
 }
 #venus {
   position: absolute;
+  background-color: brown;
+  width: 20px;
+  height: 20px;
+  left: 290px;
+  top: 370px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #venusDiv {
   animation: rotateSolarsystem 10s linear infinite;
@@ -702,6 +713,13 @@ z-index: 100;
 }
 #earth {
   position: absolute;
+  background-color: lightgreen;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 400px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #earthDiv {
   animation: rotateSolarsystem 15s linear infinite;
@@ -709,6 +727,13 @@ z-index: 100;
 }
 #mars {
   position: absolute;
+  background-color: darkred;
+  width: 25px;
+  height: 25px;
+  left: 287.5px;
+  top: 440px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #marsDiv {
   animation: rotateSolarsystem 20s linear infinite;
@@ -716,6 +741,13 @@ z-index: 100;
 }
 #jupiter {
   position: absolute;
+  background-color: purple;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 510px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #jupiterDiv {
   animation: rotateSolarsystem 25s linear infinite;
@@ -723,6 +755,24 @@ z-index: 100;
 }
 #saturn {
   position: absolute;
+  background-color: lightyellow;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 550px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#saturnbelt {
+  position: absolute;
+  background-color: brown;
+  width: 5px;
+  height: 50px;
+  left: 11px;
+  top: -11px;
+  transform: rotate(45deg);
+  border: 0px solid white;
+  border-radius: 25%;
 }
 #saturnDiv {
   animation: rotateSolarsystem 30s linear infinite;
@@ -730,6 +780,13 @@ z-index: 100;
 }
 #uranus {
   position: absolute;
+  background-color: orange;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 590px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #uranusDiv {
   animation: rotateSolarsystem 35s linear infinite;
@@ -737,6 +794,13 @@ z-index: 100;
 }
 #neptune {
   position: absolute;
+  background-color: lightyellow;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 630px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #neptuneDiv {
   animation: rotateSolarsystem 40s linear infinite;

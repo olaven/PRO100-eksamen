@@ -593,23 +593,22 @@ z-index: 100;
 /*-solarsystem-*/
 .rotation {
   position: absolute;
-  background-color: red;
   width: 600px;
   height: 600px;
   left: 200px;
   top: 50px;
 }
 #sun {
+  position: absolute;
   background-color: yellow;
-  width: 50px;
-  height: 50px;
-  left: 300px;
-  top: 300px;
+  width: 70px;
+  height: 70px;
+  left: 265px;
+  top: 265px;
   border: 0px solid white;
   border-radius: 100%;
 }
 #sunDiv {
-  /*animation: rotateSolarsystem 5s linear infinite;*/
   z-index: 50;
 }
 #mercury {

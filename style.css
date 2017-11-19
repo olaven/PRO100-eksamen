@@ -14,67 +14,95 @@ html, body {
 }
 
 /*-SIDE 1-*/
-/*-Scene 1-*/
+/*-Scene 1--*/
 #artikkelContainer{
   /*farge som gammelt papir*/
   background-color: rgb(243,236,226);
 
   overflow-y: scroll;
 }
-/*bilder til artikkel*/
+/*--dato--*/
+#dato{
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10%;
+
+  /*samme farge som ramme, men svakt*/
+  background-color: rgba(143,136,126,0.5);
+
+  text-decoration: underline;
+}
+/*END, dato*/
+/*--bilder til artikkel--*/
 .artikkelBilder{
   position: absolute;
   display: inline;
-  padding: 20px;
 
-  background-color: rgb(243,236,226);
+  /*ramme rundt*/
+  background-color: rgb(143,136,126);
+  padding: 15px;
 
-  height: 400px;
+  border-radius: 2.5%;
+
+  height: 450px;
 
   transition-duration: 0.5s;
 }
 .artikkelBilder:hover{
   /*"pop"-effekt*/
-  transform: scale(1.01);
-  padding: 15px;
-  background-color: rgba(143,136,126,1);
+  transform-origin: center;
+  transform: scale(1.05);
+
+  padding: 10px;/*minske bakgrunnsfarge/ramme rundt når størrelsen økes*/
 }
 #artikkelBilde1{
    margin: 25px;
 }
 #artikkelBilde2{
-  top: 650px;
-  left: 550px;
+  bottom: -320px;
+  left: 500px;
 }
-/*END, bilder til artikkel*/
-/*tekster til artikkel*/
+/*--END, bilder til artikkel--*/
+/*--tekster til artikkel--*/
 .artikkelTekster{
   position: absolute;
   display: block;
-  width: 250px;
+  width: 400px;
 
-  border-radius: 10%;
+  border-radius: 2.5%;
 
   transition-duration: 1s;
+
+  font-size: 1.5em;
 }
 .artikkelTekster:hover{
   /*bakgrunn endres for å gjøre tekst tydligere*/
   background-color: rgba(0, 0, 0, 0.1);
 
-  border-radius: 15%;
+  border-radius: 7.5%;
   border-style: solid;
   border-color: rgba(0,0,0,0.8);
+
+  box-shadow: 5px 5px 75px #888888;
 }
 .artikkelTekster h1, .artikkelTekster h2, .artikkelTekster p{
-  margin-left: 10px;
+  margin-left:40px;
+}
+.artikkelTekster:hover > h2{
+  text-decoration: underline;
 }
 #artikkelTekst1{
-  top: 150px;
-  left: 600px;
+  top: 70px;
+  left: 540px;
 }
 #artikkelTekst2{
-  bottom: -350px;
-  left: 150px;
+  bottom: -200px;
+  left: 50px;
 }
 /*END, tekster til artikkel*/
 
@@ -91,10 +119,10 @@ html, body {
   width: 600px;
   height: 600px;
   left: 90px;
-  top: 250px;
+  top: 300px;
   transform: rotate(45deg);
   overflow: hidden;
-  z-index: 200;
+  z-index: 99;
 }
 #mountainLeftTop1  {
   position: absolute;
@@ -110,11 +138,11 @@ html, body {
   background-color: darkgrey;
   width: 600px;
   height: 600px;
-  left: 450px;
-  top: 50px;
+  left: 500px;
+  top: 350px;
   transform: rotate(35deg);
   overflow: hidden;
-  z-index: 201;
+  z-index: 99;
 }
 #mountainRightTop1 {
   position: absolute;
@@ -126,32 +154,70 @@ html, body {
   transform: rotate(-35deg);
 }
 #grass {
-
+position: absolute;
+width:1000px;
+height: 100px;
+bottom: 0px;
+background-color: green;
+z-index: 100;
 }
-#giraff{
+#girrafe{
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 300px;
   bottom: 20px;
-  left: 100px;
+  left: 500px;
+  z-index: 101;
+}
+#sheep{
+  position: absolute;
+  width: 120px;
+  height: 70px;
+  bottom: 20px;
+  left: 700px;
   z-index: 102;
 }
-#sau{
+#pig{
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 120px;
+  height: 70px;
   bottom: 20px;
-  left: 100px;
+  left: 860px;
   z-index: 103;
 }
-#gris{
+#rakett-full{
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 400px;
+  height: 610px;
+  bottom: 10px;
+  left: 5px;
+  z-index: 105;
+}
+#rakett-halv{
+  position: absolute;
+  width: 250px;
+  height: 590px;
   bottom: 20px;
-  left: 100px;
+  left: 5px;
   z-index: 104;
 }
+
+#skrift{
+  position: absolute;
+  width: 200px;
+  height: 120px;
+  bottom: 250px;
+  left: 70px;
+  color: white;
+  font-family: "Bangers";
+  z-index:106;
+}
+
+#skrift:hover{
+  color:green;
+}
+
+
 
 /*-END, Scene 2-*/
 /*-END, SIDE 1-*/
@@ -472,7 +538,44 @@ html, body {
 
 /*-SIDE 3-*/
 /*-Scene 4*/
+#solarsystemContainer {
+  border: 1px solid white;
+  background-color: black;
+  z-index: 98;
+}
 
+/*-solarsystem-*/
+.rotation {
+  
+}
+#sun {
+
+}
+#mercury {
+
+}
+#venus {
+
+}
+#earth {
+
+}
+#mars {
+
+}
+#jupiter {
+
+}
+#saturn {
+
+}
+#uranus {
+
+}
+#neptune {
+
+}
+/*-END, solarsystem-*/
 /*-END, Scene 4*/
 /*-Scene 5*/
 

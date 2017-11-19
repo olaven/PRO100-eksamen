@@ -1,5 +1,5 @@
 html, body {
-  background: black;
+  background-color: black;
   height: 100%;
   body: 100%;
 }
@@ -15,7 +15,7 @@ html, body {
 
 /*-SIDE 1-*/
 /*-Scene 1--*/
-#artikkelContainer{
+#articleContainer{
   /*farge som gammelt papir*/
   background-color: rgb(243,236,226);
 
@@ -39,7 +39,7 @@ html, body {
 }
 /*END, dato*/
 /*--bilder til artikkel--*/
-.artikkelBilder{
+.articleImages{
   position: absolute;
   display: inline;
 
@@ -50,26 +50,26 @@ html, body {
   border-radius: 2.5%;
 
   height: 450px;
-  width: 450px; 
+  width: 450px;
 
   transition-duration: 0.5s;
 }
-.artikkelBilder:hover{
+.articleImages:hover{
   /*"pop"-effekt*/
   transform-origin: center;
   transform: scale(1.05);
 
   padding: 10px;/*minske bakgrunnsfarge/ramme rundt når størrelsen økes*/
 }
-#artikkelBilde1{
+#articleImage1{
    margin: 25px;
 }
-#artikkelBilde2{
+#articleImage2{
   bottom: -320px;
   left: 500px;
 }
-/*tegning av bilde1*/
-#artikkelBilde1-container{
+/*--tegning av bilde1--*/
+#articleImage1Container{
   position: relative;
 
   background-color: darkblue;
@@ -79,10 +79,10 @@ html, body {
 
   overflow: hidden;
 }
-/*--jorden--*/
-#jord{
+/*--earth--*/
+#earth{
   position: absolute;
-  /*kontinenter "går over" horisonten*/
+  /*continenter "går over" horisonten*/
   overflow: hidden;
 
   width: 700px;
@@ -95,12 +95,13 @@ html, body {
 
   border-radius: 50%;
 }
-/*--END, jorden--*/
-.kontinents{
+/*--END, earth--*/
+/*--continents--*/
+.continents{
   position: absolute;
   background-color: green;
 }
-#kontinent1{
+#continent1{
   width: 80px;
   height: 120px;
 
@@ -114,7 +115,7 @@ html, body {
   border-bottom-right-radius: 90%;
   border-bottom-left-radius: 100%;
 }
-#kontinent2{
+#continent2{
   width: 200px;
   height: 100px;
 
@@ -125,7 +126,7 @@ html, body {
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 80%;
 }
-#kontinent3{
+#continent3{
   width: 250px;
   height: 60px;
 
@@ -136,8 +137,90 @@ html, body {
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 80%;
 }
+/*--END,continents--*/
+/*--meteor--*/
+#meteor{
+  position: absolute;
+  background-color: rgb(55, 26, 4);
 
-/*END, tegning av bilde1*/
+  width: 100px;
+  height: 100px;
+
+  top: 140px;
+  right: 150px;
+
+  border-radius: 50%;
+}
+.meteorTail{
+  position: absolute;
+
+  height: 100px;
+  width: 30px;
+
+  border-top-left-radius: 70%;
+  border-top-right-radius: 70%;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+.meteorTailGroup1{
+  background-color: rgb(223, 216, 46);
+
+  border-style: solid;
+  border-color: rgb(194, 40, 7); 
+
+  animation-name: meteorTailGroup1Pulse;
+  animation-duration: 3s;
+}
+.meteorTailGroup2{
+  background-color: rgb(194, 40, 7);
+
+  animation-name: meteorTailGroup2Pulse;
+  animation-duration: 1s;
+}
+#meteorTail1{
+  top:70px;
+  left: 250px;
+}
+#meteorTail2{
+  top:55px;
+  left: 260px;
+
+  height:150px;
+}
+#meteorTail3{
+  top:55px;
+  left: 290px;
+
+  height: 150px;
+}
+#meteorTail4{
+  top:85px;
+  left: 300px;
+}
+@keyframes meteorTailGroup1Pulse {
+  from{
+    transform: scale(1.2) rotate(35deg);
+  }
+  to{
+    transform: scale(1) rotate(35deg);
+  }
+}
+@keyframes meteorTailGroup2Pulse {
+  from{
+    transform: scale(1) rotate(35deg);
+  }
+  to{
+    transform: scale(1.1) rotate(35deg);
+  }
+}
+/*--END, meteor--*/
+/*--stars--*/
+
+/*--END, stars--*/
+
+/*--END, tegning av bilde1--*/
 /*--END, bilder til artikkel--*/
 /*--tekster til artikkel--*/
 .artikkelTekster{
@@ -335,7 +418,6 @@ z-index: 100;
 
 #skrift:hover{
   color:yellow;
-
 
 
 

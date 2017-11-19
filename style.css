@@ -381,7 +381,44 @@ z-index: 100;
 
 /*-SIDE 3-*/
 /*-Scene 4*/
+#solarsystemContainer {
+  border: 1px solid white;
+  background-color: black;
+  z-index: 98;
+}
 
+/*-solarsystem-*/
+.rotation {
+  
+}
+#sun {
+
+}
+#mercury {
+
+}
+#venus {
+
+}
+#earth {
+
+}
+#mars {
+
+}
+#jupiter {
+
+}
+#saturn {
+
+}
+#uranus {
+
+}
+#neptune {
+
+}
+/*-END, solarsystem-*/
 /*-END, Scene 4*/
 /*-Scene 5*/
 

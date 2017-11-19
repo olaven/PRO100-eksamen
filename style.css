@@ -50,7 +50,7 @@ html, body {
   border-radius: 2.5%;
 
   height: 450px;
-  width: 450px;
+  width: 450px; 
 
   transition-duration: 0.5s;
 }
@@ -61,8 +61,6 @@ html, body {
 
   padding: 10px;/*minske bakgrunnsfarge/ramme rundt når størrelsen økes*/
 }
-/*tegning av bilde 1s innhold under
--> logisk å ha bilde1 og bilde 2 ved hverandre*/
 #artikkelBilde1{
    margin: 25px;
 }
@@ -81,8 +79,11 @@ html, body {
 
   overflow: hidden;
 }
+/*--jorden--*/
 #jord{
   position: absolute;
+  /*kontinenter "går over" horisonten*/
+  overflow: hidden;
 
   width: 700px;
   height: 700px;
@@ -94,24 +95,48 @@ html, body {
 
   border-radius: 50%;
 }
-.continents{
+/*--END, jorden--*/
+.kontinents{
   position: absolute;
   background-color: green;
 }
-#continent1{
+#kontinent1{
   width: 80px;
   height: 120px;
 
-  left: 500px;
+  left: 545px;
   top: 60px;
 
   transform: rotate(120deg);
 
-  border-top-left-radius: 40%;
   border-top-right-radius: 20%;
+  border-top-left-radius: 40%;
   border-bottom-right-radius: 90%;
   border-bottom-left-radius: 100%;
 }
+#kontinent2{
+  width: 200px;
+  height: 100px;
+
+  left: 120px;
+  top: 10px;
+
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 80%;
+}
+#kontinent3{
+  width: 250px;
+  height: 60px;
+
+  left: 300px;
+  top: 0;
+
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 80%;
+}
+
 /*END, tegning av bilde1*/
 /*--END, bilder til artikkel--*/
 /*--tekster til artikkel--*/
@@ -213,7 +238,56 @@ z-index: 100;
   height: 300px;
   bottom: 20px;
   left: 500px;
-  z-index: 101;
+  z-index: 102;
+  animation-name: animationGirrafe;
+  animation-duration: 15s;
+}
+@keyframes animationGirrafe {
+    0%{
+      left: 500px;
+      bottom: 20px;
+
+     }
+    10%{
+      bottom: 20px;
+    }
+
+    20%{
+      bottom: 20px;
+    }
+
+    30%{
+      bottom: 70px;
+    }
+
+    40%{
+      bottom: 90px;
+    }
+
+    50%{
+      bottom: 140px;
+      transform: rotate(20deg);
+      height:
+    }
+
+    60%{
+      bottom: 140x;
+    }
+
+    70%{
+      bottom: 140px;
+    }
+    80%{
+      bottom: 145px;
+    }
+
+    90%{
+       left:
+    }
+    100%{
+      left:70px;
+      bottom: 150px;
+    }
 }
 #sheep{
   position: absolute;
@@ -221,7 +295,7 @@ z-index: 100;
   height: 70px;
   bottom: 20px;
   left: 700px;
-  z-index: 102;
+  z-index: 103;
 }
 #pig{
   position: absolute;
@@ -229,23 +303,23 @@ z-index: 100;
   height: 70px;
   bottom: 20px;
   left: 860px;
-  z-index: 103;
+  z-index: 104;
 }
 #rakett-full{
   position: absolute;
   width: 400px;
   height: 610px;
   bottom: 10px;
-  left: 5px;
-  z-index: 105;
+  left: 11px;
+  z-index: 100;
 }
 #rakett-halv{
   position: absolute;
-  width: 250px;
-  height: 590px;
-  bottom: 20px;
-  left: 5px;
-  z-index: 104;
+  width: 270px;
+  height: 600px;
+  bottom: 18px;
+  left: 0px;
+  z-index: 105;
 }
 
 #skrift{
@@ -260,8 +334,8 @@ z-index: 100;
 }
 
 #skrift:hover{
-  color:green;
-}
+  color:yellow;
+
 
 
 
@@ -270,8 +344,6 @@ z-index: 100;
 
 /*-SIDE 2-*/
 /*-Scene 3-*/
-
-/* forklar blabla hvorfor shake blabla.*/
 #controlPanelContainer  {
   background-color: lightskyblue;
   z-index: 98;
@@ -419,93 +491,22 @@ z-index: 100;
   border: 1px solid black;
   border-radius: 20px;
 }
-#launchHidden{
-    position: absolute;
-    z-index: 109;
-    width: 40px;
-    height: 170px;
-    left: 726px;
-    bottom: 69px;
-}
-
-/* HUSK: går i teorien ann å legge shake effekt på alt inni controlPanelContainer, men ikke controlPanelContainer i seg selv. */
-#launchHidden:hover ~ #nextSide{
-    z-index: 110;
-}
-#launchHidden:hover ~ #leverPart2{
-    bottom: 82px;
-}
-#launchHidden:hover ~ #mountains{
-    top: 700px;
-}
-
-#nextSide {
-    background-color: blue;
-    transition-property: all;
-    transition-delay: 1s;
-    transition-duration: 17s;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 726px;
-    bottom: 29px;
-    z-index: 106;
-    border-radius: 50%;
-}
-#leverPart2{
-    transition: all 5s ease-in-out 10s;
-    position: absolute;
-    width: 60px;
-    height: 20px;
-    bottom: 210px;
-    left: 715px;
-    border-radius: 20px;
-    background-color: grey;
-    z-index: 108;
-}
-#launchButton {
+#leverPart2 {
   position: absolute;
-  width: 40px;
+  width: 90px;
   height: 40px;
-  left: 726px;
-  bottom: 29px;
-  background-color: red;
-  z-index: 108;
-  border-radius: 50%;
+  bottom: 25px;
 }
-
-#leverPart2{
-    transition: all 1s;
-    position: absolute;
-    width: 60px;
-    height: 20px;
-    bottom: 210px;
-    left: 716px;
-    border-radius: 20px;
-    background-color: grey;
-    z-index: 108;
-}
-
 /*-END, controlPanel-*/
 
 /*-background-*/
-#mountains{
-    transition-property: all;
-    transition-duration: 15s;
-    position: absolute;
-    width: 1000px;
-    height: 271px;
-    z-index: 100;
-    top: 104px;
-    overflow: hidden;
-}
 #mountainLeft {
   position: absolute;
-  background-color: darkgreen;
+  background-color: darkgrey;
   width: 500px;
   height: 500px;
   left: 90px;
-  top: 139px;
+  top: 250px;
   transform: rotate(45deg);
   overflow: hidden;
   z-index: 100;
@@ -521,12 +522,11 @@ z-index: 100;
 }
 #mountainRight  {
   position: absolute;
-  /*background-color: rgb(150, 150, 150);*/
-  background-color: green;
+  background-color: rgb(150, 150, 150);
   width: 500px;
   height: 500px;
   left: 450px;
-  top: 198px;
+  top: 300px;
   transform: rotate(35deg);
   overflow: hidden;
   z-index: 99;
@@ -541,43 +541,6 @@ z-index: 100;
   transform: rotate(-35deg);
 }
 /*-END, background-*/
-
-@keyframes shake{
-    0%{
-        left: 10px;
-    }
-    10%{
-        bottom: 10px;
-    }
-    20%{
-        left: 0px;
-    }
-    30%{
-        bottom:0px;
-    }
-    40%{
-        left: -10px;
-    }
-    50%{
-        bottom: -10px;
-    }
-    60%{
-        bottom: 10px;
-    }
-    70%{
-        left: 0px;
-    }
-    80%{
-        bottom:0px;
-    }
-    90%{
-        left: -10px;
-    }
-    100%{
-        left: 0px;
-        bottom: 0px;
-    }
-}
 /*-END, Scene 3-*/
 
 /*-END, SIDE 2-*/
@@ -592,6 +555,7 @@ z-index: 100;
 
 /*-solarsystem-*/
 .rotation {
+<<<<<<< HEAD
   position: absolute;
   width: 600px;
   height: 600px;
@@ -610,71 +574,36 @@ z-index: 100;
 }
 #sunDiv {
   z-index: 50;
+=======
+
+}
+#sun {
+
+>>>>>>> 4c043387628c295ee1bac553d9d884c563f7a9ea
 }
 #mercury {
 
 }
-#mercuryDiv {
-  animation: rotateSolarsystem 10s linear infinite;
-  z-index: 49;
-}
 #venus {
 
-}
-#venusDiv {
-  animation: rotateSolarsystem 15s linear infinite;
-  z-index: 48;
 }
 #earth {
 
 }
-#earthDiv {
-  animation: rotateSolarsystem 20s linear infinite;
-  z-index: 47;
-}
 #mars {
 
-}
-#marsDiv {
-  animation: rotateSolarsystem 25s linear infinite;
-  z-index: 46;
 }
 #jupiter {
 
 }
-#jupiterDiv {
-  animation: rotateSolarsystem 30s linear infinite;
-  z-index: 45;
-}
 #saturn {
 
-}
-#saturnDiv {
-  animation: rotateSolarsystem 35s linear infinite;
-  z-index: 44;
 }
 #uranus {
 
 }
-#uranusDiv {
-  animation: rotateSolarsystem 40s linear infinite;
-  z-index: 43;
-}
 #neptune {
 
-}
-#neptuneDiv {
-  animation: rotateSolarsystem 45s linear infinite;
-  z-index: 42;
-}
-
-@keyframes rotateSolarsystem {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 /*-END, solarsystem-*/
 /*-END, Scene 4*/

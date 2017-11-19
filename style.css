@@ -50,6 +50,7 @@ html, body {
   border-radius: 2.5%;
 
   height: 450px;
+  width: 450px; 
 
   transition-duration: 0.5s;
 }
@@ -67,7 +68,6 @@ html, body {
   bottom: -320px;
   left: 500px;
 }
-<<<<<<< HEAD
 /*tegning av bilde1*/
 #artikkelBilde1-container{
   position: relative;
@@ -138,8 +138,6 @@ html, body {
 }
 
 /*END, tegning av bilde1*/
-=======
->>>>>>> 3e9dc201d462367ae8628912757131658eef60c0
 /*--END, bilder til artikkel--*/
 /*--tekster til artikkel--*/
 .artikkelTekster{

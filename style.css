@@ -168,7 +168,7 @@ html, body {
   background-color: rgb(223, 216, 46);
 
   border-style: solid;
-  border-color: rgb(194, 40, 7); 
+  border-color: rgb(194, 40, 7);
 
   animation-name: meteorTailGroup1Pulse;
   animation-duration: 3s;
@@ -269,7 +269,7 @@ html, body {
 
 #mountainLeft1 {
   position: absolute;
-  background-color: darkgrey;
+  background-color: grey;
   width: 600px;
   height: 600px;
   left: 90px;
@@ -322,56 +322,78 @@ z-index: 100;
   bottom: 20px;
   left: 500px;
   z-index: 102;
-  animation-name: animationGirrafe;
+  animation-name: boarding;
   animation-duration: 15s;
+  animation-fill-mode: forwards;
 }
-@keyframes animationGirrafe {
+@keyframes boarding {
     0%{
       left: 500px;
       bottom: 20px;
-
-     }
+      transform: rotate(0deg);
+    }
     10%{
+      left: 350px;
       bottom: 20px;
+      transform: rotate(0deg);
     }
-
     20%{
+      left:350px;
       bottom: 20px;
+      transform: rotate(35deg);
     }
-
     30%{
-      bottom: 70px;
+      left:350px;
+      bottom: 20px;
+      transform: rotate(35deg);
     }
-
+    /* vinkler her */
     40%{
-      bottom: 90px;
+      left:350px;
+      bottom:;
+      transform: rotate(35deg);
     }
-
+    /* deler opp til +5% */
     50%{
-      bottom: 140px;
-      transform: rotate(20deg);
-      height:
+      left:350px;
+      bottom:;
+      transform: rotate(35deg);
+      height:;
     }
-
     60%{
-      bottom: 140x;
+      left:350px;
+      bottom: ;
+      transform: rotate(35deg);
+      height:;
     }
-
     70%{
-      bottom: 140px;
+      left:350px;
+      bottom:;
+      transform: rotate(35deg);
+      height:;
     }
     80%{
-      bottom: 145px;
+      left:
+      bottom:;
+      transform: rotate(35deg);
+      height:;
     }
-
     90%{
-       left:
+      left:
+      bottom:;
+      transform: rotate(35deg);
+      height:;
     }
     100%{
-      left:70px;
-      bottom: 150px;
+      left:;
+      bottom:;
+      transform:;
+      height:300px;
+      width:150px;
     }
 }
+
+
 #sheep{
   position: absolute;
   width: 120px;
@@ -418,8 +440,7 @@ z-index: 100;
 
 #skrift:hover{
   color:yellow;
-
-
+}
 
 /*-END, Scene 2-*/
 /*-END, SIDE 1-*/
@@ -748,7 +769,6 @@ z-index: 100;
 
 /*-solarsystem-*/
 .rotation {
-<<<<<<< HEAD
   position: absolute;
   width: 600px;
   height: 600px;
@@ -767,36 +787,138 @@ z-index: 100;
 }
 #sunDiv {
   z-index: 50;
-=======
-
-}
-#sun {
-
->>>>>>> 4c043387628c295ee1bac553d9d884c563f7a9ea
 }
 #mercury {
-
+  position: absolute;
+  background-color: lightgrey;
+  width: 15px;
+  height: 15px;
+  left: 292.5px;
+  top: 345px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#mercuryDiv {
+  animation: rotateSolarsystem 5s linear infinite;
+  z-index: 49;
 }
 #venus {
-
+  position: absolute;
+  background-color: brown;
+  width: 20px;
+  height: 20px;
+  left: 290px;
+  top: 370px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#venusDiv {
+  animation: rotateSolarsystem 10s linear infinite;
+  z-index: 48;
 }
 #earth {
-
+  position: absolute;
+  background-color: lightgreen;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 400px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#earthDiv {
+  animation: rotateSolarsystem 15s linear infinite;
+  z-index: 47;
 }
 #mars {
-
+  position: absolute;
+  background-color: darkred;
+  width: 25px;
+  height: 25px;
+  left: 287.5px;
+  top: 440px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#marsDiv {
+  animation: rotateSolarsystem 20s linear infinite;
+  z-index: 46;
 }
 #jupiter {
-
+  position: absolute;
+  background-color: purple;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 510px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#jupiterDiv {
+  animation: rotateSolarsystem 25s linear infinite;
+  z-index: 45;
 }
 #saturn {
-
+  position: absolute;
+  background-color: lightyellow;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 550px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#saturnbelt {
+  position: absolute;
+  background-color: brown;
+  width: 5px;
+  height: 50px;
+  left: 11px;
+  top: -11px;
+  transform: rotate(45deg);
+  border: 0px solid white;
+  border-radius: 25%;
+}
+#saturnDiv {
+  animation: rotateSolarsystem 30s linear infinite;
+  z-index: 44;
 }
 #uranus {
-
+  position: absolute;
+  background-color: orange;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 590px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#uranusDiv {
+  animation: rotateSolarsystem 35s linear infinite;
+  z-index: 43;
 }
 #neptune {
+  position: absolute;
+  background-color: lightyellow;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 630px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#neptuneDiv {
+  animation: rotateSolarsystem 40s linear infinite;
+  z-index: 42;
+}
 
+@keyframes rotateSolarsystem {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /*-END, solarsystem-*/
 /*-END, Scene 4*/

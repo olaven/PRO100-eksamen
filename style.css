@@ -130,7 +130,8 @@ position: absolute;
 width:1000px;
 height: 100px;
 bottom: 0px;
-z-index: 101;
+background-color: green;
+z-index: 100;
 }
 #girrafe{
   position: absolute;
@@ -150,13 +151,20 @@ z-index: 101;
 }
 #pig{
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
   bottom: 20px;
-  left: 100px;
+  left: 700px;
   z-index: 104;
 }
-
+#rakett-full{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  bottom: 20px;
+  left: 50px;
+  z-index: 105;
+}
 /*-END, Scene 2-*/
 /*-END, SIDE 1-*/
 

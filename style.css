@@ -217,7 +217,50 @@ html, body {
 }
 /*--END, meteor--*/
 /*--stars--*/
+.stars{
+  position: absolute;
 
+  background-color: whitesmoke;
+
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  animation-name: starGlow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+#star1{
+  top: 20px;
+  left: 100px;
+}
+#star2{
+  top: 50px;
+  left: 400px;
+}
+#star3{
+  top: 240px;
+  left: 20px;
+}
+#star4{
+  top: 410px;
+  left: 435px;
+}
+#star5{
+  top: -10px;
+  left: 300px;
+}
+@keyframes starGlow {
+  from{
+    box-shadow: 0px 0px 30px whitesmoke;
+  }
+  to{
+    box-shadow: 0px 0px 50px whitesmoke: ;
+  }
+}
 /*--END, stars--*/
 
 /*--END, tegning av bilde1--*/

@@ -94,7 +94,7 @@ html, body {
   top: 250px;
   transform: rotate(45deg);
   overflow: hidden;
-  z-index: 200;
+  z-index: 100;
 }
 #mountainLeftTop1  {
   position: absolute;
@@ -114,7 +114,7 @@ html, body {
   top: 50px;
   transform: rotate(35deg);
   overflow: hidden;
-  z-index: 201;
+  z-index: 100;
 }
 #mountainRightTop1 {
   position: absolute;

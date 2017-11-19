@@ -50,7 +50,7 @@ html, body {
   border-radius: 2.5%;
 
   height: 450px;
-  width: 450px; 
+  width: 450px;
 
   transition-duration: 0.5s;
 }
@@ -335,7 +335,7 @@ z-index: 100;
 
 #skrift:hover{
   color:yellow;
-
+}
 
 
 
@@ -344,9 +344,7 @@ z-index: 100;
 
 /*-SIDE 2-*/
 /*-Scene 3-*/
-
-/* forklar blabla hvorfor shake blabla.*/
-#controlPanelContainer  {
+#controlPanelContainer {
   background-color: lightskyblue;
   z-index: 98;
 }
@@ -457,31 +455,70 @@ z-index: 100;
   transform: rotate(-20deg);
   opacity: 0.2;
 }
+
 .usableButtons {
-  position: absolute;
-  width: 90px;
-  height: 40px;
-  bottom: 25px;
-  border: 2px solid black;
-  border-radius: 10px;
-  z-index: 107;
+    display: block;
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    bottom: 25px;
+		font-size: 40px;
+		text-decoration: none;
+		text-align: center;
+		transition: all .1s ease-in-out;
+    z-index: 107;
+    border-radius: 10px;
+}
+
+.usableButtons:hover {
+
+}
+/*
+.usableButtons:active {
+  box-shadow: 0px 3px 0px 0px;
+  transform: translateY(3px);
+}*/
+
+#buttonBensin:active{
+  box-shadow: 0px 2px 0px 0px rgb(255, 255, 0);
+  transform: translateY(5px);
 }
 #buttonBensin {
+  box-shadow: 0px 7px 0px 0px rgb(235, 235, 0);
   background-color: yellow;
   left: 295px;
 }
+
+#buttonReise:active{
+  box-shadow: 0px 2px 0px 0px rgb(153, 196, 210);
+  transform: translateY(5px);
+}
 #buttonReise {
+  box-shadow: 0px 7px 0px 0px rgb(153, 176, 210);
   background-color: lightblue;
   left: 400px;
 }
+
+#buttonNASA:active{
+  box-shadow: 0px 2px 0px 0px rgb(235, 145, 0);
+  transform: translateY(5px);
+}
 #buttonNASA {
+  box-shadow: 0px 7px 0px 0px rgb(235, 145, 0);
   background-color: orange;
   left: 505px;
 }
+
+#buttonDyr:active{
+  box-shadow: 0px 2px 0px 0px rgb(124, 218, 124);
+  transform: translateY(5px);
+}
 #buttonDyr {
+  box-shadow: 0px 7px 0px 0px rgb(124, 218, 124);
   background-color: lightgreen;
   left: 610px;
 }
+
 #leverPart1 {
   position: absolute;
   width: 10px;
@@ -666,7 +703,6 @@ z-index: 100;
 
 /*-solarsystem-*/
 .rotation {
-<<<<<<< HEAD
   position: absolute;
   width: 600px;
   height: 600px;
@@ -685,12 +721,9 @@ z-index: 100;
 }
 #sunDiv {
   z-index: 50;
-=======
-
 }
 #sun {
 
->>>>>>> 4c043387628c295ee1bac553d9d884c563f7a9ea
 }
 #mercury {
 

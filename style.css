@@ -389,34 +389,90 @@ z-index: 100;
 
 /*-solarsystem-*/
 .rotation {
-  
+  position: absolute;
+  background-color: red;
+  width: 600px;
+  height: 600px;
+  left: 200px;
+  top: 50px;
 }
 #sun {
-
+  background-color: yellow;
+  width: 50px;
+  height: 50px;
+  left: 300px;
+  top: 300px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#sunDiv {
+  /*animation: rotateSolarsystem 5s linear infinite;*/
+  z-index: 50;
 }
 #mercury {
 
 }
+#mercuryDiv {
+  animation: rotateSolarsystem 10s linear infinite;
+  z-index: 49;
+}
 #venus {
 
+}
+#venusDiv {
+  animation: rotateSolarsystem 15s linear infinite;
+  z-index: 48;
 }
 #earth {
 
 }
+#earthDiv {
+  animation: rotateSolarsystem 20s linear infinite;
+  z-index: 47;
+}
 #mars {
 
+}
+#marsDiv {
+  animation: rotateSolarsystem 25s linear infinite;
+  z-index: 46;
 }
 #jupiter {
 
 }
+#jupiterDiv {
+  animation: rotateSolarsystem 30s linear infinite;
+  z-index: 45;
+}
 #saturn {
 
+}
+#saturnDiv {
+  animation: rotateSolarsystem 35s linear infinite;
+  z-index: 44;
 }
 #uranus {
 
 }
+#uranusDiv {
+  animation: rotateSolarsystem 40s linear infinite;
+  z-index: 43;
+}
 #neptune {
 
+}
+#neptuneDiv {
+  animation: rotateSolarsystem 45s linear infinite;
+  z-index: 42;
+}
+
+@keyframes rotateSolarsystem {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /*-END, solarsystem-*/
 /*-END, Scene 4*/

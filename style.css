@@ -10,6 +10,7 @@ html, body {
   height: 700px;
   margin: auto;
   margin-top: 100px;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 
@@ -493,8 +494,20 @@ z-index: 100;
 /*-SIDE 2-*/
 /*-Scene 3-*/
 #controlPanelContainer {
+  z-index: 98;
+  position: relative;
+  margin-top: 0px;
+  overflow: visible;
+}
+
+#controlPanelContainerChildTest {
+  position: relative;
   background-color: lightskyblue;
   z-index: 98;
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
 }
 
 /*-text-*/
@@ -605,17 +618,17 @@ z-index: 100;
 }
 
 .usableButtons {
-    display: block;
-    position: absolute;
-    width: 90px;
-    height: 40px;
-    bottom: 25px;
-		font-size: 40px;
-		text-decoration: none;
-		text-align: center;
-		transition: all .1s ease-in-out;
-    z-index: 107;
-    border-radius: 10px;
+  display: block;
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  bottom: 25px;
+	font-size: 40px;
+	text-decoration: none;
+	text-align: center;
+	transition: all .1s ease-in-out;
+  z-index: 107;
+  border-radius: 10px;
 }
 
 .usableButtons:hover {
@@ -679,22 +692,25 @@ z-index: 100;
   border-radius: 20px;
 }
 #launchHidden{
-    position: absolute;
-    z-index: 109;
-    width: 40px;
-    height: 170px;
-    left: 726px;
-    bottom: 69px;
+  position: absolute;
+  z-index: 109;
+  width: 40px;
+  height: 170px;
+  left: 730px;
+  bottom: -69px;
 }
 
 /* HUSK: går i teorien ann å legge shake effekt på alt inni controlPanelContainer, men ikke controlPanelContainer i seg selv. */
-#launchHidden:hover ~ #nextSide{
+#launchHidden:hover ~ #controlPanelContainerChildTest{
+  animation-play-state: running;
+}
+#launchHidden:hover ~ #controlPanelContainerChildTest #nextSide{
     z-index: 110;
 }
-#launchHidden:hover ~ #leverPart2{
+#launchHidden:hover ~ #controlPanelContainerChildTest #leverPart2{
     bottom: 82px;
 }
-#launchHidden:hover ~ #mountains{
+#launchHidden:hover ~ #controlPanelContainerChildTest #mountains{
     top: 700px;
 }
 
@@ -764,7 +780,7 @@ z-index: 100;
   width: 500px;
   height: 500px;
   left: 90px;
-  top: 139px;
+  top: 140px;
   transform: rotate(45deg);
   overflow: hidden;
   z-index: 100;
@@ -785,7 +801,7 @@ z-index: 100;
   width: 500px;
   height: 500px;
   left: 450px;
-  top: 198px;
+  top: 200px;
   transform: rotate(35deg);
   overflow: hidden;
   z-index: 99;

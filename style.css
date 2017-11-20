@@ -631,51 +631,71 @@ z-index: 100;
   border-radius: 10px;
 }
 
+
 .usableButtons:hover {
 
 }
-/*
-.usableButtons:active {
-  box-shadow: 0px 3px 0px 0px;
-  transform: translateY(3px);
-}*/
 
+#buttonShadowBensin{
+  width: 90px;
+  height: 40px;
+  bottom: 18px;
+  z-index: 106;
+  left: 295px;
+  background-color: rgb(235, 235, 0);
+}
 #buttonBensin:active{
-  box-shadow: 0px 2px 0px 0px rgb(255, 255, 0);
   transform: translateY(5px);
 }
 #buttonBensin {
-  box-shadow: 0px 7px 0px 0px rgb(235, 235, 0);
   background-color: yellow;
   left: 295px;
 }
 
+#buttonShadowReise{
+  width: 90px;
+  height: 40px;
+  bottom: 18px;
+  z-index: 106;
+  left: 400px;
+  background-color: rgb(153, 196, 210);
+}
 #buttonReise:active{
-  box-shadow: 0px 2px 0px 0px rgb(153, 196, 210);
   transform: translateY(5px);
 }
 #buttonReise {
-  box-shadow: 0px 7px 0px 0px rgb(153, 176, 210);
   background-color: lightblue;
   left: 400px;
 }
 
+#buttonShadowNASA{
+  width: 90px;
+  height: 40px;
+  bottom: 18px;
+  z-index: 106;
+  left: 505px;
+  background-color: rgb(235, 145, 0);
+}
 #buttonNASA:active{
-  box-shadow: 0px 2px 0px 0px rgb(235, 145, 0);
   transform: translateY(5px);
 }
 #buttonNASA {
-  box-shadow: 0px 7px 0px 0px rgb(235, 145, 0);
   background-color: orange;
   left: 505px;
 }
 
+#buttonShadowDyr{
+  width: 90px;
+  height: 40px;
+  bottom: 18px;
+  z-index: 106;
+  left: 610px;
+  background-color: rgb(124, 218, 124);
+}
 #buttonDyr:active{
-  box-shadow: 0px 2px 0px 0px rgb(124, 218, 124);
   transform: translateY(5px);
 }
 #buttonDyr {
-  box-shadow: 0px 7px 0px 0px rgb(124, 218, 124);
   background-color: lightgreen;
   left: 610px;
 }

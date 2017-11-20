@@ -229,7 +229,7 @@ html, body {
   border-radius: 50%;
 
   animation-name: starGlow;
-  animation-duration: 5s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
@@ -256,10 +256,12 @@ html, body {
 }
 @keyframes starGlow {
   from{
-    box-shadow: 0px 0px 30px whitesmoke;
+    background-color: rgba(255,255,255,0.8);
+    transform: scaleX(1.2);
   }
   to{
-    box-shadow: 0px 0px 50px whitesmoke: ;
+    background-color: rgba(255,255,255);
+    transform: scaleY(1.2);
   }
 }
 /*--END, stars--*/
@@ -285,8 +287,6 @@ html, body {
   border-radius: 7.5%;
   border-style: solid;
   border-color: rgba(0,0,0,0.8);
-
-  box-shadow: 5px 5px 75px #888888;
 }
 .artikkelTekster h1, .artikkelTekster h2, .artikkelTekster p{
   margin-left:40px;
@@ -367,7 +367,7 @@ z-index: 100;
   left: 500px;
   z-index: 102;
   animation-name: boarding;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-fill-mode: forwards;
 }
 @keyframes boarding {
@@ -376,7 +376,7 @@ z-index: 100;
       bottom: 20px;
       transform: rotate(0deg);
     }
-    10%{
+  10%{
       left: 350px;
       bottom: 20px;
       transform: rotate(0deg);
@@ -393,44 +393,79 @@ z-index: 100;
     }
     /* vinkler her */
     40%{
-      left:350px;
-      bottom:;
+      left:300px;
+      bottom:50px;
       transform: rotate(35deg);
     }
     /* deler opp til +5% */
     50%{
-      left:350px;
-      bottom:;
+      left:280px;
+      bottom:60px;
       transform: rotate(35deg);
-      height:;
+      height:270px;
+    }
+    55%{
+      left:260px;
+      bottom:70px;
+      transform: rotate(35deg);
+      height:240px;
     }
     60%{
-      left:350px;
-      bottom: ;
+      left:240px;
+      bottom:80px;
       transform: rotate(35deg);
-      height:;
+      height:210px;
+    }
+    65%{
+      left:220px;
+      bottom:90px;
+      transform: rotate(35deg);
+      height:190px;
     }
     70%{
-      left:350px;
-      bottom:;
+      left:200px;
+      bottom:100px;
       transform: rotate(35deg);
       height:;
+    }
+    75%{
+      left:180px;
+      bottom:180px;
+      transform:;
+      height:300px;
+      width:150px;
     }
     80%{
-      left:
-      bottom:;
-      transform: rotate(35deg);
-      height:;
+      left:160px;
+      bottom:180px;
+      transform:;
+      height:300px;
+      width:150px;
+    }
+    85%{
+      left:140px;
+      bottom:180px;
+      transform:;
+      height:300px;
+      width:150px;
     }
     90%{
-      left:
-      bottom:;
-      transform: rotate(35deg);
-      height:;
+      left:120px;
+      bottom:180px;
+      transform:;
+      height:300px;
+      width:150px;
+    }
+    95%{
+      left:110px;
+      bottom:180px;
+      transform:;
+      height:300px;
+      width:150px;
     }
     100%{
-      left:;
-      bottom:;
+      left:90px;
+      bottom:180px;
       transform:;
       height:300px;
       width:150px;

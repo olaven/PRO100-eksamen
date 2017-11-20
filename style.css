@@ -912,7 +912,7 @@ z-index: 100;
 }
 
 /*-solarsystem-*/
-.rotation {
+.planetRotation {
   position: absolute;
   width: 600px;
   height: 600px;

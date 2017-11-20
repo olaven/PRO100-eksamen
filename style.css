@@ -350,7 +350,7 @@ background-color: rgb(200, 190, 191);
 
 #mountainLeft1 {
   position: absolute;
-  background-color: grey;
+  background-color: darkgreen;
   width: 600px;
   height: 600px;
   left: 90px;
@@ -370,14 +370,14 @@ background-color: rgb(200, 190, 191);
 }
 #mountainRight1  {
   position: absolute;
-  background-color: darkgrey;
+  background-color: green;
   width: 600px;
   height: 600px;
   left: 500px;
   top: 350px;
   transform: rotate(35deg);
   overflow: hidden;
-  z-index: 99;
+  z-index: 98;
 }
 #mountainRightTop1 {
   position: absolute;
@@ -393,85 +393,144 @@ position: absolute;
 width:1000px;
 height: 100px;
 bottom: 0px;
-background-color: green;
+background-color: rgb(172, 99, 72);
 z-index: 100;
 }
 #girrafe{
   position: absolute;
   width: 150px;
   height: 300px;
-  bottom: 20px;
-  left: 500px;
+  bottom: 10px;
+  left: 1000px;
   z-index: 102;
-  animation-name: boarding;
-  animation-duration: 15s;
-  animation-fill-mode: forwards;
+  animation: boarding2 15s;
 }
-@keyframes boarding {
-    0%{
-      left: 500px;
-      transform: scale(1,1) rotate(0);
-
-    }
-    10%{
-      left:340px;
-      bottom: 0px
-    }
-    20%{
-      transform: scale(0.5,0.5) rotate(35deg);
-    }
-    30%{
-      transform: scale(0.4,0.4)
-      bottom:0px
-    }
-    40%{
-      transform: scale(0.3,0.3)
-    }
-    50%{
-      transform: scale(0.2,0.2)
-    }
-
-    50%{
-      left:80px;
-      bottom: 70px
-
-
-    }
-}
-
 #sheep{
   position: absolute;
   width: 120px;
   height: 70px;
-  bottom: 20px;
-  left: 700px;
+  bottom: 10px;
+  left: 1000px;
   z-index: 103;
+  animation: boarding 15s;
+  animation-delay: 4s;
 }
 #pig{
   position: absolute;
   width: 120px;
   height: 70px;
-  bottom: 20px;
-  left: 860px;
+  bottom: 10px;
+  left: 1000px;
   z-index: 104;
+  animation: boarding 15s;
+  animation-delay: 8s;
 }
 #rakett-full{
   position: absolute;
   width: 450px;
-  height: 650px;
+  height: auto;
   bottom: 10px;
   left: 11px;
   z-index: 100;
 }
 #rakett-halv{
   position: absolute;
-  width: 252px;
-  height: 518px;
-  bottom: 140px;
-  left: 50px;
+  width: 224px;
+  height: auto;
+  bottom: 146px;
+  left: 66px;
   z-index: 105;
 }
-
+@keyframes boarding {
+    0% {
+      width: 120px;
+      height: 70px;
+      left: 1000px;
+      transform: rotate(0deg);
+    }
+    40% {
+      bottom: 10px;
+      transform: rotate(0deg);
+    }
+    60% {
+      width: 52px;
+      height: 30px;
+      left: 410px;
+      bottom: 10px;
+      transform: rotate(20deg);
+    }
+    65% {
+      left: 410px;
+      bottom: 10px;
+      transform: rotate(35deg);
+    }
+    80% {
+      width: 52px;
+      height: 30px;
+      left: 220px;
+      bottom: 146px;
+      transform: rotate(35deg);
+    }
+    90% {
+      width: 52px;
+      height: 30px;
+      left: 220px;
+      bottom: 146px;
+      transform: rotate(0deg);
+    }
+    100% {
+      width: 52px;
+      height: 30px;
+      left: 130px;
+      bottom: 146px;
+      transform: rotate(0deg);
+    }
+}
+@keyframes boarding2 {
+    0% {
+      width: 150px;
+      height: 300px;
+      left: 1000px;
+      transform: rotate(0deg);
+    }
+    40% {
+      bottom: 10px;
+      transform: rotate(0deg);
+    }
+    60% {
+      width: 30px;
+      height: 90px;
+      left: 410px;
+      bottom: 10px;
+      transform: rotate(20deg);
+    }
+    65% {
+      left: 410px;
+      bottom: 10px;
+      transform: rotate(35deg);
+    }
+    80% {
+      width: 30px;
+      height: 90px;
+      left: 235px;
+      bottom: 146px;
+      transform: rotate(35deg);
+    }
+    90% {
+      width: 30px;
+      height: 90px;
+      left: 235px;
+      bottom: 146px;
+      transform: rotate(0deg);
+    }
+    100% {
+      width: 30px;
+      height: 90px;
+      left: 130px;
+      bottom: 146px;
+      transform: rotate(0deg);
+    }
+}
 #textRocket{
   position: absolute;
   width: 200px;

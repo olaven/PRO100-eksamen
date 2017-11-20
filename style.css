@@ -769,7 +769,7 @@ display:none;
   left: 400px;
 }
 
-#buttonShadowNASA{
+#buttonShadowInstruksjoner{
   width: 90px;
   height: 40px;
   bottom: 18px;
@@ -777,10 +777,10 @@ display:none;
   left: 505px;
   background-color: rgb(235, 145, 0);
 }
-#buttonNASA:active{
+#buttonInstruksjoner:active{
   transform: translateY(5px);
 }
-#buttonNASA {
+#buttonInstruksjoner {
   background-color: orange;
   left: 505px;
 }

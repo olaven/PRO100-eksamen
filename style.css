@@ -928,7 +928,7 @@ z-index: 100;
   height: 15px;
   left: 292.5px;
   top: 345px;
-  border: 2px solid rgb(150, 150, 150);
+  border: 0px solid);
   border-radius: 100%;
 }
 #mercuryDiv {
@@ -942,7 +942,7 @@ z-index: 100;
   height: 20px;
   left: 290px;
   top: 205px;
-  border: 2px solid rgb(162, 53, 6);
+  border: 0px solid);
   border-radius: 100%;
 }
 #venusDiv {
@@ -951,12 +951,12 @@ z-index: 100;
 }
 #earth {
   position: absolute;
-  background-color: lightblue;
+  background-color: lightskyblue;
   width: 30px;
   height: 30px;
   left: 285px;
   top: 400px;
-  border: 2px solid rgb(112, 206, 246);
+  border: 0px solid;
   border-radius: 100%;
 }
 #earthSpot1 {
@@ -967,7 +967,7 @@ z-index: 100;
   left: 5px;
   top: 0px;
   transform: rotate(60deg);
-  border: 0px solid green;
+  border: 0px solid;
   border-radius: 100%;
 }
 #earthSpot2 {
@@ -977,7 +977,7 @@ z-index: 100;
   height: 10px;
   left: 5px;
   top: 19px;
-  border: 0px solid green;
+  border: 0px solid;
   border-radius: 100%;
 }
 #earthSpot3 {
@@ -987,8 +987,7 @@ z-index: 100;
   height: 10px;
   left: 19px;
   top: 7px;
-  transform: rotate(60deg);
-  border: 0px solid green;
+  border: 0px solid;
   border-radius: 100%;
 }
 #earthDiv {
@@ -997,12 +996,34 @@ z-index: 100;
 }
 #mars {
   position: absolute;
-  background-color: darkred;
+  background-color: rgb(238, 128, 38);
   width: 25px;
   height: 25px;
   left: 287.5px;
   top: 130px;
-  border: 2px solid rgb(186, 68, 60);
+  border: 0px solid;
+  border-radius: 100%;
+}
+#marsSpot1 {
+  position: absolute;
+  background-color: rgb(179, 64, 0);
+  width: 7px;
+  height: 7px;
+  left: 10px;
+  top: 13px;
+  transform: rotate(60deg);
+  border: 0px solid;
+  border-radius: 100%;
+}
+#marsSpot2 {
+  position: absolute;
+  background-color: rgb(179, 64, 0);
+  width: 3px;
+  height: 3px;
+  left: 5px;
+  top: 13px;
+  transform: rotate(60deg);
+  border: 0px solid;
   border-radius: 100%;
 }
 #marsDiv {
@@ -1016,7 +1037,7 @@ z-index: 100;
   height: 40px;
   left: 280px;
   top: 475px;
-  border: 2px solid rgb(223, 224, 178);
+  border: 0px solid;
   border-radius: 100%;
 }
 #jupiterDiv {
@@ -1030,7 +1051,7 @@ z-index: 100;
   height: 40px;
   left: 280px;
   top: 30px;
-  border: 2px solid rgb(246, 251, 202);
+  border: 0px solid);
   border-radius: 100%;
 }
 #saturnbelt {
@@ -1055,7 +1076,7 @@ z-index: 100;
   height: 30px;
   left: 285px;
   top: 575px;
-  border: 2px solid rgb(88, 193, 252);
+  border: 0px solid;
   border-radius: 100%;
 }
 #uranusDiv {
@@ -1069,7 +1090,7 @@ z-index: 100;
   height: 30px;
   left: 285px;
   top: -50px;
-  border: 2px solid rgb(43, 0, 255);
+  border: 0px solid);
   border-radius: 100%;
 }
 #neptuneDiv {

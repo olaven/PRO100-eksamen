@@ -1094,6 +1094,76 @@ z-index: 100;
 /*-END, solarsystem-*/
 /*-END, Scene 4*/
 /*-Scene 5*/
+/*--marsContainer*/
+#marsContainer{
+  border-style: solid;
+  border-color: white;
+}
+/*--END, marsContainer*/
+/*--planetMarsDiv--*/
+#planetMarsDiv{
+  /*bruker animasjon fra solsystem*/
+  animation-name: rotateSolarsystem;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/*--END, planetMarsDiv--*/
 
+/*--mars--*/
+#planetMars{
+  position: absolute;
+  /*flekker "går over" horistonten*/
+  overflow: hidden;
+
+  background-color: rgb(238, 128, 38);
+
+  border-radius: 100%;
+
+  width: 500px;
+  height: 500px;
+
+  top: 50px;
+}
+/*--END, mars--*/
+/*--marsSpots--*/
+.marsSpots{
+  position: absolute;
+  background-color: rgb(234, 107, 2);
+
+  width: 100px;
+  height: 50px;
+
+  border-style: solid;
+  border-width: 3px;
+}
+#marsSpot1{
+  width: 200px;
+
+  top: 100px;
+  left: 0;
+
+  transform: rotate(-50deg);
+
+  border-top-right-radius: 150%;
+  border-top-left-radius: 70%;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 100%;
+}
+#marsSpot2{
+  top: 450px;
+  left: 300px;
+
+  border-top-left-radius: 170%;
+  border-bottom-left-radius: 50%;
+}
+#marsSpot3{
+  top: 100px;
+  left: 400px;
+
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+/*--END, marsSpots--*/
 /*-END, Scene 5*/
 /*-END, SIDE 3-*/

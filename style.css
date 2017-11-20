@@ -73,7 +73,11 @@ background-color: rgb(200, 190, 191);
   bottom: -320px;
   left: 500px;
 
+<<<<<<< HEAD
+  margin-bottom: 30px;
+=======
   margin-bottom: 20px;
+>>>>>>> 47d8ef9fd9d0f87902c12119ff814b3159e695e4
 }
 /*--tegning av bilde1--*/
 #articleImage1Container{

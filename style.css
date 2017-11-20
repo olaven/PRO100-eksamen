@@ -368,118 +368,19 @@ z-index: 100;
   left: 500px;
   z-index: 102;
   animation-name: boarding;
-  animation-duration: 3s;
+  animation-duration: 8s;
   animation-fill-mode: forwards;
 }
 @keyframes boarding {
     0%{
       left: 450px;
       bottom: 20px;
-      transform: rotate(0deg);
-    }
-  10%{
-      left: 400px;
-      bottom: 20px;
-      transform: rotate(0deg);
-    }
-
-    15%{
-        left: 390px;
-        bottom: 20px;
-        transform: rotate(30deg);
-      }
-
-    20%{
-      left:380px;
-      bottom: 20px;
-      transform: rotate(35deg);
-      height:280px;
-    }
-    30%{
-      left:370px;
-      bottom: 20px;
-      transform: rotate(35deg);
-      height: 270px;
-    }
-    /* vinkler her */
-    40%{
-      left:360px;
-      bottom:20px;
-      transform: rotate(35deg);
-      height:260px;
-    }
-    50%{
-      left:350px;
-      bottom:20px;
-      transform: rotate(35deg);
-      height:250px;
-    }
-    /* deler opp til +5% */
-    55%{
-      left:340px;
-      bottom:40px;
-      transform: rotate(35deg);
-      height:230px;
-    }
-    60%{
-      left:330px;
-      bottom:50px;
-      transform: rotate(35deg);
-      height:210px;
-    }
-  65%{
-      left:320px;
-      bottom:70px;
-      transform: rotate(30deg);
-      height:;
-    }
-    70%{
-      left:300px;
-      bottom:90px;
-      transform: rotate(25deg);
-      height:;
-    }
-    75%{
-      left:280px;
-      bottom:110px;
-      transform:rotate(20deg);;
-      height:;
-      width:;
     }
     80%{
-      left:270px;
-      bottom:120px;
-      transform:rotate(15deg);;
-      height:;
-      width:;
-    }
-    85%{
-      left:230px;
-      bottom:125px;
-      transform:
-      height:;
-      width:;
-    }
-    90%{
-      left:200px;
-      bottom: 130px;
-      transform:rotate(20deg);
-      height:;
-      width:;
-    }
-    95%{
-      left:150px;
-      bottom:135px;
-      transform:;
-      height:;
-      width:;
+
     }
     100%{
-      left:80px;
-      bottom:140px;
-      transform:;
-      height:;
-      width:;
+      height:
     }
 }
 

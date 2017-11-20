@@ -70,7 +70,7 @@ background-color: rgb(200, 190, 191);
   bottom: -320px;
   left: 500px;
 
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 /*--tegning av bilde1--*/
 #articleImage1Container{
@@ -570,7 +570,7 @@ z-index: 100;
 
 #controlPanelContainerChildTest {
   /* NOTE: fjern denne linjen etter launchBackground ferdig */
-  margin-top: 3000px;
+  /*margin-top: 3000px;*/
 
   position: relative;
   background-color: lightskyblue;
@@ -581,7 +581,7 @@ z-index: 100;
   animation-play-state: paused;
 
   /* NOTE: sett til Hidden etter launchBackground er ferdig */
-  overflow:visible;
+  /*overflow:visible;*/
 }
 
 /*-text-*/
@@ -793,7 +793,7 @@ z-index: 100;
   left: 730px;
 
   /* NOTE: sett tilbake til -69px */
-  bottom: -3000px;
+  bottom: -69px;
 
   background-color: yellow;
 }
@@ -807,6 +807,72 @@ z-index: 100;
   transition-duration: 25s;
   transition-property: all
 }
+
+#backgroundStar1{
+  left: 200px;
+  bottom: 1400px;
+}
+#backgroundStar2{
+  left: 256px;
+  bottom: 1300px;
+}
+#backgroundStar3{
+  left: 400px;
+  bottom: 1200px;
+}
+#backgroundStar4{
+  left: 520px;
+  bottom: 1250px;
+}
+#backgroundStar5{
+  left: 150px;
+  bottom: 1050px;
+}
+#backgroundStar6{
+  left: 345px;
+  bottom: 1025px;
+}
+#backgroundStar7{
+  left: 660px;
+  bottom: 1434px;
+}
+#backgroundStar8{
+  left: 100px;
+  bottom: 1190px;
+}
+#backgroundStar9{
+  left: 234px;
+  bottom:1050px;
+}
+#backgroundStar10{
+  left: 543px;
+  bottom: 1150px;
+}
+#backgroundStar11{
+  left: 760px;
+  bottom: 1434px;
+}
+#backgroundStar12{
+  left: 800px;
+  bottom: 1190px;
+}
+#backgroundStar13{
+  left: 734px;
+  bottom:1050px;
+}
+#backgroundStar14{
+  left: 743px;
+  bottom: 1150px;
+}
+#backgroundStar15{
+  left: 650px;
+  bottom: 1090px;
+}
+#backgroundStar16{
+  left: 825px;
+  bottom: 1190px;
+}
+
 .cloud{
   position: absolute;
   background-color: white;
@@ -879,8 +945,8 @@ z-index: 100;
 #nextSide {
     background-color: blue;
     transition-property: all;
-    transition-delay: 1s;
-    transition-duration: 17s;
+    transition-delay: 0s;
+    transition-duration: 50s;
     position: absolute;
     width: 40px;
     height: 40px;

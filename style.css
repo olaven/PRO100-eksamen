@@ -13,6 +13,13 @@ html, body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: darkblue;
+}
+
 /*-SIDE 1-*/
 /*-Scene 1--*/
 #articleContainer{
@@ -722,17 +729,12 @@ display:none;
   width: 90px;
   height: 40px;
   bottom: 25px;
-	font-size: 40px;
-	text-decoration: none;
+	font-size: 25px;
+  line-height: 40px;
 	text-align: center;
 	transition: all .1s ease-in-out;
   z-index: 107;
   border-radius: 10px;
-}
-
-
-.usableButtons:hover {
-
 }
 
 #buttonShadowBensin{

@@ -1113,12 +1113,14 @@ z-index: 100;
 
   background-color: rgb(238, 128, 38);
 
-  border-radius: 100%;
+  border-radius: 50%;
 
   width: 500px;
   height: 500px;
 
+  /*i midten av sin div*/
   top: 50px;
+  left: 50px;
 }
 /*--END, mars--*/
 /*--marsSpots--*/
@@ -1160,5 +1162,15 @@ z-index: 100;
   border-bottom-left-radius: 50%;
 }
 /*--END, marsSpots--*/
+/*--landedRocket--*/
+#landedRocket{
+  position: absolute;
+
+  height: 200px;
+  transform: rotate(314deg);
+
+  top: -45px;
+}
+/*--END, landedRocket--*/
 /*-END, Scene 5*/
 /*-END, SIDE 3-*/

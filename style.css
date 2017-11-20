@@ -1155,7 +1155,7 @@ z-index: 100;
 }
 /*--END, mars--*/
 /*--marsSpots--*/
-.marsSpots{
+.planetMarsSpots{
   position: absolute;
   background-color: rgb(234, 107, 2);
 
@@ -1165,7 +1165,7 @@ z-index: 100;
   border-style: solid;
   border-width: 3px;
 }
-#marsSpot1{
+#planetMarsSpot1{
   width: 200px;
 
   top: 100px;
@@ -1178,14 +1178,14 @@ z-index: 100;
   border-bottom-right-radius: 30%;
   border-bottom-left-radius: 100%;
 }
-#marsSpot2{
+#planetMarsSpot2{
   top: 450px;
   left: 300px;
 
   border-top-left-radius: 170%;
   border-bottom-left-radius: 50%;
 }
-#marsSpot3{
+#planetMarsSpot3{
   top: 100px;
   left: 400px;
 

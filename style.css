@@ -18,7 +18,8 @@ html, body {
 /*-Scene 1--*/
 #articleContainer{
   /*farge som gammelt papir*/
-  background-color: rgb(243,236,226);
+ /*background-color: rgb(243,236,226);*/
+background-color: rgb(200, 190, 191);
 
   overflow-y: scroll;
 }

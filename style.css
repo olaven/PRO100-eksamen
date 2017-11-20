@@ -28,7 +28,7 @@ background-color: rgb(200, 190, 191);
   position: absolute;
 
   top: 0;
-  right: 0;
+  left: 875px;
 
   margin: 10px;
   padding: 10px;
@@ -66,9 +66,18 @@ background-color: rgb(200, 190, 191);
 #articleImage1{
    margin: 25px;
 }
+#articleImage1:hover #meteorContainer{
+  animation-name: meteorFall;
+}
 #articleImage2{
   bottom: -320px;
   left: 500px;
+
+<<<<<<< HEAD
+  margin-bottom: 30px;
+=======
+  margin-bottom: 20px;
+>>>>>>> 7dbe95d5d92d1bd812776ff3ac5d53af20a5f61b
 }
 /*--tegning av bilde1--*/
 #articleImage1Container{
@@ -140,16 +149,43 @@ background-color: rgb(200, 190, 191);
   border-bottom-left-radius: 80%;
 }
 /*--END,continents--*/
+/*--meteorContainer--*/
+
+#meteorContainer{
+  position: relative;
+
+  top: -100px;
+
+  width: 200px;
+  height: 200px;
+
+  /*animation-name settes ved hover på bildet*/
+  animation-duration: 2s;
+  animation-direction: forwards;
+}
+@keyframes meteorFall {
+  from{
+    top: -100px;
+    left: 0;
+    transform: scale(1);
+  }
+  to{
+    top: 200px;
+    left: -350px;
+    transform: scale(1.6);
+  }
+}
+/*--END, meteorContainer--*/
 /*--meteor--*/
 #meteor{
   position: absolute;
   background-color: rgb(55, 26, 4);
 
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 
-  top: 140px;
-  right: 150px;
+  top: 200px;
+  left: 180px;
 
   border-radius: 50%;
 }
@@ -157,7 +193,7 @@ background-color: rgb(200, 190, 191);
   position: absolute;
 
   height: 100px;
-  width: 30px;
+  width: 25px;
 
   border-top-left-radius: 70%;
   border-top-right-radius: 70%;
@@ -182,24 +218,24 @@ background-color: rgb(200, 190, 191);
   animation-duration: 1s;
 }
 #meteorTail1{
-  top:70px;
-  left: 250px;
+  top: 110px;
+  left: 240px;
 }
 #meteorTail2{
-  top:55px;
+  top: 70px;
   left: 260px;
 
   height:150px;
 }
 #meteorTail3{
-  top:55px;
-  left: 290px;
+  top:75px;
+  left: 280px;
 
   height: 150px;
 }
 #meteorTail4{
-  top:85px;
-  left: 300px;
+  top: 145px;
+  left: 260px;
 }
 @keyframes meteorTailGroup1Pulse {
   from{
@@ -491,6 +527,9 @@ display:none;
 }
 
 #controlPanelContainerChildTest {
+  /* NOTE: fjern denne linjen etter launchBackground ferdig */
+  /*margin-top: 3000px;*/
+
   position: relative;
   background-color: lightskyblue;
   z-index: 98;
@@ -498,6 +537,9 @@ display:none;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-play-state: paused;
+
+  /* NOTE: sett til Hidden etter launchBackground er ferdig */
+  /*overflow:visible;*/
 }
 
 /*-text-*/
@@ -621,51 +663,71 @@ display:none;
   border-radius: 10px;
 }
 
+
 .usableButtons:hover {
 
 }
-/*
-.usableButtons:active {
-  box-shadow: 0px 3px 0px 0px;
-  transform: translateY(3px);
-}*/
 
+#buttonShadowBensin{
+  width: 90px;
+  height: 40px;
+  bottom: 18px;
+  z-index: 106;
+  left: 295px;
+  background-color: rgb(235, 235, 0);
+}
 #buttonBensin:active{
-  box-shadow: 0px 2px 0px 0px rgb(255, 255, 0);
   transform: translateY(5px);
 }
 #buttonBensin {
-  box-shadow: 0px 7px 0px 0px rgb(235, 235, 0);
   background-color: yellow;
   left: 295px;
 }
 
+#buttonShadowReise{
+  width: 90px;
+  height: 40px;
+  bottom: 18px;
+  z-index: 106;
+  left: 400px;
+  background-color: rgb(153, 196, 210);
+}
 #buttonReise:active{
-  box-shadow: 0px 2px 0px 0px rgb(153, 196, 210);
   transform: translateY(5px);
 }
 #buttonReise {
-  box-shadow: 0px 7px 0px 0px rgb(153, 176, 210);
   background-color: lightblue;
   left: 400px;
 }
 
+#buttonShadowNASA{
+  width: 90px;
+  height: 40px;
+  bottom: 18px;
+  z-index: 106;
+  left: 505px;
+  background-color: rgb(235, 145, 0);
+}
 #buttonNASA:active{
-  box-shadow: 0px 2px 0px 0px rgb(235, 145, 0);
   transform: translateY(5px);
 }
 #buttonNASA {
-  box-shadow: 0px 7px 0px 0px rgb(235, 145, 0);
   background-color: orange;
   left: 505px;
 }
 
+#buttonShadowDyr{
+  width: 90px;
+  height: 40px;
+  bottom: 18px;
+  z-index: 106;
+  left: 610px;
+  background-color: rgb(124, 218, 124);
+}
 #buttonDyr:active{
-  box-shadow: 0px 2px 0px 0px rgb(124, 218, 124);
   transform: translateY(5px);
 }
 #buttonDyr {
-  box-shadow: 0px 7px 0px 0px rgb(124, 218, 124);
   background-color: lightgreen;
   left: 610px;
 }
@@ -687,10 +749,141 @@ display:none;
   width: 40px;
   height: 170px;
   left: 730px;
+
+  /* NOTE: sett tilbake til -69px */
   bottom: -69px;
 }
+#launchBackground{
+  position: absolute;
+  width: 1000px;
+  height: 1500px;
+  background-color: lightskyblue;
+  bottom: 300px;
+  transition-duration: 25s;
+  transition-property: all
+}
 
-/* HUSK: går i teorien ann å legge shake effekt på alt inni controlPanelContainer, men ikke controlPanelContainer i seg selv. */
+#backgroundStar1{
+  left: 200px;
+  bottom: 1400px;
+}
+#backgroundStar2{
+  left: 256px;
+  bottom: 1300px;
+}
+#backgroundStar3{
+  left: 400px;
+  bottom: 1200px;
+}
+#backgroundStar4{
+  left: 520px;
+  bottom: 1250px;
+}
+#backgroundStar5{
+  left: 150px;
+  bottom: 1050px;
+}
+#backgroundStar6{
+  left: 345px;
+  bottom: 1025px;
+}
+#backgroundStar7{
+  left: 660px;
+  bottom: 1434px;
+}
+#backgroundStar8{
+  left: 100px;
+  bottom: 1190px;
+}
+#backgroundStar9{
+  left: 534px;
+  bottom:1060px;
+}
+#backgroundStar10{
+  left: 543px;
+  bottom: 1150px;
+}
+#backgroundStar11{
+  left: 760px;
+  bottom: 1434px;
+}
+#backgroundStar12{
+  left: 800px;
+  bottom: 1190px;
+}
+#backgroundStar13{
+  left: 734px;
+  bottom:1050px;
+}
+#backgroundStar14{
+  left: 743px;
+  bottom: 1150px;
+}
+#backgroundStar15{
+  left: 650px;
+  bottom: 1090px;
+}
+#backgroundStar16{
+  left: 825px;
+  bottom: 1190px;
+}
+
+.cloud{
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/*-CLOUD 1-*/
+#c1{
+  bottom: 500px;
+  left: 500px;
+}
+#c2{
+  bottom: 480px;
+  left: 550px;
+}
+#c3{
+  bottom: 510px;
+  left: 450px;
+}
+#c4{
+  bottom: 515px;
+  left: 530px;
+}
+#c5{
+  bottom: 485px;
+  left: 475px;
+}
+
+/*-CLOUD 2-*/
+#c6{
+  bottom: 600px;
+  left: 200px;
+}
+#c7{
+  bottom: 640px;
+  left: 200px;
+}
+#c8{
+  bottom: 610px;
+  left: 150px;
+}
+#c9{
+  bottom: 615px;
+  left: 230px;
+}
+#c10{
+  bottom: 645px;
+  left: 265px;
+}
+
+#launchHidden:hover ~ #controlPanelContainerChildTest #launchBackground{
+  bottom: -800px;
+  background-color: black;
+}
 #launchHidden:hover ~ #controlPanelContainerChildTest{
   animation-play-state: running;
 }
@@ -707,8 +900,8 @@ display:none;
 #nextSide {
     background-color: blue;
     transition-property: all;
-    transition-delay: 1s;
-    transition-duration: 17s;
+    transition-delay: 0s;
+    transition-duration: 50s;
     position: absolute;
     width: 40px;
     height: 40px;
@@ -805,6 +998,8 @@ display:none;
   top: -65px;
   transform: rotate(-35deg);
 }
+
+/* NOTE: Flytt launchBackground til her */
 /*-END, background-*/
 
 @keyframes shake{
@@ -870,8 +1065,9 @@ display:none;
   height: 70px;
   left: 265px;
   top: 265px;
-  border: 2px solid rgb(213, 205, 3);
+  border: 0px solid;
   border-radius: 100%;
+  animation: sunGlow 7s linear infinite;
 }
 #sunDiv {
   z-index: 50;
@@ -966,7 +1162,6 @@ display:none;
   height: 7px;
   left: 10px;
   top: 13px;
-  transform: rotate(60deg);
   border: 0px solid;
   border-radius: 100%;
 }
@@ -977,7 +1172,6 @@ display:none;
   height: 3px;
   left: 5px;
   top: 13px;
-  transform: rotate(60deg);
   border: 0px solid;
   border-radius: 100%;
 }
@@ -992,6 +1186,26 @@ display:none;
   height: 40px;
   left: 280px;
   top: 475px;
+  border: 0px solid;
+  border-radius: 100%;
+}
+#jupiterSpot1 {
+  position: absolute;
+  background-color: rgb(208, 210, 182);
+  width: 10px;
+  height: 10px;
+  left: 15px;
+  top: 13px;
+  border: 0px solid;
+  border-radius: 100%;
+}
+#jupiterSpot2 {
+  position: absolute;
+  background-color: rgb(208, 210, 182);
+  width: 5px;
+  height: 5px;
+  left: 7px;
+  top: 13px;
   border: 0px solid;
   border-radius: 100%;
 }
@@ -1061,7 +1275,138 @@ display:none;
     transform: rotate(360deg);
   }
 }
+@keyframes sunGlow {
+  0% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: rgb(255, 181, 18);
+  }
+  100% {
+    background-color: yellow;
+  }
+}
 /*-END, solarsystem-*/
+/*-systemStars-*/
+.systemStars {
+  position: absolute;
+  background-color: whitesmoke;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  z-index: 41;
+}
+#systemStar1 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 100px;
+  top: 80px;
+}
+#systemStar2 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 480px;
+  top: 110px;
+}
+#systemStar3 {
+  animation: systemStarglow 2s infinite alternate-reverse linear;
+  left: 900px;
+  top: 70px;
+}
+#systemStar4 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 120px;
+  top: 230px;
+}
+#systemStar5 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 790px;
+  top: 200px;
+}
+#systemStar6 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 530px;
+  top: 210px;
+}
+#systemStar7 {
+  animation: systemStarglow 2s infinite alternate-reverse linear;
+  left: 300px;
+  top: 300px;
+}
+#systemStar8 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 600px;
+  top: 330px;
+}
+#systemStar9 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 860px;
+  top: 310px;
+}
+#systemStar10 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 50px;
+  top: 400px;
+}
+#systemStar11 {
+  animation: systemStarglow 2s infinite alternate-reverse linear;
+  left: 360px;
+  top: 400px;
+}
+#systemStar12 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 740px;
+  top: 400px;
+}
+#systemStar13 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 180px;
+  top: 510px;
+}
+#systemStar14 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 420px;
+  top: 490px;
+}
+#systemStar15 {
+  animation: systemStarglow 2s infinite alternate-reverse linear;
+  left: 930px;
+  top: 520px;
+}
+#systemStar16 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 40px;
+  top: 630px;
+}
+#systemStar17 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 400px;
+  top: 610px;
+}
+#systemStar18 {
+  animation: systemStarglow 2s infinite alternate-reverse linear;
+  left: 700px;
+  top: 600px;
+}
+#systemStar19 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 300px;
+  top: 50px;
+}
+#systemStar20 {
+  animation: systemStarglow 2s infinite alternate-reverse linear;
+  left: 200px;
+  top: 650px;
+}
+@keyframes systemStarglow {
+  from{
+    background-color: rgba(255,255,255,0.5);
+    transform: scaleX(1.2);
+  }
+  to{
+    background-color: rgba(255,255,255);
+    transform: scaleY(1.2);
+  }
+}
+/*-END, systemStars-*/
 /*-END, Scene 4*/
 /*-Scene 5*/
 /*--marsContainer*/

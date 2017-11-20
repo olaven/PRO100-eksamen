@@ -1,5 +1,5 @@
 html, body {
-  background: black;
+  background-color: black;
   height: 100%;
   body: 100%;
 }
@@ -10,12 +10,13 @@ html, body {
   height: 700px;
   margin: auto;
   margin-top: 100px;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 
 /*-SIDE 1-*/
 /*-Scene 1--*/
-#artikkelContainer{
+#articleContainer{
   /*farge som gammelt papir*/
   background-color: rgb(243,236,226);
 
@@ -39,7 +40,7 @@ html, body {
 }
 /*END, dato*/
 /*--bilder til artikkel--*/
-.artikkelBilder{
+.articleImages{
   position: absolute;
   display: inline;
 
@@ -54,22 +55,22 @@ html, body {
 
   transition-duration: 0.5s;
 }
-.artikkelBilder:hover{
+.articleImages:hover{
   /*"pop"-effekt*/
   transform-origin: center;
   transform: scale(1.05);
 
   padding: 10px;/*minske bakgrunnsfarge/ramme rundt når størrelsen økes*/
 }
-#artikkelBilde1{
+#articleImage1{
    margin: 25px;
 }
-#artikkelBilde2{
+#articleImage2{
   bottom: -320px;
   left: 500px;
 }
-/*tegning av bilde1*/
-#artikkelBilde1-container{
+/*--tegning av bilde1--*/
+#articleImage1Container{
   position: relative;
 
   background-color: darkblue;
@@ -79,10 +80,10 @@ html, body {
 
   overflow: hidden;
 }
-/*--jorden--*/
-#jord{
+/*--planetEarth--*/
+#planetEarth{
   position: absolute;
-  /*kontinenter "går over" horisonten*/
+  /*continenter "går over" horisonten*/
   overflow: hidden;
 
   width: 700px;
@@ -95,12 +96,13 @@ html, body {
 
   border-radius: 50%;
 }
-/*--END, jorden--*/
-.kontinents{
+/*--END, planetEarth--*/
+/*--continents--*/
+.continents{
   position: absolute;
   background-color: green;
 }
-#kontinent1{
+#continent1{
   width: 80px;
   height: 120px;
 
@@ -114,7 +116,7 @@ html, body {
   border-bottom-right-radius: 90%;
   border-bottom-left-radius: 100%;
 }
-#kontinent2{
+#continent2{
   width: 200px;
   height: 100px;
 
@@ -125,7 +127,7 @@ html, body {
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 80%;
 }
-#kontinent3{
+#continent3{
   width: 250px;
   height: 60px;
 
@@ -136,8 +138,135 @@ html, body {
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 80%;
 }
+/*--END,continents--*/
+/*--meteor--*/
+#meteor{
+  position: absolute;
+  background-color: rgb(55, 26, 4);
 
-/*END, tegning av bilde1*/
+  width: 100px;
+  height: 100px;
+
+  top: 140px;
+  right: 150px;
+
+  border-radius: 50%;
+}
+.meteorTail{
+  position: absolute;
+
+  height: 100px;
+  width: 30px;
+
+  border-top-left-radius: 70%;
+  border-top-right-radius: 70%;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+.meteorTailGroup1{
+  background-color: rgb(223, 216, 46);
+
+  border-style: solid;
+  border-color: rgb(194, 40, 7);
+
+  animation-name: meteorTailGroup1Pulse;
+  animation-duration: 3s;
+}
+.meteorTailGroup2{
+  background-color: rgb(194, 40, 7);
+
+  animation-name: meteorTailGroup2Pulse;
+  animation-duration: 1s;
+}
+#meteorTail1{
+  top:70px;
+  left: 250px;
+}
+#meteorTail2{
+  top:55px;
+  left: 260px;
+
+  height:150px;
+}
+#meteorTail3{
+  top:55px;
+  left: 290px;
+
+  height: 150px;
+}
+#meteorTail4{
+  top:85px;
+  left: 300px;
+}
+@keyframes meteorTailGroup1Pulse {
+  from{
+    transform: scale(1.2) rotate(35deg);
+  }
+  to{
+    transform: scale(1) rotate(35deg);
+  }
+}
+@keyframes meteorTailGroup2Pulse {
+  from{
+    transform: scale(1) rotate(35deg);
+  }
+  to{
+    transform: scale(1.1) rotate(35deg);
+  }
+}
+/*--END, meteor--*/
+/*--stars--*/
+.stars{
+  position: absolute;
+
+  background-color: whitesmoke;
+
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  animation-name: starGlow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+#star1{
+  top: 20px;
+  left: 100px;
+}
+#star2{
+  top: 50px;
+  left: 400px;
+}
+#star3{
+  top: 240px;
+  left: 20px;
+}
+#star4{
+  top: 410px;
+  left: 435px;
+}
+#star5{
+  top: -10px;
+  left: 300px;
+}
+@keyframes starGlow {
+  from{
+    background-color: rgba(255,255,255,0.8);
+    transform: scaleX(1.2);
+  }
+  to{
+    background-color: rgba(255,255,255);
+    transform: scaleY(1.2);
+  }
+}
+/*--END, stars--*/
+
+/*--END, tegning av bilde1--*/
 /*--END, bilder til artikkel--*/
 /*--tekster til artikkel--*/
 .artikkelTekster{
@@ -158,8 +287,6 @@ html, body {
   border-radius: 7.5%;
   border-style: solid;
   border-color: rgba(0,0,0,0.8);
-
-  box-shadow: 5px 5px 75px #888888;
 }
 .artikkelTekster h1, .artikkelTekster h2, .artikkelTekster p{
   margin-left:40px;
@@ -401,11 +528,21 @@ z-index: 100;
 
 /*-SIDE 2-*/
 /*-Scene 3-*/
+#controlPanelContainer {
+  z-index: 98;
+  position: relative;
+  margin-top: 0px;
+  overflow: visible;
+}
 
-/* forklar blabla hvorfor shake blabla.*/
-#controlPanelContainer  {
+#controlPanelContainerChildTest {
+  position: relative;
   background-color: lightskyblue;
   z-index: 98;
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
 }
 
 /*-text-*/
@@ -514,31 +651,70 @@ z-index: 100;
   transform: rotate(-20deg);
   opacity: 0.2;
 }
+
 .usableButtons {
+  display: block;
   position: absolute;
   width: 90px;
   height: 40px;
   bottom: 25px;
-  border: 2px solid black;
-  border-radius: 10px;
+	font-size: 40px;
+	text-decoration: none;
+	text-align: center;
+	transition: all .1s ease-in-out;
   z-index: 107;
+  border-radius: 10px;
+}
+
+.usableButtons:hover {
+
+}
+/*
+.usableButtons:active {
+  box-shadow: 0px 3px 0px 0px;
+  transform: translateY(3px);
+}*/
+
+#buttonBensin:active{
+  box-shadow: 0px 2px 0px 0px rgb(255, 255, 0);
+  transform: translateY(5px);
 }
 #buttonBensin {
+  box-shadow: 0px 7px 0px 0px rgb(235, 235, 0);
   background-color: yellow;
   left: 295px;
 }
+
+#buttonReise:active{
+  box-shadow: 0px 2px 0px 0px rgb(153, 196, 210);
+  transform: translateY(5px);
+}
 #buttonReise {
+  box-shadow: 0px 7px 0px 0px rgb(153, 176, 210);
   background-color: lightblue;
   left: 400px;
 }
+
+#buttonNASA:active{
+  box-shadow: 0px 2px 0px 0px rgb(235, 145, 0);
+  transform: translateY(5px);
+}
 #buttonNASA {
+  box-shadow: 0px 7px 0px 0px rgb(235, 145, 0);
   background-color: orange;
   left: 505px;
 }
+
+#buttonDyr:active{
+  box-shadow: 0px 2px 0px 0px rgb(124, 218, 124);
+  transform: translateY(5px);
+}
 #buttonDyr {
+  box-shadow: 0px 7px 0px 0px rgb(124, 218, 124);
   background-color: lightgreen;
   left: 610px;
 }
+
 #leverPart1 {
   position: absolute;
   width: 10px;
@@ -551,22 +727,25 @@ z-index: 100;
   border-radius: 20px;
 }
 #launchHidden{
-    position: absolute;
-    z-index: 109;
-    width: 40px;
-    height: 170px;
-    left: 726px;
-    bottom: 69px;
+  position: absolute;
+  z-index: 109;
+  width: 40px;
+  height: 170px;
+  left: 730px;
+  bottom: -69px;
 }
 
 /* HUSK: går i teorien ann å legge shake effekt på alt inni controlPanelContainer, men ikke controlPanelContainer i seg selv. */
-#launchHidden:hover ~ #nextSide{
+#launchHidden:hover ~ #controlPanelContainerChildTest{
+  animation-play-state: running;
+}
+#launchHidden:hover ~ #controlPanelContainerChildTest #nextSide{
     z-index: 110;
 }
-#launchHidden:hover ~ #leverPart2{
+#launchHidden:hover ~ #controlPanelContainerChildTest #leverPart2{
     bottom: 82px;
 }
-#launchHidden:hover ~ #mountains{
+#launchHidden:hover ~ #controlPanelContainerChildTest #mountains{
     top: 700px;
 }
 
@@ -636,7 +815,7 @@ z-index: 100;
   width: 500px;
   height: 500px;
   left: 90px;
-  top: 139px;
+  top: 140px;
   transform: rotate(45deg);
   overflow: hidden;
   z-index: 100;
@@ -657,7 +836,7 @@ z-index: 100;
   width: 500px;
   height: 500px;
   left: 450px;
-  top: 198px;
+  top: 200px;
   transform: rotate(35deg);
   overflow: hidden;
   z-index: 99;
@@ -724,7 +903,6 @@ z-index: 100;
 /*-solarsystem-*/
 .rotation {
   position: absolute;
-  background-color: red;
   width: 600px;
   height: 600px;
   left: 200px;
@@ -742,9 +920,22 @@ z-index: 100;
 }
 #sunDiv {
   z-index: 50;
+<<<<<<< HEAD
+}
+#sun {
+
+=======
+>>>>>>> 87876d58662f9cb7f0339806912d2ba276d45f40
 }
 #mercury {
   position: absolute;
+  background-color: lightgrey;
+  width: 15px;
+  height: 15px;
+  left: 292.5px;
+  top: 345px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #mercuryDiv {
   animation: rotateSolarsystem 5s linear infinite;
@@ -752,6 +943,13 @@ z-index: 100;
 }
 #venus {
   position: absolute;
+  background-color: brown;
+  width: 20px;
+  height: 20px;
+  left: 290px;
+  top: 370px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #venusDiv {
   animation: rotateSolarsystem 10s linear infinite;
@@ -759,6 +957,13 @@ z-index: 100;
 }
 #earth {
   position: absolute;
+  background-color: lightgreen;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 400px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #earthDiv {
   animation: rotateSolarsystem 15s linear infinite;
@@ -766,6 +971,13 @@ z-index: 100;
 }
 #mars {
   position: absolute;
+  background-color: darkred;
+  width: 25px;
+  height: 25px;
+  left: 287.5px;
+  top: 440px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #marsDiv {
   animation: rotateSolarsystem 20s linear infinite;
@@ -773,6 +985,13 @@ z-index: 100;
 }
 #jupiter {
   position: absolute;
+  background-color: purple;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 510px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #jupiterDiv {
   animation: rotateSolarsystem 25s linear infinite;
@@ -780,6 +999,24 @@ z-index: 100;
 }
 #saturn {
   position: absolute;
+  background-color: lightyellow;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 550px;
+  border: 0px solid white;
+  border-radius: 100%;
+}
+#saturnbelt {
+  position: absolute;
+  background-color: brown;
+  width: 5px;
+  height: 50px;
+  left: 11px;
+  top: -11px;
+  transform: rotate(45deg);
+  border: 0px solid white;
+  border-radius: 25%;
 }
 #saturnDiv {
   animation: rotateSolarsystem 30s linear infinite;
@@ -787,6 +1024,13 @@ z-index: 100;
 }
 #uranus {
   position: absolute;
+  background-color: orange;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 590px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #uranusDiv {
   animation: rotateSolarsystem 35s linear infinite;
@@ -794,6 +1038,13 @@ z-index: 100;
 }
 #neptune {
   position: absolute;
+  background-color: lightyellow;
+  width: 30px;
+  height: 30px;
+  left: 285px;
+  top: 630px;
+  border: 0px solid white;
+  border-radius: 100%;
 }
 #neptuneDiv {
   animation: rotateSolarsystem 40s linear infinite;

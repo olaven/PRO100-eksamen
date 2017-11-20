@@ -2,55 +2,58 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>ControlPanel</title>
+    <title>Fremtidens Ark</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!--launchHidden må være utenfor controlPanel div'en fordi man med hover på child ikke kan påvirke parent.-->
     <div class = "mainContainer" id="controlPanelContainer">
-
-      <!--text-->
-      <h1 id="fremtidensArkText">FREMTIDENS ARK</h1>
-      <!--END, text-->
-
-      <!--windowFrame-->
-      <div class="windowFrame" id="topFrame"></div>
-      <div class="windowFrame" id="bottomFrame"></div>
-      <div class="windowFrame" id="windowFrameRight"></div>
-      <div class="windowFrame" id="windowFrameLeft"></div>
-      <div class="windowFrame" id="controlBackground"></div>
-      <div id="windowShine"></div>
-      <!--END, windowFrame-->
-
-      <!--controlPanel-->
-      <div id="controlPanel"></div>
-      <p id="controlPanelText">KONTROLLPANEL</p>
-      <div id="display">
-        <div id="displayShine"></div>
-      </div>
-
-      <div class="usableButtons" id="buttonBensin"></div>
-      <div class="usableButtons" id="buttonReise"></div>
-      <div class="usableButtons" id="buttonNASA"></div>
-      <div class="usableButtons" id="buttonDyr"></div>
-      <div id="leverPart1"></div>
       <div id = "launchHidden"></div>
-      <div id="leverPart2"></div>
-      <div id ="launchButton"></div>
-      <a id="nextSide" href ="side3.html"></a>
-      <!--END, controlPanel-->
+      /* Dette er nødvendig for å få til shake effekten på containeren.
+         Et child kan ikke påvirke parent med hover, vi faker derfor en
+         parent, som egentlig er sibling. */
+      <div class = "mainContainer" id="controlPanelContainerChildTest">
 
-      <!--background-->
-      <div id="mountains">
-          <div id="mountainLeft">
-            <div id="mountainLeftTop"></div>
-          </div>
-          <div id="mountainRight">
-            <div id="mountainRightTop"></div>
-          </div>
-      </div>
+        <!--text-->
+        <h1 id="fremtidensArkText">FREMTIDENS ARK</h1>
+        <!--END, text-->
+
+        <!--windowFrame-->
+        <div class="windowFrame" id="topFrame"></div>
+        <div class="windowFrame" id="bottomFrame"></div>
+        <div class="windowFrame" id="windowFrameRight"></div>
+        <div class="windowFrame" id="windowFrameLeft"></div>
+        <div class="windowFrame" id="controlBackground"></div>
+        <div id="windowShine"></div>
+        <!--END, windowFrame-->
+
+        <!--controlPanel-->
+        <div id="controlPanel"></div>
+        <p id="controlPanelText">KONTROLLPANEL</p>
+        <div id="display">
+          <div id="displayShine"></div>
+        </div>
+
+        <div class="usableButtons" id="buttonBensin"></div>
+        <div class="usableButtons" id="buttonReise"></div>
+        <div class="usableButtons" id="buttonNASA"></div>
+        <div class="usableButtons" id="buttonDyr"></div>
+        <div id="leverPart1"></div>
+        <div id="leverPart2"></div>
+        <div id ="launchButton"></div>
+        <a id="nextSide" href ="side3.html"></a>
+        <!--END, controlPanel-->
+
+        <!--background-->
+        <div id="mountains">
+            <div id="mountainLeft">
+              <div id="mountainLeftTop"></div>
+            </div>
+            <div id="mountainRight">
+              <div id="mountainRightTop"></div>
+            </div>
+        </div>
       <!--END, background-->
-
+      </div>
     </div>
 
   </body>

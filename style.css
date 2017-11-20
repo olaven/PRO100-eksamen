@@ -536,6 +536,9 @@ z-index: 100;
 }
 
 #controlPanelContainerChildTest {
+  /* NOTE: fjern denne linjen etter launchBackground ferdig */
+  margin-top: 3000px;
+
   position: relative;
   background-color: lightskyblue;
   z-index: 98;
@@ -543,6 +546,9 @@ z-index: 100;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-play-state: paused;
+
+  /* NOTE: sett til Hidden etter launchBackground er ferdig */
+  overflow:visible;
 }
 
 /*-text-*/
@@ -752,10 +758,90 @@ z-index: 100;
   width: 40px;
   height: 170px;
   left: 730px;
-  bottom: -69px;
+
+  /* NOTE: sett tilbake til -69px */
+  bottom: -3000px;
+
+  background-color: yellow;
+}
+#launchBackground{
+  position: absolute;
+  width: 1000px;
+  height: 1500px;
+  background-color: lightskyblue;
+  bottom: 300px;
+  border: 5px solid green;
+  transition-duration: 25s;
+  transition-property: all
+}
+.cloud{
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+}
+.rotation{
+  transform: rotate(360deg);
 }
 
-/* HUSK: går i teorien ann å legge shake effekt på alt inni controlPanelContainer, men ikke controlPanelContainer i seg selv. */
+/*-CLOUD 1-*/
+#cloud1{
+  position: absolute;
+  bottom: 600px;
+  left: 500px;
+  border: 2px solid green;
+  width: 250px;
+  height: 150px;
+}
+
+#c1{
+  bottom: 600px;
+  left: 500px;
+}
+#c2{
+  bottom: 580px;
+  left: 550px;
+}
+#c3{
+  bottom: 610px;
+  left: 450px;
+}
+#c4{
+  bottom: 615px;
+  left: 530px;
+}
+#c5{
+  bottom: 585px;
+  left: 475px;
+}
+
+/*-CLOUD 2-*/
+#c6{
+  bottom: 700px;
+  left: 200px;
+}
+#c7{
+  bottom: 680px;
+  left: 250px;
+}
+#c8{
+  bottom: 710px;
+  left: 150px;
+}
+#c9{
+  bottom: 715px;
+  left: 230px;
+}
+#c10{
+  bottom: 685px;
+  left: 175px;
+}
+
+#launchHidden:hover ~ #controlPanelContainerChildTest #launchBackground{
+  bottom: -800px;
+  background-color: black;
+}
 #launchHidden:hover ~ #controlPanelContainerChildTest{
   animation-play-state: running;
 }
@@ -870,6 +956,8 @@ z-index: 100;
   top: -65px;
   transform: rotate(-35deg);
 }
+
+/* NOTE: Flytt launchBackground til her */
 /*-END, background-*/
 
 @keyframes shake{

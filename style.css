@@ -1446,15 +1446,15 @@ display:none;
 /*--marsSpots--*/
 .planetMarsSpots{
   position: absolute;
-  background-color: rgb(234, 107, 2);
+  background-color: rgb(179, 64, 0);
 
-  width: 100px;
-  height: 50px;
-
+  /*
   border-style: solid;
   border-width: 3px;
+  */
 }
 #planetMarsSpot1{
+  height: 50px;
   width: 200px;
 
   top: 100px;
@@ -1468,17 +1468,13 @@ display:none;
   border-bottom-left-radius: 100%;
 }
 #planetMarsSpot2{
-  top: 450px;
-  left: 300px;
+  height: 100px;
+  width: 200px;
+
+  top: 200px;
+  left: 200px;
 
   border-top-left-radius: 170%;
-  border-bottom-left-radius: 50%;
-}
-#planetMarsSpot3{
-  top: 100px;
-  left: 400px;
-
-  border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
 }
 /*--END, marsSpots--*/
@@ -1487,10 +1483,38 @@ display:none;
   position: absolute;
 
   height: 200px;
+
   transform: rotate(314deg);
 
   top: -45px;
 }
 /*--END, landedRocket--*/
+/*--buildings--*/
+.houses{
+  position: absolute;
+
+  height: 75px;
+  width: 150px;
+
+  border-style: solid;
+
+  background-color: rgb(78, 103, 126);
+}
+#house1, #house3{ /*to hus på hver sin side av den siste*/
+  left: -80px;
+}
+#house1{
+  top: 300px;
+  left: -80px;
+}
+#house2{
+  top: 250px;
+  left: -75px;
+  z-index: 1;
+}
+#house3{
+  top: 200px;
+}
+/*--buildings--*/
 /*-END, Scene 5*/
 /*-END, SIDE 3-*/

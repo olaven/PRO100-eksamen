@@ -77,7 +77,7 @@ background-color: rgb(200, 190, 191);
   margin-bottom: 30px;
 =======
   margin-bottom: 20px;
->>>>>>> 47d8ef9fd9d0f87902c12119ff814b3159e695e4
+>>>>>>> 7dbe95d5d92d1bd812776ff3ac5d53af20a5f61b
 }
 /*--tegning av bilde1--*/
 #articleImage1Container{
@@ -583,6 +583,9 @@ z-index: 100;
 }
 
 #controlPanelContainerChildTest {
+  /* NOTE: fjern denne linjen etter launchBackground ferdig */
+  /*margin-top: 3000px;*/
+
   position: relative;
   background-color: lightskyblue;
   z-index: 98;
@@ -590,6 +593,9 @@ z-index: 100;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-play-state: paused;
+
+  /* NOTE: sett til Hidden etter launchBackground er ferdig */
+  /*overflow:visible;*/
 }
 
 /*-text-*/
@@ -713,51 +719,71 @@ z-index: 100;
   border-radius: 10px;
 }
 
+
 .usableButtons:hover {
 
 }
-/*
-.usableButtons:active {
-  box-shadow: 0px 3px 0px 0px;
-  transform: translateY(3px);
-}*/
 
+#buttonShadowBensin{
+  width: 90px;
+  height: 40px;
+  bottom: 18px;
+  z-index: 106;
+  left: 295px;
+  background-color: rgb(235, 235, 0);
+}
 #buttonBensin:active{
-  box-shadow: 0px 2px 0px 0px rgb(255, 255, 0);
   transform: translateY(5px);
 }
 #buttonBensin {
-  box-shadow: 0px 7px 0px 0px rgb(235, 235, 0);
   background-color: yellow;
   left: 295px;
 }
 
+#buttonShadowReise{
+  width: 90px;
+  height: 40px;
+  bottom: 18px;
+  z-index: 106;
+  left: 400px;
+  background-color: rgb(153, 196, 210);
+}
 #buttonReise:active{
-  box-shadow: 0px 2px 0px 0px rgb(153, 196, 210);
   transform: translateY(5px);
 }
 #buttonReise {
-  box-shadow: 0px 7px 0px 0px rgb(153, 176, 210);
   background-color: lightblue;
   left: 400px;
 }
 
+#buttonShadowNASA{
+  width: 90px;
+  height: 40px;
+  bottom: 18px;
+  z-index: 106;
+  left: 505px;
+  background-color: rgb(235, 145, 0);
+}
 #buttonNASA:active{
-  box-shadow: 0px 2px 0px 0px rgb(235, 145, 0);
   transform: translateY(5px);
 }
 #buttonNASA {
-  box-shadow: 0px 7px 0px 0px rgb(235, 145, 0);
   background-color: orange;
   left: 505px;
 }
 
+#buttonShadowDyr{
+  width: 90px;
+  height: 40px;
+  bottom: 18px;
+  z-index: 106;
+  left: 610px;
+  background-color: rgb(124, 218, 124);
+}
 #buttonDyr:active{
-  box-shadow: 0px 2px 0px 0px rgb(124, 218, 124);
   transform: translateY(5px);
 }
 #buttonDyr {
-  box-shadow: 0px 7px 0px 0px rgb(124, 218, 124);
   background-color: lightgreen;
   left: 610px;
 }
@@ -779,10 +805,144 @@ z-index: 100;
   width: 40px;
   height: 170px;
   left: 730px;
+
+  /* NOTE: sett tilbake til -69px */
   bottom: -69px;
+
+  background-color: yellow;
+}
+#launchBackground{
+  position: absolute;
+  width: 1000px;
+  height: 1500px;
+  background-color: lightskyblue;
+  bottom: 300px;
+  border: 5px solid green;
+  transition-duration: 25s;
+  transition-property: all
 }
 
-/* HUSK: går i teorien ann å legge shake effekt på alt inni controlPanelContainer, men ikke controlPanelContainer i seg selv. */
+#backgroundStar1{
+  left: 200px;
+  bottom: 1400px;
+}
+#backgroundStar2{
+  left: 256px;
+  bottom: 1300px;
+}
+#backgroundStar3{
+  left: 400px;
+  bottom: 1200px;
+}
+#backgroundStar4{
+  left: 520px;
+  bottom: 1250px;
+}
+#backgroundStar5{
+  left: 150px;
+  bottom: 1050px;
+}
+#backgroundStar6{
+  left: 345px;
+  bottom: 1025px;
+}
+#backgroundStar7{
+  left: 660px;
+  bottom: 1434px;
+}
+#backgroundStar8{
+  left: 100px;
+  bottom: 1190px;
+}
+#backgroundStar9{
+  left: 234px;
+  bottom:1050px;
+}
+#backgroundStar10{
+  left: 543px;
+  bottom: 1150px;
+}
+#backgroundStar11{
+  left: 760px;
+  bottom: 1434px;
+}
+#backgroundStar12{
+  left: 800px;
+  bottom: 1190px;
+}
+#backgroundStar13{
+  left: 734px;
+  bottom:1050px;
+}
+#backgroundStar14{
+  left: 743px;
+  bottom: 1150px;
+}
+#backgroundStar15{
+  left: 650px;
+  bottom: 1090px;
+}
+#backgroundStar16{
+  left: 825px;
+  bottom: 1190px;
+}
+
+.cloud{
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/*-CLOUD 1-*/
+#c1{
+  bottom: 500px;
+  left: 500px;
+}
+#c2{
+  bottom: 480px;
+  left: 550px;
+}
+#c3{
+  bottom: 510px;
+  left: 450px;
+}
+#c4{
+  bottom: 515px;
+  left: 530px;
+}
+#c5{
+  bottom: 485px;
+  left: 475px;
+}
+
+/*-CLOUD 2-*/
+#c6{
+  bottom: 600px;
+  left: 200px;
+}
+#c7{
+  bottom: 640px;
+  left: 200px;
+}
+#c8{
+  bottom: 610px;
+  left: 150px;
+}
+#c9{
+  bottom: 615px;
+  left: 230px;
+}
+#c10{
+  bottom: 645px;
+  left: 265px;
+}
+
+#launchHidden:hover ~ #controlPanelContainerChildTest #launchBackground{
+  bottom: -800px;
+  background-color: black;
+}
 #launchHidden:hover ~ #controlPanelContainerChildTest{
   animation-play-state: running;
 }
@@ -799,8 +959,8 @@ z-index: 100;
 #nextSide {
     background-color: blue;
     transition-property: all;
-    transition-delay: 1s;
-    transition-duration: 17s;
+    transition-delay: 0s;
+    transition-duration: 50s;
     position: absolute;
     width: 40px;
     height: 40px;
@@ -897,6 +1057,8 @@ z-index: 100;
   top: -65px;
   transform: rotate(-35deg);
 }
+
+/* NOTE: Flytt launchBackground til her */
 /*-END, background-*/
 
 @keyframes shake{

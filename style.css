@@ -704,6 +704,15 @@ z-index: 100;
   transform: rotate(-20deg);
   opacity: 0.2;
 }
+.displayContent {
+  margin: auto;
+  padding: 10px;
+  color: green;
+  display: none;
+}
+.displayContent:target {
+  display: block;
+}
 
 .usableButtons {
   display: block;

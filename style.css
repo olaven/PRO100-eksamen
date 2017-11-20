@@ -792,61 +792,49 @@ z-index: 100;
   height: 50px;
   border-radius: 50%;
 }
-.rotation{
-  transform: rotate(360deg);
-}
 
 /*-CLOUD 1-*/
-#cloud1{
-  position: absolute;
-  bottom: 600px;
-  left: 500px;
-  border: 2px solid green;
-  width: 250px;
-  height: 150px;
-}
-
 #c1{
-  bottom: 600px;
+  bottom: 500px;
   left: 500px;
 }
 #c2{
-  bottom: 580px;
+  bottom: 480px;
   left: 550px;
 }
 #c3{
-  bottom: 610px;
+  bottom: 510px;
   left: 450px;
 }
 #c4{
-  bottom: 615px;
+  bottom: 515px;
   left: 530px;
 }
 #c5{
-  bottom: 585px;
+  bottom: 485px;
   left: 475px;
 }
 
 /*-CLOUD 2-*/
 #c6{
-  bottom: 700px;
+  bottom: 600px;
   left: 200px;
 }
 #c7{
-  bottom: 680px;
-  left: 250px;
+  bottom: 640px;
+  left: 200px;
 }
 #c8{
-  bottom: 710px;
+  bottom: 610px;
   left: 150px;
 }
 #c9{
-  bottom: 715px;
+  bottom: 615px;
   left: 230px;
 }
 #c10{
-  bottom: 685px;
-  left: 175px;
+  bottom: 645px;
+  left: 265px;
 }
 
 #launchHidden:hover ~ #controlPanelContainerChildTest #launchBackground{

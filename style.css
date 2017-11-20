@@ -368,22 +368,40 @@ z-index: 100;
   left: 500px;
   z-index: 102;
   animation-name: boarding;
-  animation-duration: 8s;
+  animation-duration: 15s;
   animation-fill-mode: forwards;
 }
 @keyframes boarding {
     0%{
-      left: 450px;
-      bottom: 20px;
-    }
-    80%{
+      left: 500px;
+      transform: scale(1,1) rotate(0);
 
     }
-    100%{
-      height:
+    10%{
+      left:340px;
+      bottom: 0px
+    }
+    20%{
+      transform: scale(0.5,0.5) rotate(35deg);
+    }
+    30%{
+      transform: scale(0.4,0.4)
+      bottom:0px
+    }
+    40%{
+      transform: scale(0.3,0.3)
+    }
+    50%{
+      transform: scale(0.2,0.2)
+    }
+
+    50%{
+      left:80px;
+      bottom: 70px
+
+
     }
 }
-
 
 #sheep{
   position: absolute;
@@ -418,7 +436,7 @@ z-index: 100;
   z-index: 105;
 }
 
-#skrift{
+#textRocket{
   position: absolute;
   width: 200px;
   height: 120px;
@@ -429,8 +447,33 @@ z-index: 100;
   z-index:106;
 }
 
-#skrift:hover{
-  color:yellow;
+#textRocketLaunch{
+  position: absolute;
+  width: 200px;
+  height: 120px;
+  bottom: 250px;
+  left: 85px;
+  font-family: "Bangers";
+  animation-name: textRocketLaunch;
+  animation-duration: 2s;
+  animation-delay: 10s;
+  z-index:107;
+}
+
+@keyframes textRocketLaunch {
+0%{
+  display:none;
+  color:white;
+}
+50%{
+color:white;
+display:none;
+}
+100%{
+  color:green;
+  display:block;
+}
+
 }
 
 

@@ -926,8 +926,9 @@ z-index: 100;
   height: 70px;
   left: 265px;
   top: 265px;
-  border: 2px solid rgb(213, 205, 3);
+  border: 0px solid;
   border-radius: 100%;
+  animation: sunGlow 7s linear infinite;
 }
 #sunDiv {
   z-index: 50;
@@ -1022,7 +1023,6 @@ z-index: 100;
   height: 7px;
   left: 10px;
   top: 13px;
-  transform: rotate(60deg);
   border: 0px solid;
   border-radius: 100%;
 }
@@ -1033,7 +1033,6 @@ z-index: 100;
   height: 3px;
   left: 5px;
   top: 13px;
-  transform: rotate(60deg);
   border: 0px solid;
   border-radius: 100%;
 }
@@ -1048,6 +1047,26 @@ z-index: 100;
   height: 40px;
   left: 280px;
   top: 475px;
+  border: 0px solid;
+  border-radius: 100%;
+}
+#jupiterSpot1 {
+  position: absolute;
+  background-color: rgb(208, 210, 182);
+  width: 10px;
+  height: 10px;
+  left: 15px;
+  top: 13px;
+  border: 0px solid;
+  border-radius: 100%;
+}
+#jupiterSpot2 {
+  position: absolute;
+  background-color: rgb(208, 210, 182);
+  width: 5px;
+  height: 5px;
+  left: 7px;
+  top: 13px;
   border: 0px solid;
   border-radius: 100%;
 }
@@ -1117,7 +1136,138 @@ z-index: 100;
     transform: rotate(360deg);
   }
 }
+@keyframes sunGlow {
+  0% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: rgb(255, 181, 18);
+  }
+  100% {
+    background-color: yellow;
+  }
+}
 /*-END, solarsystem-*/
+/*-systemStars-*/
+.systemStars {
+  position: absolute;
+  background-color: whitesmoke;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  z-index: 41;
+}
+#systemStar1 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 100px;
+  top: 80px;
+}
+#systemStar2 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 480px;
+  top: 110px;
+}
+#systemStar3 {
+  animation: systemStarglow 2s infinite alternate-reverse linear;
+  left: 900px;
+  top: 70px;
+}
+#systemStar4 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 120px;
+  top: 230px;
+}
+#systemStar5 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 790px;
+  top: 200px;
+}
+#systemStar6 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 530px;
+  top: 210px;
+}
+#systemStar7 {
+  animation: systemStarglow 2s infinite alternate-reverse linear;
+  left: 300px;
+  top: 300px;
+}
+#systemStar8 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 600px;
+  top: 330px;
+}
+#systemStar9 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 860px;
+  top: 310px;
+}
+#systemStar10 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 50px;
+  top: 400px;
+}
+#systemStar11 {
+  animation: systemStarglow 2s infinite alternate-reverse linear;
+  left: 360px;
+  top: 400px;
+}
+#systemStar12 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 740px;
+  top: 400px;
+}
+#systemStar13 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 180px;
+  top: 510px;
+}
+#systemStar14 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 420px;
+  top: 490px;
+}
+#systemStar15 {
+  animation: systemStarglow 2s infinite alternate-reverse linear;
+  left: 930px;
+  top: 520px;
+}
+#systemStar16 {
+  animation: systemStarglow 3s infinite alternate-reverse linear;
+  left: 40px;
+  top: 630px;
+}
+#systemStar17 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 400px;
+  top: 610px;
+}
+#systemStar18 {
+  animation: systemStarglow 2s infinite alternate-reverse linear;
+  left: 700px;
+  top: 600px;
+}
+#systemStar19 {
+  animation: systemStarglow 1s infinite alternate-reverse linear;
+  left: 300px;
+  top: 50px;
+}
+#systemStar20 {
+  animation: systemStarglow 2s infinite alternate-reverse linear;
+  left: 200px;
+  top: 650px;
+}
+@keyframes systemStarglow {
+  from{
+    background-color: rgba(255,255,255,0.5);
+    transform: scaleX(1.2);
+  }
+  to{
+    background-color: rgba(255,255,255);
+    transform: scaleY(1.2);
+  }
+}
+/*-END, systemStars-*/
 /*-END, Scene 4*/
 /*-Scene 5*/
 /*--marsContainer*/

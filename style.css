@@ -713,8 +713,9 @@ z-index: 100;
 
 /*-text-*/
 #fremtidensArkText {
-  text-align: center;
   position: absolute;
+  text-align: center;
+  letter-spacing: 3px;
   color: white;
   font-size: 50px;
   font-family: Bangers;
@@ -854,6 +855,8 @@ z-index: 100;
   transform: translateY(5px);
 }
 #buttonBensin {
+  font-family: 'Impact';
+  font-size: 20px;
   background-color: yellow;
   left: 295px;
 }
@@ -870,6 +873,8 @@ z-index: 100;
   transform: translateY(5px);
 }
 #buttonReise {
+  font-family: 'Impact';
+  font-size: 20px;
   background-color: lightblue;
   left: 400px;
 }
@@ -886,6 +891,8 @@ z-index: 100;
   transform: translateY(5px);
 }
 #buttonInstruksjoner {
+  font-family: 'Impact';
+  font-size: 20px;
   background-color: orange;
   left: 505px;
 }
@@ -902,6 +909,8 @@ z-index: 100;
   transform: translateY(5px);
 }
 #buttonDyr {
+  font-family: 'Impact';
+  font-size: 20px;
   background-color: lightgreen;
   left: 610px;
 }
@@ -1548,10 +1557,10 @@ z-index: 100;
 /*--planetMarsDiv--*/
 #planetMarsDiv{
   /*bruker animasjon fra solsystem*/
-  /*animation-name: rotateSolarsystem;
+  animation-name: rotateSolarsystem;
   animation-duration: 20s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;*/
+  animation-timing-function: linear;
 }
 /*--END, planetMarsDiv--*/
 

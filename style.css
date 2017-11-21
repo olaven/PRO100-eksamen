@@ -1784,5 +1784,47 @@ z-index: 100;
   background-color: lightskyblue;
 }
 /*--buildings--*/
+/*--marsStars--*/
+#marsStar1{
+  top: 20px;
+  left: 100px;
+}
+#marsStar2{
+  top: 15px;
+  left: 20px;
+}
+#marsStar3{
+  top: 630px;
+  left: 700px;
+}
+#marsStar4{
+  top: 500px;
+  left: 30px;
+}
+#marsStar5{
+  top: 300px;
+  left: 50px;
+}
+#marsStar6{
+  top: 150px;
+  left: 900px;
+}
+#marsStar7{
+  top: 50px;
+  left: 770px;
+}
+#marsStar8{
+  top: 685px;
+  left: 575px;
+}
+#marsStar9{
+  top: 400px;
+  left: 860px;
+}
+#marsStar10{
+  top: 600px;
+  left: 880px;
+}
+/*--END, marsStars--*/
 /*-END, Scene 5*/
 /*-END, SIDE 3-*/

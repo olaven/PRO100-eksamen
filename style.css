@@ -1053,6 +1053,16 @@ z-index: 100;
   bottom: -800px;
   background-color: black;
 }
+#launchHidden:hover{
+  /*blokkerer knapper når flyet letter*/
+  width: 600px;
+  height: 300px;
+  top: 600px;
+  left: 200px;
+  border-top-left-radius: 190%;
+  border-bottom-right-radius: 170%;
+
+}
 #launchHidden:hover ~ #controlPanelContainerChildTest{
   animation-play-state: running;
 }
@@ -1217,7 +1227,11 @@ z-index: 100;
   border: 1px solid white;
   background-color: black;
   z-index: 98;
+  display: block;
+  animation: 0s displayNone 5s linear 1;
+  animation-fill-mode: forwards;
 }
+
 
 /*-solarsystem-*/
 .planetRotation {
@@ -1229,8 +1243,8 @@ z-index: 100;
 }
 
 #shipDiv {
-  animation: rotateShip15s 13.25s linear 1 normal forwards,
-           rotateShip15s 20s linear 13.25s infinite normal;
+  animation: rotateShip 13.25s linear 1 normal forwards,
+           rotateShip 20s linear 13.25s infinite normal;
   position: absolute;
   z-index: 49;
 }
@@ -1257,8 +1271,9 @@ z-index: 100;
   height: 70px;
   left: 265px;
   top: 265px;
-  animation: sunGlow 7s linear infinite;
+  animation: sunGlow 6s linear infinite;
 }
+
 #sunDiv {
   z-index: 50;
 }
@@ -1411,6 +1426,23 @@ z-index: 100;
   animation: rotateSolarsystem 40s linear infinite;
   z-index: 42;
 }
+@keyframes displayNone {
+  0%{
+    display: block;
+  }
+  100%{
+    display:none;
+  }
+}
+@keyframes display {
+  0%{
+    display: none;
+  }
+  100%{
+    display: visible; /*eller block? */
+  }
+}
+
 @keyframes shipAnimation {
   0%{
     left: 270px;
@@ -1423,7 +1455,7 @@ z-index: 100;
     transform: rotate(330deg);
   }
 }
-@keyframes rotateShip15s {
+@keyframes rotateShip {
   0% {
     transform: rotate(0deg);
   }

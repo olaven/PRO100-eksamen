@@ -1232,170 +1232,137 @@ z-index: 100;
   left: 200px;
   top: 50px;
 }
-#sun {
+
+
+
+.planets, .spots{
   position: absolute;
+  border-radius: 50%;
+  border: 0px solid;
+}
+
+#sun {
   background-color: yellow;
   width: 70px;
   height: 70px;
   left: 265px;
   top: 265px;
-  border: 0px solid;
-  border-radius: 100%;
   animation: sunGlow 7s linear infinite;
 }
 #sunDiv {
   z-index: 50;
 }
 #mercury {
-  position: absolute;
   background-color: lightgrey;
   width: 15px;
   height: 15px;
   left: 292.5px;
   top: 345px;
-  border: 0px solid);
-  border-radius: 100%;
 }
 #mercuryDiv {
   animation: rotateSolarsystem 5s linear infinite;
   z-index: 49;
 }
 #venus {
-  position: absolute;
   background-color: brown;
   width: 20px;
   height: 20px;
   left: 290px;
   top: 205px;
-  border: 0px solid);
-  border-radius: 100%;
 }
 #venusDiv {
   animation: rotateSolarsystem 10s linear infinite;
   z-index: 48;
 }
 #earth {
-  position: absolute;
   background-color: lightskyblue;
   width: 30px;
   height: 30px;
   left: 285px;
   top: 400px;
-  border: 0px solid;
-  border-radius: 100%;
 }
 #earthSpot1 {
-  position: absolute;
   background-color: lightgreen;
   width: 10px;
   height: 15px;
   left: 5px;
   top: 0px;
   transform: rotate(60deg);
-  border: 0px solid;
-  border-radius: 100%;
 }
 #earthSpot2 {
-  position: absolute;
   background-color: lightgreen;
   width: 20px;
   height: 10px;
   left: 5px;
   top: 19px;
-  border: 0px solid;
-  border-radius: 100%;
 }
 #earthSpot3 {
-  position: absolute;
   background-color: lightgreen;
   width: 10px;
   height: 10px;
   left: 19px;
   top: 7px;
-  border: 0px solid;
-  border-radius: 100%;
 }
 #earthDiv {
   animation: rotateSolarsystem 15s linear infinite;
   z-index: 47;
 }
 #mars {
-  position: absolute;
   background-color: rgb(238, 128, 38);
   width: 25px;
   height: 25px;
   left: 287.5px;
   top: 130px;
-  border: 0px solid;
-  border-radius: 100%;
 }
 #marsSpot1 {
-  position: absolute;
   background-color: rgb(179, 64, 0);
   width: 7px;
   height: 7px;
   left: 10px;
   top: 13px;
-  border: 0px solid;
-  border-radius: 100%;
 }
 #marsSpot2 {
-  position: absolute;
   background-color: rgb(179, 64, 0);
   width: 3px;
   height: 3px;
   left: 5px;
   top: 13px;
-  border: 0px solid;
-  border-radius: 100%;
 }
 #marsDiv {
   animation: rotateSolarsystem 20s linear infinite;
   z-index: 46;
 }
 #jupiter {
-  position: absolute;
   background-color: beige;
   width: 40px;
   height: 40px;
   left: 280px;
   top: 475px;
-  border: 0px solid;
-  border-radius: 100%;
 }
 #jupiterSpot1 {
-  position: absolute;
   background-color: rgb(208, 210, 182);
   width: 10px;
   height: 10px;
   left: 15px;
   top: 13px;
-  border: 0px solid;
-  border-radius: 100%;
 }
 #jupiterSpot2 {
-  position: absolute;
   background-color: rgb(208, 210, 182);
   width: 5px;
   height: 5px;
   left: 7px;
   top: 13px;
-  border: 0px solid;
-  border-radius: 100%;
 }
 #jupiterDiv {
   animation: rotateSolarsystem 25s linear infinite;
   z-index: 45;
 }
 #saturn {
-  position: absolute;
   background-color: lightyellow;
   width: 40px;
   height: 40px;
   left: 280px;
   top: 30px;
-  border: 0px solid);
-  border-radius: 100%;
 }
 #saturnbelt {
   position: absolute;
@@ -1413,28 +1380,22 @@ z-index: 100;
   z-index: 44;
 }
 #uranus {
-  position: absolute;
   background-color: lightblue;
   width: 30px;
   height: 30px;
   left: 285px;
   top: 575px;
-  border: 0px solid;
-  border-radius: 100%;
 }
 #uranusDiv {
   animation: rotateSolarsystem 35s linear infinite;
   z-index: 43;
 }
 #neptune {
-  position: absolute;
   background-color: rgb(65, 118, 255);
   width: 30px;
   height: 30px;
   left: 285px;
   top: -50px;
-  border: 0px solid);
-  border-radius: 100%;
 }
 #neptuneDiv {
   animation: rotateSolarsystem 40s linear infinite;

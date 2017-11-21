@@ -1256,6 +1256,15 @@ z-index: 100;
   height: 70px;
   left: 265px;
   top: 265px;
+  animation: sunGlow 6s linear infinite;
+}
+
+#ekstraGlow {
+  background-color: orange;
+  width: 65px;
+  height: 65px;
+  left: 2px;
+  top: 2.2px;
   animation: sunGlow 7s linear infinite;
 }
 #sunDiv {

@@ -575,7 +575,7 @@ z-index: 100;
   left: 52px;
   z-index: 98;
   animation-name: swapSceneAnimation;
-  animation-delay: 5s;
+  animation-delay: 27s;
   animation-fill-mode: forwards;
 
 }
@@ -698,7 +698,7 @@ z-index: 100;
   letter-spacing: 3px;
   color: white;
   font-size: 50px;
-  font-family: Impact;
+  font-family:'Bangers';
   left: 336px;
   top: -15px;
   z-index: 150;
@@ -800,6 +800,8 @@ z-index: 100;
   opacity: 0.2;
 }
 .displayContent {
+  font-family: 'Teko';
+  letter-spacing: 1.5px;
   margin: auto;
   padding: 10px;
   color: green;

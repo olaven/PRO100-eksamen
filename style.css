@@ -1213,6 +1213,7 @@ z-index: 100;
   z-index: 98;
 }
 
+
 /*-solarsystem-*/
 .planetRotation {
   position: absolute;
@@ -1405,6 +1406,7 @@ z-index: 100;
   animation: rotateSolarsystem 40s linear infinite;
   z-index: 42;
 }
+
 @keyframes shipAnimation {
   0%{
     left: 270px;

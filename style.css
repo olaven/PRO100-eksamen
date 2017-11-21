@@ -390,6 +390,7 @@ background-color: rgb(200, 190, 191);
   top: -65px;
   transform: rotate(-35deg);
 }
+
 #ground {
 position: absolute;
 width:1000px;
@@ -400,7 +401,7 @@ z-index: 100;
 }
 /*-END, background-*/
 /*-animals-*/
-#girrafe {
+#girrafe{
   position: absolute;
   width: 150px;
   height: 300px;
@@ -409,7 +410,7 @@ z-index: 100;
   z-index: 102;
   animation: boarding2 20s;
 }
-#sheep,#pig{
+#sheep{
   position: absolute;
   width: 120px;
   height: 70px;
@@ -420,7 +421,13 @@ z-index: 100;
   animation-delay: 4s;
 }
 #pig{
+  position: absolute;
+  width: 120px;
+  height: 70px;
+  bottom: 10px;
+  left: 1000px;
   z-index: 104;
+  animation: boarding 20s;
   animation-delay: 8s;
 }
 @keyframes boarding {
@@ -531,18 +538,6 @@ z-index: 100;
   left: 66px;
   z-index: 105;
 }
-#textRocket{
-  position: absolute;
-  width: 175px;
-  height: 175px;
-  bottom: 250px;
-  left: 97px;
-  color: white;
-  font-family: "Bangers";
-  letter-spacing: 3px;
-  text-align: center;
-  z-index:106;
-}
 #textRocketLaunch{
   position: absolute;
   width: 200px;
@@ -555,7 +550,7 @@ z-index: 100;
   text-align: center;
   animation-name: textRocketLaunch;
   animation-duration: 2s;
-  animation-delay: 5s;
+  animation-delay: 27s;
   animation-iteration-count: 100;
   z-index:108;
 }
@@ -563,15 +558,6 @@ z-index: 100;
 0%{
   color:white;
   }
-  50%{
-    color:white;
-    display:none;
-  }
-  100%{
-    color:green;
-    display:block;
-  }
-}
 50%{
   color: rgb(0,220,0);
 }
@@ -883,6 +869,7 @@ z-index: 100;
   background-color: orange;
   left: 505px;
 }
+
 #buttonShadowDyr{
   width: 90px;
   height: 40px;

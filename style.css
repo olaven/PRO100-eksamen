@@ -312,7 +312,7 @@ background-color: rgb(200, 190, 191);
 /*--END, tegning av bilde1--*/
 /*--END, bilder til artikkel--*/
 /*--tekster til artikkel--*/
-.artikkelTekster{
+.articleTexts{
   position: absolute;
   display: block;
   width: 400px;
@@ -323,7 +323,7 @@ background-color: rgb(200, 190, 191);
 
   font-size: 1.5em;
 }
-.artikkelTekster:hover{
+.articleTexts:hover{
   /*bakgrunn endres for å gjøre tekst tydligere*/
   background-color: rgba(0, 0, 0, 0.1);
 
@@ -331,17 +331,17 @@ background-color: rgb(200, 190, 191);
   border-style: solid;
   border-color: rgba(0,0,0,0.8);
 }
-.artikkelTekster h1, .artikkelTekster h2, .artikkelTekster p{
+.articleTexts h1, .articleTexts h2, .articleTexts p{
   margin-left:40px;
 }
-.artikkelTekster:hover > h2{
+.articleTexts:hover > h2{
   text-decoration: underline;
 }
-#artikkelTekst1{
+#articleText1{
   top: 70px;
   left: 540px;
 }
-#artikkelTekst2{
+#articleText2{
   bottom: -200px;
   left: 50px;
 }

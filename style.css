@@ -1055,6 +1055,16 @@ z-index: 100;
   bottom: -800px;
   background-color: black;
 }
+#launchHidden:hover{
+  /*blokkerer knapper når flyet letter*/
+  width: 600px;
+  height: 300px;
+  top: 600px;
+  left: 200px;
+  border-top-left-radius: 190%;
+  border-bottom-right-radius: 170%;
+
+}
 #launchHidden:hover ~ #controlPanelContainerChildTest{
   animation-play-state: running;
 }
@@ -1219,7 +1229,11 @@ z-index: 100;
   border: 1px solid white;
   background-color: black;
   z-index: 98;
+  display: block;
+  animation: 0s displayNone 5s linear 1;
+  animation-fill-mode: forwards;
 }
+
 
 /*-solarsystem-*/
 .planetRotation {
@@ -1231,8 +1245,8 @@ z-index: 100;
 }
 
 #shipDiv {
-  animation: rotateShip15s 13.25s linear 1 normal forwards,
-           rotateShip15s 20s linear 13.25s infinite normal;
+  animation: rotateShip 13.25s linear 1 normal forwards,
+           rotateShip 20s linear 13.25s infinite normal;
   position: absolute;
   z-index: 49;
 }
@@ -1414,6 +1428,23 @@ z-index: 100;
   animation: rotateSolarsystem 40s linear infinite;
   z-index: 42;
 }
+@keyframes displayNone {
+  0%{
+    display: block;
+  }
+  100%{
+    display:none;
+  }
+}
+@keyframes display {
+  0%{
+    display: none;
+  }
+  100%{
+    display: visible; /*eller block? */
+  }
+}
+
 @keyframes shipAnimation {
   0%{
     left: 270px;
@@ -1426,7 +1457,7 @@ z-index: 100;
     transform: rotate(330deg);
   }
 }
-@keyframes rotateShip15s {
+@keyframes rotateShip {
   0% {
     transform: rotate(0deg);
   }
@@ -1582,10 +1613,10 @@ z-index: 100;
 /*--planetMarsDiv--*/
 #planetMarsDiv{
   /*bruker animasjon fra solsystem*/
-  animation-name: rotateSolarsystem;
+  /*animation-name: rotateSolarsystem;
   animation-duration: 20s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear;*/
 }
 /*--END, planetMarsDiv--*/
 
@@ -1654,7 +1685,6 @@ z-index: 100;
   top: 275px;
   left: -9px;
   transform: rotate(2deg);
-  z-index: 1;
 }
 #houseWindow2 {
   position: absolute;
@@ -1829,7 +1859,65 @@ z-index: 100;
   border-radius: 3px;
   background-color: lightskyblue;
 }
-/*--buildings--*/
+.houseBlock5 {
+  position: absolute;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: rgb(221, 136, 255);
+}
+#house15 {
+  width: 60px;
+  top: 450px;
+  left: 43px;
+  transform: rotate(-35deg);
+}
+#house16 {
+  width: 40px;
+  top: 465px;
+  left: 76px;
+  transform: rotate(-38deg);
+}
+#houseWindow16 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 4px;
+  left: 4px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: lightskyblue;
+}
+#house17 {
+  width: 60px;
+  top: 490px;
+  left: 76px;
+  transform: rotate(-43deg);
+}
+/*--END, buildings--*/
+.crate {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  border-radius: 15px;
+  background-color: rgb(238, 128, 38);
+}
+#crate1 {
+  left: 480px;
+  top: 380px;
+  transform: rotate(-20deg);
+}
+#crate2 {
+  left: 300px;
+  top: 500px;
+  transform: rotate(-50deg);
+}
+#crate3 {
+  left: 400px;
+  top: 470px;
+  transform: rotate(-75deg);
+}
 /*--marsStars--*/
 #marsStar1{
   top: 20px;

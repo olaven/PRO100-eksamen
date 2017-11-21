@@ -29,6 +29,21 @@ background-color: rgb(200, 190, 191);
 
   overflow-y: scroll;
 }
+#articleContainer:active{
+  animation-name: changeToScene2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes changeToScene2 {
+  from{
+    background-color: blue;
+    display: block;
+  }
+  to{
+    background-color: red;
+    display: none;
+  }
+}
 /*--dato--*/
 #dato{
   position: absolute;
@@ -79,11 +94,7 @@ background-color: rgb(200, 190, 191);
   bottom: -320px;
   left: 500px;
 
-<<<<<<< HEAD
-  margin-bottom: 30px;
-=======
   margin-bottom: 20px;
->>>>>>> 7dbe95d5d92d1bd812776ff3ac5d53af20a5f61b
 }
 /*--tegning av bilde1--*/
 #articleImage1Container{

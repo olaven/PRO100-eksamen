@@ -1045,12 +1045,35 @@ z-index: 100;
   left: 265px;
 }
 
+/*--blockButtonsDiv--*/
+#blockButtonsDiv{
+  border-style: solid;
+  display: none;
+
+  position: absolute;
+  z-index: 109;
+
+  width: 405px;
+  height: 170px;
+
+
+  transition-duration: 10s;
+}
+/*--END, blockButtonsDiv--*/
+
 #launchHidden:hover ~ #controlPanelContainerChildTest #launchBackground{
   bottom: -800px;
   background-color: black;
 }
-#launchHidden:hover ~ #blockButtonsDiv{
+#launchHidden:hover ~ #controlPanelContainerChildTest #blockButtonsDiv{
   display: block;
+  background-color: blue;
+}
+#launchHidden:active{
+
+  transition-duration: 2s;
+  display: block;
+  background-color: purple;
 }
 #launchHidden:hover ~ #controlPanelContainerChildTest{
   animation-play-state: running;
@@ -1064,26 +1087,6 @@ z-index: 100;
 #launchHidden:hover ~ #controlPanelContainerChildTest #mountains{
     top: 700px;
 }
-
-/*--blockButtonsDiv--*/
-#blockButtonsDiv{
-  border-style: solid;
-  display: none;
-
-  position: absolute;
-  z-index: 109;
-
-  width: 405px;
-  height: 170px;
-
-  top: 700px;
-  left: 302.5px;
-
-  transition-property: all;
-  transition-delay: 0s;
-  transition-duration: 50s;
-}
-/*--END, blockButtonsDiv--*/
 
 #nextSide {
     background-color: blue;

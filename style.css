@@ -1049,35 +1049,20 @@ z-index: 100;
   left: 265px;
 }
 
-/*--blockButtonsDiv--*/
-#blockButtonsDiv{
-  border-style: solid;
-  display: none;
-
-  position: absolute;
-  z-index: 109;
-
-  width: 405px;
-  height: 170px;
-
-
-  transition-duration: 10s;
-}
-/*--END, blockButtonsDiv--*/
-
 #launchHidden:hover ~ #controlPanelContainerChildTest #launchBackground{
   bottom: -800px;
   background-color: black;
 }
-#launchHidden:hover ~ #controlPanelContainerChildTest #blockButtonsDiv{
-  display: block;
-  background-color: blue;
-}
-#launchHidden:active{
+#launchHidden:hover{
+  /*blokkerer knapper når flyet letter*/
+  width: 600px;
+  height: 300px;
+  top: 600px;
+  left: 200px;
+  border-style: solid;
+  border-top-left-radius: 190%;
+  border-bottom-right-radius: 170%;
 
-  transition-duration: 2s;
-  display: block;
-  background-color: purple;
 }
 #launchHidden:hover ~ #controlPanelContainerChildTest{
   animation-play-state: running;

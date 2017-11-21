@@ -1650,30 +1650,198 @@ z-index: 100;
 }
 /*--END, landedRocket--*/
 /*--buildings--*/
-.houses{
+.houseBlock1 {
   position: absolute;
   height: 25px;
-  border-style: 0px;
+  border: 1px solid black;
   border-radius: 3px;
-  background-color: rgb(78, 103, 126);
+  background-color: lightgreen;
 }
-#house1{
+#house1 {
   width: 40px;
   top: 300px;
   left: 11px;
   transform: rotate(-2deg);
-
 }
-#house2{
+#house2 {
   width: 60px;
-  top: 250px;
-  left: -10px;
-  trasnform: rotate(-5deg);
+  top: 275px;
+  left: -9px;
+  transform: rotate(2deg);
   z-index: 1;
 }
-#house3{
+#houseWindow2 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 4px;
+  left: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: lightskyblue;
+}
+#house3 {
+  width: 30px;
+  top: 250px;
+  left: 22px;
+  transform: rotate(5deg);
+}
+.houseBlock2 {
+  position: absolute;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: lightyellow;
+}
+#house4 {
   width: 40px;
-  top: 200px;
+  top: 80px;
+  left: 453px;
+  transform: rotate(-50deg);
+}
+#house5 {
+  width: 60px;
+  top: 56px;
+  left: 427px;
+  transform: rotate(-54deg);
+}
+#houseWindow5 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 4px;
+  left: 37px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: lightskyblue;
+}
+#house6 {
+  width: 40px;
+  top: 49px;
+  left: 408px;
+  transform: rotate(-60deg);
+}
+#house7 {
+  width: 50px;
+  top: 32px;
+  left: 380px;
+  transform: rotate(-67deg);
+}
+#houseWindow7 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 4px;
+  left: 27px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: lightskyblue;
+}
+.houseBlock3 {
+  position: absolute;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: rgb(252, 124, 124);
+}
+#house8 {
+  width: 40px;
+  top: 50px;
+  left: 150px;
+  transform: rotate(-117deg);
+}
+#house9 {
+  width: 50px;
+  top: 35px;
+  left: 167px;
+  transform: rotate(-114deg);
+}
+#houseWindow9 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 4px;
+  left: 30px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: lightskyblue;
+}
+#house10 {
+  width: 70px;
+  top: 16px;
+  left: 178px;
+  transform: rotate(-111deg);
+}
+#houseWindow10 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 5px;
+  left: 43px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: lightskyblue;
+}
+#houseWindow100 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 5px;
+  left: 15px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: lightskyblue;
+}
+#house11 {
+  width: 50px;
+  top: 18px;
+  left: 217px;
+  transform: rotate(-105deg);
+}
+#houseWindow11 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 4px;
+  left: 30px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: lightskyblue;
+}
+#house12 {
+  width: 40px;
+  top: 18px;
+  left: 250px;
+  transform: rotate(-98deg);
+}
+.houseBlock4 {
+  position: absolute;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: rgb(255, 186, 82);
+}
+#house13 {
+  width: 30px;
+  top: 197px;
+  left: 534px;
+  transform: rotate(-20deg);
+}
+#house14 {
+  width: 50px;
+  top: 170px;
+  left: 523px;
+  transform: rotate(-25deg);
+}
+#houseWindow14 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 4px;
+  left: 30px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: lightskyblue;
 }
 /*--buildings--*/
 /*-END, Scene 5*/

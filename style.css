@@ -721,7 +721,7 @@ z-index: 100;
   position: absolute;
   color: white;
   font-size: 50px;
-  font-family: Bangers;
+  font-family: Impact;
   left: 336px;
   top: -15px;
   z-index: 150;
@@ -1236,6 +1236,24 @@ z-index: 100;
   left: 200px;
   top: 50px;
 }
+
+#shipDiv {
+  animation: rotateShip15s 13.25s linear 1 normal forwards,
+           rotateShip15s 20s linear 13.25s infinite normal;
+  position: absolute;
+  z-index: 49;
+}
+#systemShip{
+  transform: rotate(270deg);
+  position: absolute;
+  height: 20px;
+  left: 287.5px;
+  top: 130px;
+  animation-name: shipAnimation;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+}
+
 #sun {
   position: absolute;
   background-color: yellow;
@@ -1444,6 +1462,27 @@ z-index: 100;
   animation: rotateSolarsystem 40s linear infinite;
   z-index: 42;
 }
+@keyframes shipAnimation {
+  0%{
+    left: 270px;
+    top: 404px;
+    transform: rotate(270deg);
+  }
+  100%{
+    left: 150px;
+    top: 354px;
+    transform: rotate(330deg);
+  }
+}
+@keyframes rotateShip15s {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 @keyframes rotateSolarsystem {
   0% {

@@ -312,7 +312,7 @@ background-color: rgb(200, 190, 191);
 /*--END, tegning av bilde1--*/
 /*--END, bilder til artikkel--*/
 /*--tekster til artikkel--*/
-.artikkelTekster{
+.articleTexts{
   position: absolute;
   display: block;
   width: 400px;
@@ -323,7 +323,7 @@ background-color: rgb(200, 190, 191);
 
   font-size: 1.5em;
 }
-.artikkelTekster:hover{
+.articleTexts:hover{
   /*bakgrunn endres for å gjøre tekst tydligere*/
   background-color: rgba(0, 0, 0, 0.1);
 
@@ -331,17 +331,17 @@ background-color: rgb(200, 190, 191);
   border-style: solid;
   border-color: rgba(0,0,0,0.8);
 }
-.artikkelTekster h1, .artikkelTekster h2, .artikkelTekster p{
+.articleTexts h1, .articleTexts h2, .articleTexts p{
   margin-left:40px;
 }
-.artikkelTekster:hover > h2{
+.articleTexts:hover > h2{
   text-decoration: underline;
 }
-#artikkelTekst1{
+#articleText1{
   top: 70px;
   left: 540px;
 }
-#artikkelTekst2{
+#articleText2{
   bottom: -200px;
   left: 50px;
 }
@@ -559,17 +559,18 @@ z-index: 100;
   height: 175px;
   bottom: 250px;
   left: 85px;
+  color:white;
   font-family: "Bangers";
   letter-spacing: 3px;
   text-align: center;
   animation-name: textRocketLaunch;
   animation-duration: 2s;
-  animation-delay: 15s;
-  z-index:107;
+  animation-delay: 5s;
+  animation-iteration-count: 100;
+  z-index:108;
 }
 @keyframes textRocketLaunch {
 0%{
-  display:none;
   color:white;
   }
   50%{
@@ -579,6 +580,37 @@ z-index: 100;
   100%{
     color:green;
     display:block;
+  }
+}
+50%{
+  color: rgb(0,220,0);
+}
+100%{
+  color:white;
+}
+
+}
+
+#swapScene{
+  position: absolute;
+  width: 255px;
+  height: 641px;
+  bottom: 18px;
+  left: 52px;
+  z-index: 98;
+  animation-name: swapSceneAnimation;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes swapSceneAnimation{
+  0%{
+    z-index: 98;
+  }
+
+  100%{
+    z-index: 120;
   }
 }
 /*-END, rocket-*/

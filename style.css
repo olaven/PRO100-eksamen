@@ -404,7 +404,7 @@ z-index: 100;
 }
 /*-END, background-*/
 /*-animals-*/
-#girrafe{
+#girrafe {
   position: absolute;
   width: 150px;
   height: 300px;
@@ -413,7 +413,7 @@ z-index: 100;
   z-index: 102;
   animation: boarding2 20s;
 }
-#sheep{
+#sheep,#pig{
   position: absolute;
   width: 120px;
   height: 70px;
@@ -424,13 +424,7 @@ z-index: 100;
   animation-delay: 4s;
 }
 #pig{
-  position: absolute;
-  width: 120px;
-  height: 70px;
-  bottom: 10px;
-  left: 1000px;
   z-index: 104;
-  animation: boarding 20s;
   animation-delay: 8s;
 }
 @keyframes boarding {
@@ -860,7 +854,6 @@ z-index: 100;
   background-color: orange;
   left: 505px;
 }
-
 #buttonShadowDyr{
   width: 90px;
   height: 40px;

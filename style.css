@@ -390,6 +390,7 @@ background-color: rgb(200, 190, 191);
   top: -65px;
   transform: rotate(-35deg);
 }
+
 #ground {
 position: absolute;
 width:1000px;
@@ -537,18 +538,6 @@ z-index: 100;
   left: 66px;
   z-index: 105;
 }
-#textRocket{
-  position: absolute;
-  width: 175px;
-  height: 175px;
-  bottom: 250px;
-  left: 97px;
-  color: white;
-  font-family: "Bangers";
-  letter-spacing: 3px;
-  text-align: center;
-  z-index:106;
-}
 #textRocketLaunch{
   position: absolute;
   width: 200px;
@@ -561,7 +550,7 @@ z-index: 100;
   text-align: center;
   animation-name: textRocketLaunch;
   animation-duration: 2s;
-  animation-delay: 5s;
+  animation-delay: 27s;
   animation-iteration-count: 100;
   z-index:108;
 }
@@ -569,15 +558,6 @@ z-index: 100;
 0%{
   color:white;
   }
-  50%{
-    color:white;
-    display:none;
-  }
-  100%{
-    color:green;
-    display:block;
-  }
-}
 50%{
   color: rgb(0,220,0);
 }
@@ -1805,5 +1785,47 @@ z-index: 100;
   background-color: lightskyblue;
 }
 /*--buildings--*/
+/*--marsStars--*/
+#marsStar1{
+  top: 20px;
+  left: 100px;
+}
+#marsStar2{
+  top: 15px;
+  left: 20px;
+}
+#marsStar3{
+  top: 630px;
+  left: 700px;
+}
+#marsStar4{
+  top: 500px;
+  left: 30px;
+}
+#marsStar5{
+  top: 300px;
+  left: 50px;
+}
+#marsStar6{
+  top: 150px;
+  left: 900px;
+}
+#marsStar7{
+  top: 50px;
+  left: 770px;
+}
+#marsStar8{
+  top: 685px;
+  left: 575px;
+}
+#marsStar9{
+  top: 400px;
+  left: 860px;
+}
+#marsStar10{
+  top: 600px;
+  left: 880px;
+}
+/*--END, marsStars--*/
 /*-END, Scene 5*/
 /*-END, SIDE 3-*/

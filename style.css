@@ -312,7 +312,7 @@ background-color: rgb(200, 190, 191);
 /*--END, tegning av bilde1--*/
 /*--END, bilder til artikkel--*/
 /*--tekster til artikkel--*/
-.artikkelTekster{
+.articleTexts{
   position: absolute;
   display: block;
   width: 400px;
@@ -323,7 +323,7 @@ background-color: rgb(200, 190, 191);
 
   font-size: 1.5em;
 }
-.artikkelTekster:hover{
+.articleTexts:hover{
   /*bakgrunn endres for å gjøre tekst tydligere*/
   background-color: rgba(0, 0, 0, 0.1);
 
@@ -331,17 +331,17 @@ background-color: rgb(200, 190, 191);
   border-style: solid;
   border-color: rgba(0,0,0,0.8);
 }
-.artikkelTekster h1, .artikkelTekster h2, .artikkelTekster p{
+.articleTexts h1, .articleTexts h2, .articleTexts p{
   margin-left:40px;
 }
-.artikkelTekster:hover > h2{
+.articleTexts:hover > h2{
   text-decoration: underline;
 }
-#artikkelTekst1{
+#articleText1{
   top: 70px;
   left: 540px;
 }
-#artikkelTekst2{
+#articleText2{
   bottom: -200px;
   left: 50px;
 }
@@ -353,7 +353,7 @@ background-color: rgb(200, 190, 191);
   background-color: lightskyblue;
   z-index: 200px;
 }
-
+/*-background-*/
 #mountainLeft1 {
   position: absolute;
   background-color: darkgreen;
@@ -383,7 +383,7 @@ background-color: rgb(200, 190, 191);
   top: 350px;
   transform: rotate(35deg);
   overflow: hidden;
-  z-index: 98;
+  z-index: 97;
 }
 #mountainRightTop1 {
   position: absolute;
@@ -394,7 +394,7 @@ background-color: rgb(200, 190, 191);
   top: -65px;
   transform: rotate(-35deg);
 }
-#grass {
+#ground {
 position: absolute;
 width:1000px;
 height: 100px;
@@ -402,6 +402,8 @@ bottom: 0px;
 background-color: rgb(172, 99, 72);
 z-index: 100;
 }
+/*-END, background-*/
+/*-animals-*/
 #girrafe{
   position: absolute;
   width: 150px;
@@ -409,7 +411,7 @@ z-index: 100;
   bottom: 10px;
   left: 1000px;
   z-index: 102;
-  animation: boarding2 15s;
+  animation: boarding2 20s;
 }
 #sheep{
   position: absolute;
@@ -418,7 +420,7 @@ z-index: 100;
   bottom: 10px;
   left: 1000px;
   z-index: 103;
-  animation: boarding 15s;
+  animation: boarding 20s;
   animation-delay: 4s;
 }
 #pig{
@@ -428,24 +430,8 @@ z-index: 100;
   bottom: 10px;
   left: 1000px;
   z-index: 104;
-  animation: boarding 15s;
+  animation: boarding 20s;
   animation-delay: 8s;
-}
-#rakett-full{
-  position: absolute;
-  width: 450px;
-  height: auto;
-  bottom: 10px;
-  left: 11px;
-  z-index: 100;
-}
-#rakett-halv{
-  position: absolute;
-  width: 224px;
-  height: auto;
-  bottom: 146px;
-  left: 66px;
-  z-index: 105;
 }
 @keyframes boarding {
     0% {
@@ -475,7 +461,7 @@ z-index: 100;
       height: 30px;
       left: 220px;
       bottom: 146px;
-      transform: rotate(35deg);
+      transform: rotate(15deg);
     }
     90% {
       width: 52px;
@@ -520,7 +506,7 @@ z-index: 100;
       height: 90px;
       left: 235px;
       bottom: 146px;
-      transform: rotate(35deg);
+      transform: rotate(15deg);
     }
     90% {
       width: 30px;
@@ -537,35 +523,64 @@ z-index: 100;
       transform: rotate(0deg);
     }
 }
+/*-END, animals-*/
+/*-rocket-*/
+#rakett-full{
+  position: absolute;
+  width: 450px;
+  height: auto;
+  bottom: 10px;
+  left: 11px;
+  z-index: 100;
+}
+#rakett-halv{
+  position: absolute;
+  width: 224px;
+  height: auto;
+  bottom: 146px;
+  left: 66px;
+  z-index: 105;
+}
 #textRocket{
   position: absolute;
-  width: 200px;
-  height: 120px;
+  width: 175px;
+  height: 175px;
   bottom: 250px;
-  left: 85px;
+  left: 97px;
   color: white;
   font-family: "Bangers";
+  letter-spacing: 3px;
+  text-align: center;
   z-index:106;
 }
-
 #textRocketLaunch{
   position: absolute;
   width: 200px;
-  height: 120px;
+  height: 175px;
   bottom: 250px;
   left: 85px;
   color:white;
   font-family: "Bangers";
+  letter-spacing: 3px;
+  text-align: center;
   animation-name: textRocketLaunch;
   animation-duration: 2s;
   animation-delay: 5s;
   animation-iteration-count: 100;
-  z-index:108
+  z-index:108;
 }
-
 @keyframes textRocketLaunch {
 0%{
   color:white;
+  }
+  50%{
+    color:white;
+    display:none;
+  }
+  100%{
+    color:green;
+    display:block;
+  }
 }
 50%{
   color: rgb(0,220,0);
@@ -598,8 +613,80 @@ z-index: 100;
     z-index: 120;
   }
 }
-
-
+/*-END, rocket-*/
+/*-boardingCloud-*/
+.boardingCloud1 {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  left: -200px;
+  top: 10px;
+  z-index: 98;
+  animation: cloudAnimation 40s linear infinite 10s;
+}
+#boardingCloudPart1 {
+  left: 60px;
+  top: 15px;
+}
+#boardingCloudPart2 {
+  left: 30px;
+  top: 0px;
+}
+#boardingCloudPart3 {
+  left: 0px;
+  top: 20px;
+}
+.boardingCloud2 {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  left: -200px;
+  top: 70px;
+  z-index: 98;
+  animation: cloudAnimation 40s linear infinite 25s;
+}
+#boardingCloudPart4 {
+  left: 0px;
+  top: 15px;
+}
+#boardingCloudPart5 {
+  left: 55px;
+  top: 25px;
+}
+#boardingCloudPart6 {
+  left: 15px;
+  top: 40px;
+}
+.boardingCloud3 {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  left: -200px;
+  top: 250px;
+  z-index: 98;
+  animation: cloudAnimation 40s linear infinite;
+}
+#boardingCloudPart7 {
+  left: 60px;
+  top: 15px;
+}
+#boardingCloudPart8 {
+  left: 30px;
+  top: 35px;
+}
+#boardingCloudPart9 {
+  left: 0px;
+  top: 20px;
+}
+@keyframes cloudAnimation{
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 1000px;
+  }
+}
+/*-END, boardingCloud-*/
 /*-END, Scene 2-*/
 /*-END, SIDE 1-*/
 

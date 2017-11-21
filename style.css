@@ -29,21 +29,6 @@ background-color: rgb(200, 190, 191);
 
   overflow-y: scroll;
 }
-#articleContainer:active{
-  animation-name: changeToScene2;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-@keyframes changeToScene2 {
-  from{
-    background-color: blue;
-    display: block;
-  }
-  to{
-    background-color: red;
-    display: none;
-  }
-}
 /*--dato--*/
 #dato{
   position: absolute;
@@ -93,9 +78,9 @@ background-color: rgb(200, 190, 191);
 #articleImage2{
   bottom: -320px;
   left: 500px;
-
   margin-bottom: 20px;
 }
+
 /*--tegning av bilde1--*/
 #articleImage1Container{
   position: relative;
@@ -1484,104 +1469,98 @@ z-index: 100;
   height: 5px;
   border-radius: 50%;
   z-index: 41;
+
+  animation-name: systemStarglow;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+.systemStars1s{
+  animation-duration: 1s;
+}
+.systemStars2s{
+  animation-duration: 2s;
+}
+.systemStars3s{
+  animation-duration: 3s;
 }
 #systemStar1 {
-  animation: systemStarglow 1s infinite alternate-reverse linear;
   left: 100px;
   top: 80px;
 }
 #systemStar2 {
-  animation: systemStarglow 3s infinite alternate-reverse linear;
   left: 480px;
   top: 110px;
 }
 #systemStar3 {
-  animation: systemStarglow 2s infinite alternate-reverse linear;
   left: 900px;
   top: 70px;
 }
 #systemStar4 {
-  animation: systemStarglow 3s infinite alternate-reverse linear;
   left: 120px;
   top: 230px;
 }
 #systemStar5 {
-  animation: systemStarglow 1s infinite alternate-reverse linear;
   left: 790px;
   top: 200px;
 }
 #systemStar6 {
-  animation: systemStarglow 3s infinite alternate-reverse linear;
   left: 530px;
   top: 210px;
 }
 #systemStar7 {
-  animation: systemStarglow 2s infinite alternate-reverse linear;
   left: 300px;
   top: 300px;
 }
 #systemStar8 {
-  animation: systemStarglow 1s infinite alternate-reverse linear;
   left: 600px;
   top: 330px;
 }
 #systemStar9 {
-  animation: systemStarglow 1s infinite alternate-reverse linear;
   left: 860px;
   top: 310px;
 }
 #systemStar10 {
-  animation: systemStarglow 3s infinite alternate-reverse linear;
   left: 50px;
   top: 400px;
 }
 #systemStar11 {
-  animation: systemStarglow 2s infinite alternate-reverse linear;
   left: 360px;
   top: 400px;
 }
 #systemStar12 {
-  animation: systemStarglow 3s infinite alternate-reverse linear;
   left: 740px;
   top: 400px;
 }
 #systemStar13 {
-  animation: systemStarglow 3s infinite alternate-reverse linear;
   left: 180px;
   top: 510px;
 }
 #systemStar14 {
-  animation: systemStarglow 1s infinite alternate-reverse linear;
   left: 420px;
   top: 490px;
 }
 #systemStar15 {
-  animation: systemStarglow 2s infinite alternate-reverse linear;
   left: 930px;
   top: 520px;
 }
 #systemStar16 {
-  animation: systemStarglow 3s infinite alternate-reverse linear;
   left: 40px;
   top: 630px;
 }
 #systemStar17 {
-  animation: systemStarglow 1s infinite alternate-reverse linear;
   left: 400px;
   top: 610px;
 }
 #systemStar18 {
-  animation: systemStarglow 2s infinite alternate-reverse linear;
   left: 700px;
   top: 600px;
 }
 #systemStar19 {
-  animation: systemStarglow 1s infinite alternate-reverse linear;
   left: 300px;
   top: 50px;
 }
 #systemStar20 {
-  animation: systemStarglow 2s infinite alternate-reverse linear;
   left: 200px;
   top: 650px;
 }

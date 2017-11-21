@@ -1553,6 +1553,7 @@ z-index: 100;
 }
 /*-END, systemStars-*/
 /*-END, Scene 4*/
+
 /*-Scene 5*/
 /*--marsContainer*/
 #marsContainer{
@@ -1563,27 +1564,21 @@ z-index: 100;
 /*--planetMarsDiv--*/
 #planetMarsDiv{
   /*bruker animasjon fra solsystem*/
-  animation-name: rotateSolarsystem;
+  /*animation-name: rotateSolarsystem;
   animation-duration: 20s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear;*/
 }
 /*--END, planetMarsDiv--*/
 
 /*--mars--*/
 #planetMars{
   position: absolute;
-  /*flekker "går over" horistonten*/
   overflow: hidden;
-
   background-color: rgb(238, 128, 38);
-
   border-radius: 50%;
-
   width: 500px;
   height: 500px;
-
-  /*i midten av sin div*/
   top: 50px;
   left: 50px;
 }
@@ -1592,21 +1587,13 @@ z-index: 100;
 .planetMarsSpots{
   position: absolute;
   background-color: rgb(179, 64, 0);
-
-  /*
-  border-style: solid;
-  border-width: 3px;
-  */
 }
 #planetMarsSpot1{
   height: 100px;
   width: 150px;
-
   top: 120px;
   left: 100px;
-
   transform: rotate(-50deg);
-
   border-top-right-radius: 150%;
   border-top-left-radius: 70%;
   border-bottom-right-radius: 30%;
@@ -1615,10 +1602,8 @@ z-index: 100;
 #planetMarsSpot2{
   height: 200px;
   width: 200px;
-
   top: 200px;
   left: 200px;
-
   border-radius: 50%;
   border-bottom-right-radius: 25%;
   border-bottom-left-radius: 30%;
@@ -1627,36 +1612,35 @@ z-index: 100;
 /*--landedRocket--*/
 #landedRocket{
   position: absolute;
-
-  height: 200px;
-
-  transform: rotate(314deg);
-
-  top: -45px;
+  height: 110px;
+  transform: rotate(298deg);
+  top: 100px;
 }
 /*--END, landedRocket--*/
 /*--buildings--*/
 .houses{
   position: absolute;
-
-  height: 75px;
-  width: 150px;
-
-  left: -80px;
-
-  border-style: solid;
-
+  height: 25px;
+  border-style: 0px;
+  border-radius: 3px;
   background-color: rgb(78, 103, 126);
 }
 #house1{
+  width: 40px;
   top: 300px;
+  left: 11px;
+  transform: rotate(-2deg);
+
 }
 #house2{
+  width: 60px;
   top: 250px;
-  left: -75px;
-  z-index: 1; /*stå fremst av de tre*/
+  left: -10px;
+  trasnform: rotate(-5deg);
+  z-index: 1;
 }
 #house3{
+  width: 40px;
   top: 200px;
 }
 /*--buildings--*/

@@ -1203,19 +1203,21 @@ z-index: 100;
   left: 265px;
 }
 
+#blockClick{
+  position: absolute;
+  z-index: 98;
+  width: 405px;
+  height: 50px;
+  bottom: 18px;
+  left: 295px;
+  transition-duration: 15s;
+}
+#launchHidden:hover ~ #controlPanelContainerChildTest #blockClick{
+    z-index: 119;
+}
 #launchHidden:hover ~ #controlPanelContainerChildTest #launchBackground{
   bottom: -800px;
   background-color: black;
-}
-#launchHidden:hover{
-  /*blokkerer knapper når flyet letter*/
-  width: 600px;
-  height: 300px;
-  top: 600px;
-  left: 200px;
-  border-top-left-radius: 190%;
-  border-bottom-right-radius: 170%;
-
 }
 #launchHidden:hover ~ #controlPanelContainerChildTest{
   animation-play-state: running;
@@ -1381,11 +1383,7 @@ z-index: 100;
   border: 1px solid white;
   background-color: black;
   z-index: 98;
-  display: block;
-  animation: 0s displayNone 5s linear 1;
-  animation-fill-mode: forwards;
 }
-
 
 /*-solarsystem-*/
 .planetRotation {
@@ -1397,8 +1395,8 @@ z-index: 100;
 }
 
 #shipDiv {
-  animation: rotateShip 13.25s linear 1 normal forwards,
-           rotateShip 20s linear 13.25s infinite normal;
+  animation: rotateSolarsystem 13.25s linear 1 normal forwards,
+           rotateSolarsystem 20s linear 13.25s infinite normal;
   position: absolute;
   z-index: 49;
 }
@@ -1580,22 +1578,6 @@ z-index: 100;
   animation: rotateSolarsystem 40s linear infinite;
   z-index: 42;
 }
-@keyframes displayNone {
-  0%{
-    display: block;
-  }
-  100%{
-    display:none;
-  }
-}
-@keyframes display {
-  0%{
-    display: none;
-  }
-  100%{
-    display: visible; /*eller block? */
-  }
-}
 
 @keyframes shipAnimation {
   0%{
@@ -1607,14 +1589,6 @@ z-index: 100;
     left: 150px;
     top: 354px;
     transform: rotate(330deg);
-  }
-}
-@keyframes rotateShip {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 
@@ -1758,6 +1732,7 @@ z-index: 100;
 /*-Scene 5*/
 /*--marsContainer*/
 #marsContainer{
+  z-index: 20;
   border-style: solid;
   border-color: white;
 }

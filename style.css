@@ -828,9 +828,6 @@ z-index: 100;
 }
 
 #controlPanelContainerChildTest {
-  /* NOTE: fjern denne linjen etter launchBackground ferdig */
-  /*margin-top: 3000px;*/
-
   position: relative;
   background-color: lightskyblue;
   z-index: 98;
@@ -838,9 +835,6 @@ z-index: 100;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-play-state: paused;
-
-  /* NOTE: sett til Hidden etter launchBackground er ferdig */
-  /*overflow:visible;*/
 }
 
 /*-text-*/
@@ -1062,13 +1056,11 @@ z-index: 100;
   border-radius: 20px;
 }
 #launchHidden{
-  background-color: yellow;
   position: absolute;
   z-index: 109;
   width: 40px;
   height: 170px;
   left: 730px;
-  /* NOTE: sett tilbake til -69px */
   bottom: 30px;
 }
 #launchBackground{
@@ -1226,7 +1218,7 @@ z-index: 100;
 }
 
 #nextSide {
-    background-color: blue;
+    background-color: green;
     transition-property: all;
     transition-delay: 0s;
     transition-duration: 50s;

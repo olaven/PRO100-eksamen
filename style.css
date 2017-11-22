@@ -1759,6 +1759,77 @@ z-index: 100;
   border-color: white;
 }
 /*--END, marsContainer*/
+/*--marsTekster--*/
+.marsTekster{
+  position: absolute;
+  display: inline-block;
+
+  padding: 5px;
+  margin: 10px;
+
+  border-radius: 20%;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+
+  font-family: monospace;
+  font-size: 1.5em;
+
+  transition-duration: 2s;
+}
+.marsTekster:hover{
+  transform: scale(1.03);
+}
+.marsTekster p{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/*--infotekst--*/
+#infoTekst{
+  width: 200px;
+
+  animation-name: infoTekstAni;
+  /*making the text visible with bg-color*/
+  animation-duration: 15s;
+}
+@keyframes infoTekstAni {
+  0%{
+    background-color: black;
+  }
+  85%{
+    background-color: whitesmoke;
+  }
+  100%{
+    background-color: black;
+  }
+}
+/*--END, infotekst--*/
+/*--velkommenTekst--*/
+#velkommenTekst{
+  top: 575px;
+  left: 700px;
+
+  text-decoration: underline;
+
+  animation-name: velkommenTekstAni;
+  animation-duration: 15s;
+  /*starter rett før #infoTekst forsvinner*/
+  animation-delay: 10s;
+  /*skal forbli synlig*/
+  animation-fill-mode: forwards;
+}
+/*må lage to animasjoner på tekstene fordi den
+ene skal bli med whitesmoke-farge der den andre
+skal fades tilbake til black ved 100%*/
+@keyframes velkommenTekstAni {
+  0%{
+    background-color: black;
+  }
+  100%{
+    background-color: whitesmoke;
+  }
+}
+/*--END, velkommenTekst--*/
+/*--END, marsTekster--*/
 /*--planetMarsDiv--*/
 #planetMarsDiv{
   /*bruker animasjon fra solsystem*/

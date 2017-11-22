@@ -1613,10 +1613,10 @@ z-index: 100;
 /*--planetMarsDiv--*/
 #planetMarsDiv{
   /*bruker animasjon fra solsystem*/
-  /*animation-name: rotateSolarsystem;
+  animation-name: rotateSolarsystem;
   animation-duration: 20s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;*/
+  animation-timing-function: linear;
 }
 /*--END, planetMarsDiv--*/
 

@@ -351,6 +351,43 @@ background-color: rgb(200, 190, 191);
   z-index: 200px;
 }
 /*-background-*/
+#forrestFire{
+  position:absolute;
+  width:  2300px;
+	height: 2000px;
+	background-color: orange;
+  border-radius: 1000px;
+	border-radius: 1000px;
+	border-radius: 1000px;
+  z-index:97;
+  left:-450px;
+  top: 400px;
+  opacity:1;
+  animation-name:forrestFireAnimation;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes forrestFireAnimation{
+  0%{
+    top: 400px;
+    background-color:orange;
+    opacity:1;
+  }
+  50%{
+    background-color:orange;
+    top:370px;
+    opacity:0.2;
+  }
+  100%{
+    background-color:orange;
+    opacity:1;
+    top:400px;
+
+  }
+}
+
+
 #mountainLeft1 {
   position: absolute;
   background-color: darkgreen;

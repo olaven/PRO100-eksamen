@@ -10,7 +10,6 @@ html, body {
   width: 1000px;
   height: 700px;
   margin: auto;
-  margin-top: 100px;
   overflow: hidden;
 }
 
@@ -1063,13 +1062,14 @@ z-index: 100;
   border-radius: 20px;
 }
 #launchHidden{
+  background-color: yellow;
   position: absolute;
   z-index: 109;
   width: 40px;
   height: 170px;
   left: 730px;
   /* NOTE: sett tilbake til -69px */
-  bottom: -69px;
+  bottom: 30px;
 }
 #launchBackground{
   position: absolute;

@@ -351,6 +351,7 @@ background-color: rgb(200, 190, 191);
   z-index: 200px;
 }
 /*-background-*/
+/*rainbow*/
 .rainbow{
   position: absolute;
   width:  2300px;
@@ -500,6 +501,8 @@ background-color: rgb(200, 190, 191);
     opacity:0.7;
   }
 }
+/*-END, rainbow-*/
+/*-mountain-*/
 #mountainLeft1 {
   position: absolute;
   background-color: darkgreen;
@@ -540,7 +543,7 @@ background-color: rgb(200, 190, 191);
   top: -65px;
   transform: rotate(-35deg);
 }
-
+/*-END, mountain-*/
 #ground {
 position: absolute;
 width:1000px;

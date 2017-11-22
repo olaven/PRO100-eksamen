@@ -10,7 +10,6 @@ html, body {
   width: 1000px;
   height: 700px;
   margin: auto;
-  margin-top: 100px;
   overflow: hidden;
 }
 
@@ -829,9 +828,6 @@ z-index: 100;
 }
 
 #controlPanelContainerChildTest {
-  /* NOTE: fjern denne linjen etter launchBackground ferdig */
-  /*margin-top: 3000px;*/
-
   position: relative;
   background-color: lightskyblue;
   z-index: 98;
@@ -839,9 +835,6 @@ z-index: 100;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-play-state: paused;
-
-  /* NOTE: sett til Hidden etter launchBackground er ferdig */
-  /*overflow:visible;*/
 }
 
 /*-text-*/
@@ -1071,8 +1064,7 @@ z-index: 100;
   width: 40px;
   height: 170px;
   left: 730px;
-  /* NOTE: sett tilbake til -69px */
-  bottom: -69px;
+  bottom: 30px;
 }
 #launchBackground{
   position: absolute;
@@ -1229,7 +1221,7 @@ z-index: 100;
 }
 
 #nextSide {
-    background-color: blue;
+    background-color: green;
     transition-property: all;
     transition-delay: 0s;
     transition-duration: 50s;

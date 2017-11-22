@@ -965,6 +965,9 @@ z-index: 100;
 .displayContent:target {
   display: block;
 }
+#displayDyr ul li{
+  margin-bottom: -5px;
+}
 .usableButtons {
   display: block;
   position: absolute;

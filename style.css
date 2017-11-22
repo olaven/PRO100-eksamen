@@ -890,7 +890,6 @@ z-index: 100;
   transform: rotate(-30deg);
   z-index: 101;
 }
-
 #windowFrameLeft {
   width: 35px;
   height: 400px;
@@ -966,7 +965,6 @@ z-index: 100;
 .displayContent:target {
   display: block;
 }
-
 .usableButtons {
   display: block;
   position: absolute;
@@ -980,7 +978,6 @@ z-index: 100;
   z-index: 107;
   border-radius: 10px;
 }
-
 #buttonShadowBensin{
   width: 90px;
   height: 40px;
@@ -1003,7 +1000,6 @@ z-index: 100;
   width: 200px;
   left: 100px;
 }
-
 #buttonShadowReise{
   width: 90px;
   height: 40px;
@@ -1021,7 +1017,6 @@ z-index: 100;
   background-color: lightblue;
   left: 400px;
 }
-
 #buttonShadowInstruksjoner{
   width: 90px;
   height: 40px;
@@ -1039,7 +1034,6 @@ z-index: 100;
   background-color: orange;
   left: 505px;
 }
-
 #buttonShadowDyr{
   width: 90px;
   height: 40px;
@@ -1057,7 +1051,6 @@ z-index: 100;
   background-color: lightgreen;
   left: 610px;
 }
-
 #leverPart1 {
   position: absolute;
   width: 10px;
@@ -1075,7 +1068,6 @@ z-index: 100;
   width: 40px;
   height: 170px;
   left: 730px;
-
   /* NOTE: sett tilbake til -69px */
   bottom: -69px;
 }
@@ -1088,7 +1080,6 @@ z-index: 100;
   transition-duration: 25s;
   transition-property: all
 }
-
 #backgroundStar1{
   left: 200px;
   bottom: 1400px;
@@ -1161,7 +1152,6 @@ z-index: 100;
   height: 50px;
   border-radius: 50%;
 }
-
 /*-CLOUD 1-*/
 #c1{
   bottom: 500px;
@@ -1269,7 +1259,6 @@ z-index: 100;
   z-index: 108;
   border-radius: 50%;
 }
-
 #leverPart2{
     transition: all 1s;
     position: absolute;
@@ -1281,9 +1270,7 @@ z-index: 100;
     background-color: grey;
     z-index: 108;
 }
-
 /*-END, controlPanel-*/
-
 /*-background-*/
 #mountains{
     transition-property: all;
@@ -1736,8 +1723,7 @@ z-index: 100;
 /*--marsContainer*/
 #marsContainer{
   z-index: 20;
-  border-style: solid;
-  border-color: white;
+  border: 1px solid white;
 }
 /*--END, marsContainer*/
 /*--marsTekster--*/

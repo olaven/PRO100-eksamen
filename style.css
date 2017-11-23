@@ -1073,7 +1073,8 @@ z-index: 100;
   background-color: lightskyblue;
   bottom: 300px;
   transition-duration: 25s;
-  transition-property: all
+  transition-property: all;
+  overflow: hidden;
 }
 #backgroundStar1{
   left: 200px;
@@ -1216,9 +1217,7 @@ z-index: 100;
 #launchHidden:hover ~ #controlPanelContainerChildTest #leverPart2{
     bottom: 82px;
 }
-#launchHidden:hover ~ #controlPanelContainerChildTest #mountains{
-    top: 700px;
-}
+
 
 #nextSide {
     background-color: green;
@@ -1267,6 +1266,50 @@ z-index: 100;
 }
 /*-END, controlPanel-*/
 /*-background-*/
+.rainbowC{
+  position: absolute;
+  width:  2300px;
+	height: 2000px;
+  border: 20px solid;
+  border-radius: 50%;
+  left:-700px;
+  opacity:0.8;
+}
+#rainbowC1 {
+  border-color: yellow;
+  top: 1200px;
+  z-index: 97;
+}
+#rainbowC2 {
+  border-color: rgb(255, 208, 103);
+  top: 1220px;
+  z-index:96;
+}
+#rainbowC3 {
+  border-color: rgb(255, 103, 74);
+  top: 1240px;
+  z-index:95;
+}
+#rainbowC4 {
+  border-color: rgb(178, 255, 113);
+  top: 1260px;
+  z-index:94;
+}
+#rainbowC5 {
+  border-color: rgb(36, 135, 226);
+  top: 1280px;
+  z-index:93;
+}
+#rainbowC6 {
+  border-color: rgb(184, 47, 249);
+  top: 1300px;
+  z-index:92;
+}
+#rainbowC7 {
+  border-color: rgb(222, 110, 255);
+  top: 1320px;
+  z-index:91;
+}
 #mountains{
     transition-property: all;
     transition-duration: 15s;
@@ -1274,7 +1317,7 @@ z-index: 100;
     width: 1000px;
     height: 271px;
     z-index: 100;
-    top: 104px;
+    bottom: 25px;
     overflow: hidden;
 }
 #mountainLeft {
@@ -1307,7 +1350,7 @@ z-index: 100;
   top: 200px;
   transform: rotate(35deg);
   overflow: hidden;
-  z-index: 99;
+  z-index: 90;
 }
 #mountainRightTop {
   position: absolute;

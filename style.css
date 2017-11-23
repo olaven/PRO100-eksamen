@@ -707,16 +707,15 @@ z-index: 100;
   z-index:108;
 }
 @keyframes textRocketLaunch {
-0%{
-  color:white;
+  0%{
+    color:white;
+    }
+  50%{
+    color: rgb(0,220,0);
   }
-50%{
-  color: rgb(0,220,0);
-}
-100%{
-  color:white;
-}
-
+  100%{
+    color:white;
+  }
 }
 
 #swapScene{
@@ -1421,7 +1420,6 @@ z-index: 100;
   left: 200px;
   top: 50px;
 }
-
 #shipDiv {
   animation: rotateSolarsystem 13.25s linear 1 normal forwards,
            rotateSolarsystem 20s linear 13.25s infinite normal;
@@ -1437,7 +1435,6 @@ z-index: 100;
   animation-duration: 15s;
   animation-fill-mode: forwards;
 }
-
 .planets, .spots{
   position: absolute;
   border-radius: 50%;
@@ -1651,8 +1648,6 @@ z-index: 100;
     transform: rotate(330deg);
   }
 }
-
-
 @keyframes rotateSolarsystem {
   0% {
     transform: rotate(0deg);
@@ -2225,10 +2220,26 @@ skal fades tilbake til black ved 100%*/
   top: 25px;
   transform: rotate(0deg);
 }
+#ufo:hover ~ #ufoTekst{
+  display: inline-block;
+  transition-duration: 0;
+}
 #ufoDiv {
   position: absolute;
   animation: rotateSolarsystem 30s reverse linear infinite;
 }
+/*--ufoTekst--*/
+#ufoTekst{
+  display: inline-block;
+  display: none;
+}
+#ufoTekst p{
+  position: absolute;
+  background-color: whitesmoke;
+  left: 255px;
+  top: -5%;
+}
+/*--END, ufoTekst--*/
 /*-END, ufo-*/
 /*-END, Scene 5*/
 /*-END, SIDE 3-*/

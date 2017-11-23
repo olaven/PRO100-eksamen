@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fremtidens Ark</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:500" rel="stylesheet">
+  </head>
+  <body>
+    <!--SIDE3-->
+    <div id="controlPanelContainer" class="mainContainer">
+      <div id="launchHidden"></div>
+      <!--Dette er nødvendig for å få til shake effekten på containeren.
+         Et child kan ikke påvirke parent med hover, vi faker derfor en
+         parent, som egentlig er sibling.-->
+      <div id="controlPanelContainerChildTest" class="mainContainer">
+        <!--text-->
+        <h1 id="fremtidensArkText">FREMTIDENS ARK</h1>
+        <!--END, text-->
+        <!--windowFrame-->
+        <div id="topFrame" class="windowFrame"></div>
+        <div id="bottomFrame" class="windowFrame"></div>
+        <div id="windowFrameRight" class="windowFrame"></div>
+        <div id="windowFrameLeft" class="windowFrame"></div>
+        <div id="controlBackground" class="windowFrame"></div>
+        <div id="windowShine"></div>
+        <!--END, windowFrame-->
+        <!--controlPanel-->
+        <div id="controlPanel"></div>
+        <p id="controlPanelText">KONTROLLPANEL</p>
+        <div id="display">
+          <div id="displayBensin" class="displayContent">
+            <img id="bensinBilde" src="bilder/fuel.png" alt="Feil i systemet">
+          </div>
+          <div id="displayReise" class="displayContent">
+            Avstanden til Mars er cirka 54,6 millioner kilometer.<br>
+            Avstanden varierer på grunn av planetenes baner
+            og hvor fort de sirkulerer rundt Sola.</br>
+            <p>Estimert reistetid: 150 dager</p>
+          </div>
+          <div id="displayInstruksjoner" class="displayContent">
+            Din jobb er å frakte dyrene trygt til Mars.
+            <p>Hold over spaken for å starte reisen til Mars.</p>
+            <p>Trykk deretter på knappen under spaken når du har nådd utsiden av atmosfæren.</p>
+          </div>
+          <div id="displayDyr" class="displayContent">
+            Dyrene trenger vår hjelp for å overleve katastrofen.
+            <p>Dyr som skal reddes denne reisen:
+            <ul>
+              <li>Giraff</li>
+              <li>Sau</li>
+              <li>Gris</li>
+            </ul>
+          </div>
+          <div id="displayShine"></div>
+        </div>
+        <!--buttons&lever-->
+        <div id ="blockClick"></div>
+        <div id="buttonShadowBensin" class="usableButtons"></div>
+        <a href="#displayBensin"> <div id="buttonBensin" class="usableButtons">BENSIN</div></a>
+        <div id="buttonShadowReise" class="usableButtons"></div>
+        <a href="#displayReise"> <div id="buttonReise" class="usableButtons">REISE</div></a>
+        <div id="buttonShadowInstruksjoner" class="usableButtons" ></div>
+        <a href="#displayInstruksjoner"> <div id="buttonInstruksjoner" class="usableButtons">INSTRUKS</div><a/>
+        <div id="buttonShadowDyr" class="usableButtons" ></div>
+        <a href="#displayDyr"> <div id="buttonDyr" class="usableButtons">DYR</div></a>
+        <div id="leverPart1"></div>
+        <div id="leverPart2"></div>
+        <div id ="launchButton"></div>
+        <a id="nextSide" href ="side4.html"></a>
+        <!--END, buttons&lever-->
+        <!--END, controlPanel-->
+        <!--background-->
+        <div id="launchBackground">
+          <!--cloud1-->
+          <div id="c1" class="cloud"></div>
+          <div id="c2" class="cloud"></div>
+          <div id="c3" class="cloud"></div>
+          <div id="c4" class="cloud"></div>
+          <div id="c5" class="cloud"></div>
+          <!--END, cloud1-->
+          <!--cloud2-->
+          <div id="c6" class="cloud"></div>
+          <div id="c7" class="cloud"></div>
+          <div id="c8" class="cloud"></div>
+          <div id="c9" class="cloud"></div>
+          <div id="c10" class="cloud"></div>
+          <!--END, cloud2-->
+          <!--backgroundStars-->
+          <div id="backgroundStar1" class="systemStars"></div>
+          <div id="backgroundStar2" class="systemStars"></div>
+          <div id="backgroundStar3" class="systemStars"></div>
+          <div id="backgroundStar4" class="systemStars"></div>
+          <div id="backgroundStar5" class="systemStars"></div>
+          <div id="backgroundStar6" class="systemStars"></div>
+          <div id="backgroundStar7" class="systemStars"></div>
+          <div id="backgroundStar8" class="systemStars"></div>
+          <div id="backgroundStar9" class="systemStars"></div>
+          <div id="backgroundStar10" class="systemStars"></div>
+          <div id="backgroundStar11" class="systemStars"></div>
+          <div id="backgroundStar12" class="systemStars"></div>
+          <div id="backgroundStar13" class="systemStars"></div>
+          <div id="backgroundStar14" class="systemStars"></div>
+          <!--END, backgroundStars-->
+          <!--rainbow-->
+          <div id="rainbowC1" class="rainbowC"></div>
+          <div id="rainbowC2" class="rainbowC"></div>
+          <div id="rainbowC3" class="rainbowC"></div>
+          <div id="rainbowC4" class="rainbowC"></div>
+          <div id="rainbowC5" class="rainbowC"></div>
+          <div id="rainbowC6" class="rainbowC"></div>
+          <div id="rainbowC7" class="rainbowC"></div>
+          <!--END, rainbow-->
+          <!--mountains-->
+          <div id="mountains">
+            <div id="mountainLeft">
+              <div id="mountainLeftTop"></div>
+            </div>
+            <div id="mountainRight">
+              <div id="mountainRightTop"></div>
+            </div>
+          </div>
+          <!--END, mountains-->
+        </div>
+      <!--END, background-->
+      </div>
+    </div>
+    <!--audio-->
+    <audio autoplay loop>
+      <source src="lyder/Bakgrunn.mp3" type="audio/mpeg">
+    </audio>
+    <!--END, audio-->
+    <!--END, SIDE3-->
+  </body>
+</html>

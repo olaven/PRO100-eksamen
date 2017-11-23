@@ -1,72 +1,56 @@
 
-html, body {
+html, body{
   background-color: black;
   height: 100%;
   body: 100%;
 }
-
-.mainContainer {
+.mainContainer{
   position: relative;
   width: 1000px;
   height: 700px;
   margin: auto;
   overflow: hidden;
 }
-
-a {
+a{
   text-decoration: none;
 }
-a:visited {
+a:visited{
   color: darkblue;
 }
-
-/*-SIDE 1-*/
-/*-Scene 1--*/
+/*--SIDE 1--*/
 #articleContainer{
-  /*farge som gammelt papir*/
- /*background-color: rgb(243,236,226);*/
-background-color: rgb(200, 190, 191);
-
+  background-color: rgb(200, 190, 191);
   overflow-y: scroll;
 }
 /*--dato--*/
 #dato{
   position: absolute;
-
   top: 0;
   left: 875px;
-
   margin: 10px;
   padding: 10px;
   border-radius: 10%;
-
   /*samme farge som ramme, men svakt*/
   background-color: rgba(143,136,126,0.5);
-
   text-decoration: underline;
 }
-/*END, dato*/
+/*--END, dato--*/
 /*--bilder til artikkel--*/
 .articleImages{
   position: absolute;
   display: inline;
-
   /*ramme rundt*/
   background-color: rgb(143,136,126);
   padding: 15px;
-
   border-radius: 2.5%;
-
   height: 450px;
   width: 450px;
-
   transition-duration: 0.5s;
 }
 .articleImages:hover{
   /*"pop"-effekt*/
   transform-origin: center;
   transform: scale(1.05);
-
   padding: 10px;/*minske bakgrunnsfarge/ramme rundt når størrelsen økes*/
 }
 #articleImage1{
@@ -80,16 +64,12 @@ background-color: rgb(200, 190, 191);
   left: 500px;
   margin-bottom: 20px;
 }
-
 /*--tegning av bilde1--*/
 #articleImage1Container{
   position: relative;
-
   background-color: darkblue;
-
   height: inherit;
   width: inherit;
-
   overflow: hidden;
 }
 /*--planetEarth--*/
@@ -97,15 +77,11 @@ background-color: rgb(200, 190, 191);
   position: absolute;
   /*continenter "går over" horisonten*/
   overflow: hidden;
-
   width: 700px;
   height: 700px;
-
   background-color: lightskyblue;
-
   top: 300px;
   left: -200px;
-
   border-radius: 50%;
 }
 /*--END, planetEarth--*/
@@ -117,12 +93,9 @@ background-color: rgb(200, 190, 191);
 #continent1{
   width: 80px;
   height: 120px;
-
   left: 545px;
   top: 60px;
-
   transform: rotate(120deg);
-
   border-top-right-radius: 20%;
   border-top-left-radius: 40%;
   border-bottom-right-radius: 90%;
@@ -131,10 +104,8 @@ background-color: rgb(200, 190, 191);
 #continent2{
   width: 200px;
   height: 100px;
-
   left: 120px;
   top: 10px;
-
   border-top-right-radius: 60%;
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 80%;
@@ -142,25 +113,19 @@ background-color: rgb(200, 190, 191);
 #continent3{
   width: 250px;
   height: 60px;
-
   left: 300px;
   top: 0;
-
   border-top-right-radius: 60%;
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 80%;
 }
 /*--END,continents--*/
 /*--meteorContainer--*/
-
 #meteorContainer{
   position: relative;
-
   top: -100px;
-
   width: 200px;
   height: 200px;
-
   /*animation-name settes ved hover på bildet*/
   animation-duration: 2s;
   animation-direction: forwards;
@@ -182,40 +147,31 @@ background-color: rgb(200, 190, 191);
 #meteor{
   position: absolute;
   background-color: rgb(55, 26, 4);
-
   width: 75px;
   height: 75px;
-
   top: 200px;
   left: 180px;
-
   border-radius: 50%;
 }
 .meteorTail{
   position: absolute;
-
   height: 100px;
   width: 25px;
-
   border-top-left-radius: 70%;
   border-top-right-radius: 70%;
-
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate-reverse;
 }
 .meteorTailGroup1{
   background-color: rgb(223, 216, 46);
-
   border-style: solid;
   border-color: rgb(194, 40, 7);
-
   animation-name: meteorTailGroup1Pulse;
   animation-duration: 3s;
 }
 .meteorTailGroup2{
   background-color: rgb(194, 40, 7);
-
   animation-name: meteorTailGroup2Pulse;
   animation-duration: 1s;
 }
@@ -226,13 +182,11 @@ background-color: rgb(200, 190, 191);
 #meteorTail2{
   top: 70px;
   left: 260px;
-
   height:150px;
 }
 #meteorTail3{
   top:75px;
   left: 280px;
-
   height: 150px;
 }
 #meteorTail4{
@@ -259,14 +213,10 @@ background-color: rgb(200, 190, 191);
 /*--stars--*/
 .stars{
   position: absolute;
-
   background-color: whitesmoke;
-
   width: 15px;
   height: 15px;
-
   border-radius: 50%;
-
   animation-name: starGlow;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -304,7 +254,6 @@ background-color: rgb(200, 190, 191);
   }
 }
 /*--END, stars--*/
-
 /*--END, tegning av bilde1--*/
 /*--END, bilder til artikkel--*/
 /*--tekster til artikkel--*/
@@ -312,17 +261,13 @@ background-color: rgb(200, 190, 191);
   position: absolute;
   display: block;
   width: 400px;
-
   border-radius: 2.5%;
-
   transition-duration: 1s;
-
   font-size: 1.5em;
 }
 .articleTexts:hover{
   /*bakgrunn endres for å gjøre tekst tydligere*/
   background-color: rgba(0, 0, 0, 0.1);
-
   border-radius: 7.5%;
   border-style: solid;
   border-color: rgba(0,0,0,0.8);
@@ -341,15 +286,14 @@ background-color: rgb(200, 190, 191);
   bottom: -200px;
   left: 50px;
 }
-/*END, tekster til artikkel*/
-
-/*-END, Scene 1-*/
-/*-Scene 2-*/
+/*--END, tekster til artikkel--*/
+/*--END, SIDE1--*/
+/*--SIDE2--*/
 #boardingContainer{
   background-color: lightskyblue;
 }
-/*-background-*/
-/*rainbow*/
+/*--background--*/
+/*--rainbow--*/
 .rainbow{
   position: absolute;
   width:  2300px;
@@ -359,43 +303,43 @@ background-color: rgb(200, 190, 191);
   left:-600px;
   opacity:1;
 }
-#rainbow1 {
+#rainbow1{
   border-color: yellow;
   animation: rainbowAnimation1 3s infinite;
   top: 0px;
   z-index:97;
 }
-#rainbow2 {
+#rainbow2{
   border-color: rgb(255, 208, 103);
   animation: rainbowAnimation2 3s infinite;
   top: 0px;
   z-index:96;
 }
-#rainbow3 {
+#rainbow3{
   border-color: rgb(255, 103, 74);
   animation: rainbowAnimation3 3s infinite;
   top: 0px;
   z-index:95;
 }
-#rainbow4 {
+#rainbow4{
   border-color: rgb(178, 255, 113);
   animation: rainbowAnimation4 3s infinite;
   top: 0px;
   z-index:94;
 }
-#rainbow5 {
+#rainbow5{
   border-color: rgb(36, 135, 226);
   animation: rainbowAnimation5 3s infinite;
   top: 0px;
   z-index:93;
 }
-#rainbow6 {
+#rainbow6{
   border-color: rgb(184, 47, 249);
   animation: rainbowAnimation6 3s infinite;
   top: 0px;
   z-index:92;
 }
-#rainbow7 {
+#rainbow7{
   border-color: rgb(222, 110, 255);
   animation: rainbowAnimation7 3s infinite;
   top: 0px;
@@ -499,9 +443,9 @@ background-color: rgb(200, 190, 191);
     opacity:0.7;
   }
 }
-/*-END, rainbow-*/
-/*-mountain-*/
-#mountainLeft1 {
+/*--END, rainbow--*/
+/*--mountain--*/
+#mountainLeft1{
   position: absolute;
   background-color: darkgreen;
   width: 600px;
@@ -512,7 +456,7 @@ background-color: rgb(200, 190, 191);
   overflow: hidden;
   z-index: 99;
 }
-#mountainLeftTop1  {
+#mountainLeftTop1{
   position: absolute;
   background-color: white;
   width: 100px;
@@ -521,7 +465,7 @@ background-color: rgb(200, 190, 191);
   top: -50px;
   transform: rotate(-45deg);
 }
-#mountainRight1  {
+#mountainRight1{
   position: absolute;
   background-color: green;
   width: 600px;
@@ -532,7 +476,7 @@ background-color: rgb(200, 190, 191);
   overflow: hidden;
   z-index: 90;
 }
-#mountainRightTop1 {
+#mountainRightTop1{
   position: absolute;
   background-color: white;
   width: 100px;
@@ -541,8 +485,8 @@ background-color: rgb(200, 190, 191);
   top: -65px;
   transform: rotate(-35deg);
 }
-/*-END, mountain-*/
-#ground {
+/*--END, mountain--*/
+#ground{
 position: absolute;
 width:1000px;
 height: 100px;
@@ -550,9 +494,9 @@ bottom: 0px;
 background-color: rgb(172, 99, 72);
 z-index: 100;
 }
-/*-END, background-*/
-/*-animals-*/
-#girrafe{
+/*--END, background--*/
+/*--animals--*/
+#giraffe{
   position: absolute;
   width: 150px;
   height: 300px;
@@ -581,99 +525,99 @@ z-index: 100;
   animation: boarding 20s;
   animation-delay: 10s;
 }
-@keyframes boarding {
-    0% {
-      width: 120px;
-      height: 70px;
-      left: 1000px;
-      transform: rotate(0deg);
-    }
-    40% {
-      bottom: 10px;
-      transform: rotate(0deg);
-    }
-    60% {
-      width: 52px;
-      height: 30px;
-      left: 410px;
-      bottom: 10px;
-      transform: rotate(20deg);
-    }
-    65% {
-      left: 410px;
-      bottom: 10px;
-      transform: rotate(35deg);
-    }
-    80% {
-      width: 52px;
-      height: 30px;
-      left: 220px;
-      bottom: 146px;
-      transform: rotate(15deg);
-    }
-    90% {
-      width: 52px;
-      height: 30px;
-      left: 220px;
-      bottom: 146px;
-      transform: rotate(0deg);
-    }
-    100% {
-      width: 52px;
-      height: 30px;
-      left: 130px;
-      bottom: 146px;
-      transform: rotate(0deg);
-    }
+@keyframes boarding{
+  0%{
+    width: 120px;
+    height: 70px;
+    left: 1000px;
+    transform: rotate(0deg);
+  }
+  40%{
+    bottom: 10px;
+    transform: rotate(0deg);
+  }
+  60%{
+    width: 52px;
+    height: 30px;
+    left: 410px;
+    bottom: 10px;
+    transform: rotate(20deg);
+  }
+  65%{
+    left: 410px;
+    bottom: 10px;
+    transform: rotate(35deg);
+  }
+  80%{
+    width: 52px;
+    height: 30px;
+    left: 220px;
+    bottom: 146px;
+    transform: rotate(15deg);
+  }
+  90%{
+    width: 52px;
+    height: 30px;
+    left: 220px;
+    bottom: 146px;
+    transform: rotate(0deg);
+  }
+  100%{
+    width: 52px;
+    height: 30px;
+    left: 130px;
+    bottom: 146px;
+    transform: rotate(0deg);
+  }
 }
-@keyframes boarding2 {
-    0% {
-      width: 150px;
-      height: 300px;
-      left: 1000px;
-      transform: rotate(0deg);
-    }
-    40% {
-      bottom: 10px;
-      transform: rotate(0deg);
-    }
-    60% {
-      width: 30px;
-      height: 90px;
-      left: 410px;
-      bottom: 10px;
-      transform: rotate(20deg);
-    }
-    65% {
-      left: 410px;
-      bottom: 10px;
-      transform: rotate(35deg);
-    }
-    80% {
-      width: 30px;
-      height: 90px;
-      left: 235px;
-      bottom: 146px;
-      transform: rotate(15deg);
-    }
-    90% {
-      width: 30px;
-      height: 90px;
-      left: 235px;
-      bottom: 146px;
-      transform: rotate(0deg);
-    }
-    100% {
-      width: 30px;
-      height: 90px;
-      left: 130px;
-      bottom: 146px;
-      transform: rotate(0deg);
-    }
+@keyframes boarding2{
+  0%{
+    width: 150px;
+    height: 300px;
+    left: 1000px;
+    transform: rotate(0deg);
+  }
+  40%{
+    bottom: 10px;
+    transform: rotate(0deg);
+  }
+  60%{
+    width: 30px;
+    height: 90px;
+    left: 410px;
+    bottom: 10px;
+    transform: rotate(20deg);
+  }
+  65% {
+    left: 410px;
+    bottom: 10px;
+    transform: rotate(35deg);
+  }
+  80%{
+    width: 30px;
+    height: 90px;
+    left: 235px;
+    bottom: 146px;
+    transform: rotate(15deg);
+  }
+  90%{
+    width: 30px;
+    height: 90px;
+    left: 235px;
+    bottom: 146px;
+    transform: rotate(0deg);
+  }
+  100%{
+    width: 30px;
+    height: 90px;
+    left: 130px;
+    bottom: 146px;
+    transform: rotate(0deg);
+  }
 }
-/*-END, animals-*/
-/*-rocket-*/
-#rakett-full{
+/*--END, animals--*/
+/*--rocket--*/
+#rocket-full{
   position: absolute;
   width: 450px;
   height: auto;
@@ -681,7 +625,7 @@ z-index: 100;
   left: 11px;
   z-index: 100;
 }
-#rakett-halv{
+#rocket-half{
   position: absolute;
   width: 224px;
   height: auto;
@@ -705,7 +649,7 @@ z-index: 100;
   animation-iteration-count: 100;
   z-index:108;
 }
-@keyframes textRocketLaunch {
+@keyframes textRocketLaunch{
   0%{
     color:white;
     }
@@ -716,8 +660,7 @@ z-index: 100;
     color:white;
   }
 }
-
-#swapScene{
+#toSide3{
   position: absolute;
   width: 255px;
   height: 641px;
@@ -727,21 +670,18 @@ z-index: 100;
   animation-name: swapSceneAnimation;
   animation-delay: 27s;
   animation-fill-mode: forwards;
-
 }
-
 @keyframes swapSceneAnimation{
   0%{
     z-index: 98;
   }
-
   100%{
     z-index: 120;
   }
 }
-/*-END, rocket-*/
-/*-boardingCloud-*/
-.boardingCloud1 {
+/*--END, rocket--*/
+/*--boardingCloud--*/
+.boardingCloud1{
   position: absolute;
   width: 200px;
   height: 150px;
@@ -750,19 +690,19 @@ z-index: 100;
   z-index: 98;
   animation: cloudAnimation 40s linear infinite 10s;
 }
-#boardingCloudPart1 {
+#boardingCloudPart1{
   left: 60px;
   top: 15px;
 }
-#boardingCloudPart2 {
+#boardingCloudPart2{
   left: 30px;
   top: 0px;
 }
-#boardingCloudPart3 {
+#boardingCloudPart3{
   left: 0px;
   top: 20px;
 }
-.boardingCloud2 {
+.boardingCloud2{
   position: absolute;
   width: 200px;
   height: 150px;
@@ -771,19 +711,19 @@ z-index: 100;
   z-index: 98;
   animation: cloudAnimation 40s linear infinite 25s;
 }
-#boardingCloudPart4 {
+#boardingCloudPart4{
   left: 0px;
   top: 15px;
 }
-#boardingCloudPart5 {
+#boardingCloudPart5{
   left: 55px;
   top: 25px;
 }
-#boardingCloudPart6 {
+#boardingCloudPart6{
   left: 15px;
   top: 40px;
 }
-.boardingCloud3 {
+.boardingCloud3{
   position: absolute;
   width: 200px;
   height: 150px;
@@ -792,15 +732,15 @@ z-index: 100;
   z-index: 98;
   animation: cloudAnimation 40s linear infinite;
 }
-#boardingCloudPart7 {
+#boardingCloudPart7{
   left: 60px;
   top: 15px;
 }
-#boardingCloudPart8 {
+#boardingCloudPart8{
   left: 30px;
   top: 35px;
 }
-#boardingCloudPart9 {
+#boardingCloudPart9{
   left: 0px;
   top: 20px;
 }
@@ -812,20 +752,16 @@ z-index: 100;
     left: 1000px;
   }
 }
-/*-END, boardingCloud-*/
-/*-END, Scene 2-*/
-/*-END, SIDE 1-*/
-
-/*-SIDE 2-*/
-/*-Scene 3-*/
-#controlPanelContainer {
+/*--END, boardingCloud--*/
+/*--END, SIDE2--*/
+/*--SIDE 3--*/
+#controlPanelContainer{
   z-index: 98;
   position: relative;
   margin-top: 0px;
   overflow: visible;
 }
-
-#controlPanelContainerChildTest {
+#controlPanelContainerChildTest{
   position: relative;
   background-color: lightskyblue;
   z-index: 98;
@@ -834,9 +770,8 @@ z-index: 100;
   animation-iteration-count: infinite;
   animation-play-state: paused;
 }
-
 /*--fremtidensArkText--*/
-#fremtidensArkText {
+#fremtidensArkText{
   position: absolute;
   text-align: center;
   letter-spacing: 3px;

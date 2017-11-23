@@ -5,128 +5,70 @@
     <title>Fremtidens Ark</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Teko:500" rel="stylesheet">
   </head>
   <body>
-    <div class = "mainContainer" id="controlPanelContainer">
-      <div id = "launchHidden"></div>
-      /* Dette er nødvendig for å få til shake effekten på containeren.
-         Et child kan ikke påvirke parent med hover, vi faker derfor en
-         parent, som egentlig er sibling. */
-      <div class = "mainContainer" id="controlPanelContainerChildTest">
-
-        <!--text-->
-        <h1 id="fremtidensArkText">FREMTIDENS ARK</h1>
-        <!--END, text-->
-
-        <!--windowFrame-->
-        <div class="windowFrame" id="topFrame"></div>
-        <div class="windowFrame" id="bottomFrame"></div>
-        <div class="windowFrame" id="windowFrameRight"></div>
-        <div class="windowFrame" id="windowFrameLeft"></div>
-        <div class="windowFrame" id="controlBackground"></div>
-        <div id="windowShine"></div>
-        <!--END, windowFrame-->
-
-        <!--controlPanel-->
-        <div id="controlPanel"></div>
-        <p id="controlPanelText">KONTROLLPANEL</p>
-        <div id="display">
-          <div id ="displayBensin" class="displayContent">
-            <img id ="bensinBilde" src="bilder/fuel.png" alt="Feil i systemet">
-          </div>
-          <div id ="displayReise" class="displayContent">
-          Avstanden til Mars er cirka 54,6 millioner kilometer.
-          <br>Avstanden varierer på grunn av planetenes baner
-          og hvor fort de sirkulerer rundt Sola.</br>
-          <p>Estimert reistetid: 150 dager<p></div>
-          <div id ="displayInstruksjoner" class="displayContent">
-          Din jobb er å frakte dyrene trygt til Mars.
-          <p>Hold over spaken for å starte reisen til Mars.</p>
-          <p>Trykk deretter på knappen under spaken når du har nådd utsiden av atmosfæren.</p></div>
-          <div id ="displayDyr" class="displayContent">
-            Dyrene trenger vår hjelp for å overleve katastrofen.
-            <p>Dyr som skal reddes denne reisen:
-            <ul>
-              <li>Giraff</li>
-              <li>Sau</li>
-              <li>Gris</li>
-            </ul>
-          </div>
-
-          <div id="displayShine"></div>
-        </div>
-
-        <div id ="blockClick"></div>
-        <div id="buttonShadowBensin" class="usableButtons"></div>
-        <a href="#displayBensin"> <div id="buttonBensin" class="usableButtons">BENSIN</div></a>
-        <div id="buttonShadowReise" class="usableButtons"></div>
-        <a href="#displayReise"> <div id="buttonReise" class="usableButtons">REISE</div></a>
-        <div id="buttonShadowInstruksjoner" class="usableButtons" ></div>
-        <a href="#displayInstruksjoner"> <div id="buttonInstruksjoner" class="usableButtons">INSTRUKS</div><a/>
-        <div id="buttonShadowDyr" class="usableButtons" ></div>
-        <a href="#displayDyr"> <div id="buttonDyr" class="usableButtons">DYR</div></a>
-        <div id="leverPart1"></div>
-        <div id="leverPart2"></div>
-        <div id ="launchButton"></div>
-        <a id="nextSide" href ="side3a.html"></a>
-        <!--END, controlPanel-->
-
-        <!--background-->
-        <div id="launchBackground">
-        <!--CLOUD 1-->
-        <div class = "cloud" id="c1"></div>
-        <div class = "cloud" id="c2"></div>
-        <div class = "cloud" id="c3"></div>
-        <div class = "cloud" id="c4"></div>
-        <div class = "cloud" id="c5"></div>
-
-        <!--CLOUD 2-->
-        <div class = "cloud" id="c6"></div>
-        <div class = "cloud" id="c7"></div>
-        <div class = "cloud" id="c8"></div>
-        <div class = "cloud" id="c9"></div>
-        <div class = "cloud" id="c10"></div>
-
-        <div class = "systemStars" id= "backgroundStar1"></div>
-        <div class = "systemStars" id= "backgroundStar2"></div>
-        <div class = "systemStars" id= "backgroundStar3"></div>
-        <div class = "systemStars" id= "backgroundStar4"></div>
-        <div class = "systemStars" id= "backgroundStar5"></div>
-        <div class = "systemStars" id= "backgroundStar6"></div>
-        <div class = "systemStars" id= "backgroundStar7"></div>
-        <div class = "systemStars" id= "backgroundStar8"></div>
-        <div class = "systemStars" id= "backgroundStar9"></div>
-        <div class = "systemStars" id= "backgroundStar10"></div>
-        <div class = "systemStars" id= "backgroundStar11"></div>
-        <div class = "systemStars" id= "backgroundStar12"></div>
-        <div class = "systemStars" id= "backgroundStar13"></div>
-        <div class = "systemStars" id= "backgroundStar14"></div>
-
-        <div class="rainbowC" id="rainbowC1"></div>
-        <div class="rainbowC" id="rainbowC2"></div>
-        <div class="rainbowC" id="rainbowC3"></div>
-        <div class="rainbowC" id="rainbowC4"></div>
-        <div class="rainbowC" id="rainbowC5"></div>
-        <div class="rainbowC" id="rainbowC6"></div>
-        <div class="rainbowC" id="rainbowC7"></div>
-
-        <div id="mountains">
-            <div id="mountainLeft">
-              <div id="mountainLeftTop"></div>
-            </div>
-            <div id="mountainRight">
-              <div id="mountainRightTop"></div>
-            </div>
-        </div>
-
-        </div>
-      <!--END, background-->
+    <!--SIDE2-->
+    <div id="boardingContainer" class="mainContainer">
+      <!--background-->
+      <!--rainbow-->
+      <div id="rainbow1" class="rainbow"></div>
+      <div id="rainbow2" class="rainbow"></div>
+      <div id="rainbow3" class="rainbow"></div>
+      <div id="rainbow4" class="rainbow"></div>
+      <div id="rainbow5" class="rainbow"></div>
+      <div id="rainbow6" class="rainbow"></div>
+      <div id="rainbow7" class="rainbow"></div>
+      <!--END, rainbow-->
+      <!--boardingCloud-->
+      <div class="boardingCloud1">
+        <div id="boardingCloudPart1" class="cloud"></div>
+        <div id="boardingCloudPart2" class="cloud" ></div>
+        <div id="boardingCloudPart3" class="cloud" ></div>
       </div>
+      <div class="boardingCloud2">
+        <div id="boardingCloudPart4" class="cloud"></div>
+        <div id="boardingCloudPart5" class="cloud"></div>
+        <div id="boardingCloudPart6" class="cloud"></div>
+      </div>
+      <div class="boardingCloud3">
+        <div id="boardingCloudPart7" class="cloud"></div>
+        <div id="boardingCloudPart8" class="cloud"></div>
+        <div id="boardingCloudPart9" class="cloud"></div>
+      </div>
+      <!--END, boardingCloud-->
+      <!--mountain-->
+      <div id="mountainLeft1">
+        <div id="mountainLeftTop1"></div>
+      </div>
+      <div id="mountainRight1">
+        <div id="mountainRightTop1"></div>
+      </div>
+       <!--END, mountain-->
+      <div id="ground"> </div>
+      <!--END, background-->
+      <!--animals-->
+      <img id="giraffe" src="bilder/giraffe.png">
+      <img id="sheep" src="bilder/sheep.png">
+      <img id="pig" src= "bilder/pig.png">
+      <!--END, animals-->
+      <!--spaceship-->
+      <img id="rocket-full" src= "bilder/rocket-full.png">
+      <img id="rocket-half" src= "bilder/rocket-half.png">
+      <h1 id="textRocketLaunch">Fremtidens<br> Ark </h1>
+      <a href="side3.html"><div id="toSide3"></div></a>
+      <!--END, spaceship-->
     </div>
+    <!--audio-->
+    <audio autoplay>
+      <source src="lyder/EkteSau.mp3" type="audio/mpeg">
+    </audio>
+    <audio autoplay>
+      <source src="lyder/EkteGris.mp3" type="audio/mpeg">
+    </audio>
     <audio autoplay loop>
       <source src="lyder/Bakgrunn.mp3" type="audio/mpeg">
     </audio>
-
+    <!--END, audio-->
+    <!--END, SIDE2-->
   </body>
 </html>

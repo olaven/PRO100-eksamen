@@ -2202,10 +2202,26 @@ skal fades tilbake til black ved 100%*/
   top: 25px;
   transform: rotate(0deg);
 }
+#ufo:hover ~ #ufoTekst{
+  display: inline-block;
+  transition-duration: 0;
+}
 #ufoDiv {
   position: absolute;
   animation: rotateSolarsystem 30s reverse linear infinite;
 }
+/*--ufoTekst--*/
+#ufoTekst{
+  display: inline-block;
+  display: none;
+}
+#ufoTekst p{
+  position: absolute;
+  background-color: whitesmoke;
+  left: 255px;
+  top: -5%;
+}
+/*--END, ufoTekst--*/
 /*-END, ufo-*/
 /*-END, Scene 5*/
 /*-END, SIDE 3-*/

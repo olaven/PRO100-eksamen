@@ -1421,7 +1421,6 @@ z-index: 100;
   left: 200px;
   top: 50px;
 }
-
 #shipDiv {
   animation: rotateSolarsystem 13.25s linear 1 normal forwards,
            rotateSolarsystem 20s linear 13.25s infinite normal;
@@ -1437,7 +1436,6 @@ z-index: 100;
   animation-duration: 15s;
   animation-fill-mode: forwards;
 }
-
 .planets, .spots{
   position: absolute;
   border-radius: 50%;
@@ -1632,8 +1630,6 @@ z-index: 100;
     transform: rotate(330deg);
   }
 }
-
-
 @keyframes rotateSolarsystem {
   0% {
     transform: rotate(0deg);

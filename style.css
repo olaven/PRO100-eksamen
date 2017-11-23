@@ -790,8 +790,7 @@ z-index: 100;
   z-index: 150;
 }
 /*--END, fremtidensArkText--*/
-
-/*-windowFrame-*/
+/*--windowFrame--*/
 .windowFrame {
   position: absolute;
   background-color: grey;
@@ -840,8 +839,7 @@ z-index: 100;
   opacity: 0.2;
   z-index: 98;
 }
-/*-END, windowControlpanel-*/
-
+/*--END, windowControlpanel--*/
 /*-controlPanel-*/
 #controlPanel {
   position: absolute;
@@ -884,6 +882,7 @@ z-index: 100;
   transform: rotate(-20deg);
   opacity: 0.2;
 }
+/*--buttons&levers--*/
 .displayContent {
   font-family: 'Teko';
   letter-spacing: 1.5px;
@@ -944,7 +943,7 @@ z-index: 100;
 #buttonReise:active{
   transform: translateY(5px);
 }
-#buttonReise {
+#buttonReise{
   font-family: 'Impact';
   font-size: 20px;
   background-color: lightblue;
@@ -961,7 +960,7 @@ z-index: 100;
 #buttonInstruksjoner:active{
   transform: translateY(5px);
 }
-#buttonInstruksjoner {
+#buttonInstruksjoner{
   font-family: 'Impact';
   font-size: 20px;
   background-color: orange;
@@ -978,13 +977,13 @@ z-index: 100;
 #buttonDyr:active{
   transform: translateY(5px);
 }
-#buttonDyr {
+#buttonDyr{
   font-family: 'Impact';
   font-size: 20px;
   background-color: lightgreen;
   left: 610px;
 }
-#leverPart1 {
+#leverPart1{
   position: absolute;
   width: 10px;
   height: 160px;
@@ -995,6 +994,7 @@ z-index: 100;
   border: 1px solid black;
   border-radius: 20px;
 }
+/*--END, buttons&levers--*/
 #launchHidden{
   position: absolute;
   z-index: 109;
@@ -1013,6 +1013,79 @@ z-index: 100;
   transition-property: all;
   overflow: hidden;
 }
+#blockClick{
+  position: absolute;
+  z-index: 98;
+  width: 405px;
+  height: 50px;
+  bottom: 18px;
+  left: 295px;
+  transition-duration: 15s;
+}
+#launchHidden:hover ~ #controlPanelContainerChildTest #blockClick{
+    z-index: 119;
+}
+#launchHidden:hover ~ #controlPanelContainerChildTest #launchBackground{
+  bottom: -800px;
+  background-color: black;
+}
+#launchHidden:hover ~ #controlPanelContainerChildTest{
+  animation-play-state: running;
+}
+#launchHidden:hover ~ #controlPanelContainerChildTest #nextSide{
+    z-index: 110;
+}
+#launchHidden:hover ~ #controlPanelContainerChildTest #leverPart2{
+    bottom: 82px;
+}
+#nextSide {
+    background-color: rgb(77, 230, 46);
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 50s;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 726px;
+    bottom: 29px;
+    z-index: 106;
+    border-radius: 50%;
+}
+#leverPart2{
+    transition: all 5s ease-in-out 10s;
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    bottom: 210px;
+    left: 715px;
+    border-radius: 20px;
+    background-color: grey;
+    z-index: 108;
+}
+#launchButton {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 726px;
+  bottom: 29px;
+  background-color: red;
+  z-index: 108;
+  border-radius: 50%;
+}
+#leverPart2{
+    transition: all 1s;
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    bottom: 210px;
+    left: 716px;
+    border-radius: 20px;
+    background-color: grey;
+    z-index: 108;
+}
+/*-END, controlPanel-*/
+/*-background-*/
+/*--backgroundStars--*/
 #backgroundStar1{
   left: 200px;
   bottom: 1400px;
@@ -1077,7 +1150,8 @@ z-index: 100;
   left: 825px;
   bottom: 1190px;
 }
-
+/*--END, backgroundStars--*/
+/*--cloud1--*/
 .cloud{
   position: absolute;
   background-color: white;
@@ -1085,7 +1159,6 @@ z-index: 100;
   height: 50px;
   border-radius: 50%;
 }
-/*-CLOUD 1-*/
 #c1{
   bottom: 500px;
   left: 500px;
@@ -1106,7 +1179,6 @@ z-index: 100;
   bottom: 485px;
   left: 475px;
 }
-
 /*-CLOUD 2-*/
 #c6{
   bottom: 600px;
@@ -1128,81 +1200,8 @@ z-index: 100;
   bottom: 645px;
   left: 265px;
 }
-
-#blockClick{
-  position: absolute;
-  z-index: 98;
-  width: 405px;
-  height: 50px;
-  bottom: 18px;
-  left: 295px;
-  transition-duration: 15s;
-}
-#launchHidden:hover ~ #controlPanelContainerChildTest #blockClick{
-    z-index: 119;
-}
-#launchHidden:hover ~ #controlPanelContainerChildTest #launchBackground{
-  bottom: -800px;
-  background-color: black;
-}
-#launchHidden:hover ~ #controlPanelContainerChildTest{
-  animation-play-state: running;
-}
-#launchHidden:hover ~ #controlPanelContainerChildTest #nextSide{
-    z-index: 110;
-}
-#launchHidden:hover ~ #controlPanelContainerChildTest #leverPart2{
-    bottom: 82px;
-}
-
-
-#nextSide {
-    background-color: rgb(77, 230, 46);
-    transition-property: all;
-    transition-delay: 0s;
-    transition-duration: 50s;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 726px;
-    bottom: 29px;
-    z-index: 106;
-    border-radius: 50%;
-}
-#leverPart2{
-    transition: all 5s ease-in-out 10s;
-    position: absolute;
-    width: 60px;
-    height: 20px;
-    bottom: 210px;
-    left: 715px;
-    border-radius: 20px;
-    background-color: grey;
-    z-index: 108;
-}
-#launchButton {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 726px;
-  bottom: 29px;
-  background-color: red;
-  z-index: 108;
-  border-radius: 50%;
-}
-#leverPart2{
-    transition: all 1s;
-    position: absolute;
-    width: 60px;
-    height: 20px;
-    bottom: 210px;
-    left: 716px;
-    border-radius: 20px;
-    background-color: grey;
-    z-index: 108;
-}
-/*-END, controlPanel-*/
-/*-background-*/
+/*--END, cloud1--*/
+/*--rainbows--*/
 .rainbowC{
   position: absolute;
   width:  2300px;
@@ -1247,6 +1246,8 @@ z-index: 100;
   top: 1320px;
   z-index:91;
 }
+/*--END, rainbows--*/
+/*--mountains--*/
 #mountains{
     transition-property: all;
     transition-duration: 15s;
@@ -1298,10 +1299,9 @@ z-index: 100;
   top: -65px;
   transform: rotate(-35deg);
 }
-
-/* NOTE: Flytt launchBackground til her */
+/*--END, mountains--*/
 /*-END, background-*/
-
+/*--shake--*/
 @keyframes shake{
     0%{
         left: 10px;
@@ -1338,27 +1338,23 @@ z-index: 100;
         bottom: 0px;
     }
 }
-/*-END, Scene 3-*/
-
-/*-END, SIDE 2-*/
-
-/*-SIDE 3-*/
-/*-Scene 4*/
-#solarsystemContainer {
+/*--END, shake--*/
+/*--END, SIDE3--*/
+/*--SIDE4--*/
+#solarsystemContainer{
   border: 1px solid white;
   background-color: black;
   z-index: 98;
 }
-
 /*-solarsystem-*/
-.planetRotation {
+.planetRotation{
   position: absolute;
   width: 600px;
   height: 600px;
   left: 200px;
   top: 50px;
 }
-#shipDiv {
+#shipDiv{
   animation: rotateSolarsystem 13.25s linear 1 normal forwards,
            rotateSolarsystem 20s linear 13.25s infinite normal;
   position: absolute;
@@ -1378,8 +1374,7 @@ z-index: 100;
   border-radius: 50%;
   border: 0px solid;
 }
-
-#sun {
+#sun{
   background-color: yellow;
   width: 70px;
   height: 70px;
@@ -1387,40 +1382,39 @@ z-index: 100;
   top: 265px;
   animation: sunGlow 6s linear infinite;
 }
-
-#sunDiv {
+#sunDiv{
   z-index: 50;
 }
-#mercury {
+#mercury{
   background-color: lightgrey;
   width: 15px;
   height: 15px;
   left: 292.5px;
   top: 345px;
 }
-#mercuryDiv {
+#mercuryDiv{
   animation: rotateSolarsystem 5s linear infinite;
   z-index: 49;
 }
-#venus {
+#venus{
   background-color: brown;
   width: 20px;
   height: 20px;
   left: 290px;
   top: 205px;
 }
-#venusDiv {
+#venusDiv{
   animation: rotateSolarsystem 10s linear infinite;
   z-index: 48;
 }
-#earth {
+#earth{
   background-color: lightskyblue;
   width: 30px;
   height: 30px;
   left: 285px;
   top: 400px;
 }
-#earthSpot1 {
+#earthSpot1{
   background-color: lightgreen;
   width: 10px;
   height: 15px;
@@ -1428,21 +1422,21 @@ z-index: 100;
   top: 0px;
   transform: rotate(60deg);
 }
-#earthSpot2 {
+#earthSpot2{
   background-color: lightgreen;
   width: 20px;
   height: 10px;
   left: 5px;
   top: 19px;
 }
-#earthSpot3 {
+#earthSpot3{
   background-color: lightgreen;
   width: 10px;
   height: 10px;
   left: 19px;
   top: 7px;
 }
-#earthDiv {
+#earthDiv{
   animation: rotateSolarsystem 15s linear infinite;
   z-index: 47;
 }
@@ -1454,7 +1448,7 @@ z-index: 100;
   left: -10px;
   top: -10px;
 }
-#moon {
+#moon{
   position: absolute;
   background-color: grey;
   width: 5px;
@@ -1462,10 +1456,8 @@ z-index: 100;
   border-radius: 50%;
   left: 22.5px;
   bottom: 0px;
-
 }
-
-#mars {
+#mars{
   background-color: rgb(238, 128, 38);
   width: 25px;
   height: 25px;
@@ -1474,69 +1466,68 @@ z-index: 100;
   border: 0px;
   animation: marsBorder 1s linear 13s infinite;
 }
-@keyframes marsBorder {
-  0% {
+@keyframes marsBorder{
+  0%{
     border: 0px;
   }
-  50% {
+  50%{
     border: 3px solid rgb(77, 230, 46);
   }
-  100% {
+  100%{
     border: 0px;
   }
-
 }
-#marsSpot1 {
+#marsSpot1{
   background-color: rgb(179, 64, 0);
   width: 7px;
   height: 7px;
   left: 10px;
   top: 13px;
 }
-#marsSpot2 {
+#marsSpot2{
   background-color: rgb(179, 64, 0);
   width: 3px;
   height: 3px;
   left: 5px;
   top: 13px;
 }
-#marsDiv {
+#marsDiv{
   animation: rotateSolarsystem 20s linear infinite;
   z-index: 51;
 }
-#jupiter {
+#jupiter{
   background-color: beige;
   width: 40px;
   height: 40px;
   left: 280px;
   top: 475px;
 }
-#jupiterSpot1 {
+#jupiterSpot1{
   background-color: rgb(208, 210, 182);
   width: 10px;
   height: 10px;
   left: 15px;
   top: 13px;
 }
-#jupiterSpot2 {
+#jupiterSpot2{
   background-color: rgb(208, 210, 182);
   width: 5px;
   height: 5px;
   left: 7px;
   top: 13px;
 }
-#jupiterDiv {
+#jupiterDiv{
   animation: rotateSolarsystem 25s linear infinite;
   z-index: 45;
 }
-#saturn {
+#saturn{
   background-color: lightyellow;
   width: 40px;
   height: 40px;
   left: 280px;
   top: 30px;
 }
-#saturnbelt {
+#saturnbelt{
   position: absolute;
   background-color: brown;
   width: 5px;
@@ -1547,34 +1538,33 @@ z-index: 100;
   border: 0px solid white;
   border-radius: 25%;
 }
-#saturnDiv {
+#saturnDiv{
   animation: rotateSolarsystem 30s linear infinite;
   z-index: 44;
 }
-#uranus {
+#uranus{
   background-color: lightblue;
   width: 30px;
   height: 30px;
   left: 285px;
   top: 575px;
 }
-#uranusDiv {
+#uranusDiv{
   animation: rotateSolarsystem 35s linear infinite;
   z-index: 43;
 }
-#neptune {
+#neptune{
   background-color: rgb(65, 118, 255);
   width: 30px;
   height: 30px;
   left: 285px;
   top: -50px;
 }
-#neptuneDiv {
+#neptuneDiv{
   animation: rotateSolarsystem 40s linear infinite;
   z-index: 42;
 }
-
-@keyframes shipAnimation {
+@keyframes shipAnimation{
   0%{
     left: 270px;
     top: 404px;
@@ -1586,35 +1576,34 @@ z-index: 100;
     transform: rotate(330deg);
   }
 }
-@keyframes rotateSolarsystem {
-  0% {
+@keyframes rotateSolarsystem{
+  0%{
     transform: rotate(0deg);
   }
-  100% {
+  100%{
     transform: rotate(360deg);
   }
 }
-@keyframes sunGlow {
-  0% {
+@keyframes sunGlow{
+  0%{
     background-color: yellow;
   }
-  50% {
+  50%{
     background-color: rgb(255, 181, 18);
   }
-  100% {
+  100%{
     background-color: yellow;
   }
 }
 /*-END, solarsystem-*/
 /*-systemStars-*/
-.systemStars {
+.systemStars{
   position: absolute;
   background-color: whitesmoke;
   width: 5px;
   height: 5px;
   border-radius: 50%;
   z-index: 41;
-
   animation-name: systemStarGlow;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
@@ -1629,87 +1618,87 @@ z-index: 100;
 .systemStars3s{
   animation-duration: 3s;
 }
-#systemStar1 {
+#systemStar1{
   left: 100px;
   top: 80px;
 }
-#systemStar2 {
+#systemStar2{
   left: 480px;
   top: 110px;
 }
-#systemStar3 {
+#systemStar3{
   left: 900px;
   top: 70px;
 }
-#systemStar4 {
+#systemStar4{
   left: 120px;
   top: 230px;
 }
-#systemStar5 {
+#systemStar5{
   left: 790px;
   top: 200px;
 }
-#systemStar6 {
+#systemStar6{
   left: 530px;
   top: 210px;
 }
-#systemStar7 {
+#systemStar7{
   left: 300px;
   top: 300px;
 }
-#systemStar8 {
+#systemStar8{
   left: 600px;
   top: 330px;
 }
-#systemStar9 {
+#systemStar9{
   left: 860px;
   top: 310px;
 }
-#systemStar10 {
+#systemStar10{
   left: 50px;
   top: 400px;
 }
-#systemStar11 {
+#systemStar11{
   left: 360px;
   top: 400px;
 }
-#systemStar12 {
+#systemStar12{
   left: 740px;
   top: 400px;
 }
-#systemStar13 {
+#systemStar13{
   left: 180px;
   top: 510px;
 }
-#systemStar14 {
+#systemStar14{
   left: 420px;
   top: 490px;
 }
-#systemStar15 {
+#systemStar15{
   left: 930px;
   top: 520px;
 }
-#systemStar16 {
+#systemStar16{
   left: 40px;
   top: 630px;
 }
-#systemStar17 {
+#systemStar17{
   left: 400px;
   top: 610px;
 }
-#systemStar18 {
+#systemStar18{
   left: 700px;
   top: 600px;
 }
-#systemStar19 {
+#systemStar19{
   left: 300px;
   top: 50px;
 }
-#systemStar20 {
+#systemStar20{
   left: 200px;
   top: 650px;
 }
-@keyframes systemStarGlow {
+@keyframes systemStarGlow{
   from{
     background-color: rgba(255,255,255,0.5);
     transform: scaleX(1.2);
@@ -1719,49 +1708,44 @@ z-index: 100;
     transform: scaleY(1.2);
   }
 }
-/*-END, systemStars-*/
-/*-END, Scene 4*/
+/*--END, systemStars--*/
+/*--END, SIDE4--*/
 
-/*-Scene 5*/
-/*--marsContainer*/
+/*--SIDE5--*/
+/*--marsContainer--*/
 #marsContainer{
   z-index: 20;
   border: 1px solid white;
 }
-/*--END, marsContainer*/
-/*--marsTekster--*/
-.marsTekster{
+/*--END, marsContainer--*/
+/*--marsTexts--*/
+.marsTexts{
   position: absolute;
   display: inline-block;
-
   padding: 5px;
   margin: 10px;
-
   border-radius: 20%;
   border-bottom-right-radius: 30%;
   border-bottom-left-radius: 30%;
-
   font-family: monospace;
   font-size: 1.5em;
-
   transition-duration: 2s;
 }
-.marsTekster:hover{
+.marsTexts:hover{
   transform: scale(1.03);
 }
-.marsTekster p{
+.marsTexts p{
   margin-left: 20px;
   margin-right: 20px;
 }
-/*--infotekst--*/
-#infoTekst{
+/*--infotext--*/
+#infoText{
   width: 200px;
-
-  animation-name: infoTekstAni;
+  animation-name: infoTextAni;
   /*making the text visible with bg-color*/
   animation-duration: 15s;
 }
-@keyframes infoTekstAni {
+@keyframes infoTextAni{
   0%{
     background-color: black;
   }
@@ -1772,17 +1756,15 @@ z-index: 100;
     background-color: black;
   }
 }
-/*--END, infotekst--*/
-/*--velkommenTekst--*/
-#velkommenTekst{
+/*--END, infotext--*/
+/*--velkommenText--*/
+#welcomeText{
   top: 575px;
   left: 700px;
-
   text-decoration: underline;
-
-  animation-name: velkommenTekstAni;
+  animation-name: welcomeTextAni;
   animation-duration: 15s;
-  /*starter rett før #infoTekst forsvinner*/
+  /*starter rett før #infoText forsvinner*/
   animation-delay: 10s;
   /*skal forbli synlig*/
   animation-fill-mode: forwards;
@@ -1790,7 +1772,7 @@ z-index: 100;
 /*må lage to animasjoner på tekstene fordi den
 ene skal bli med whitesmoke-farge der den andre
 skal fades tilbake til black ved 100%*/
-@keyframes velkommenTekstAni {
+@keyframes welcomeTextAni {
   0%{
     background-color: black;
   }
@@ -1798,8 +1780,8 @@ skal fades tilbake til black ved 100%*/
     background-color: whitesmoke;
   }
 }
-/*--END, velkommenTekst--*/
-/*--END, marsTekster--*/
+/*--END, welcomeText--*/
+/*--END, marsTexts--*/
 /*--planetMarsDiv--*/
 #planetMarsDiv{
   /*bruker animasjon fra solsystem*/
@@ -1809,7 +1791,6 @@ skal fades tilbake til black ved 100%*/
   animation-timing-function: linear;
 }
 /*--END, planetMarsDiv--*/
-
 /*--mars--*/
 #planetMars{
   position: absolute;
@@ -1857,26 +1838,26 @@ skal fades tilbake til black ved 100%*/
 }
 /*--END, landedRocket--*/
 /*--buildings--*/
-.houseBlock1 {
+.houseBlock1{
   position: absolute;
   height: 25px;
   border: 1px solid black;
   border-radius: 3px;
   background-color: lightgreen;
 }
-#house1 {
+#house1{
   width: 40px;
   top: 300px;
   left: 11px;
   transform: rotate(-2deg);
 }
-#house2 {
+#house2{
   width: 60px;
   top: 275px;
   left: -9px;
   transform: rotate(2deg);
 }
-#houseWindow2 {
+#houseWindow2{
   position: absolute;
   width: 15px;
   height: 15px;
@@ -1886,32 +1867,32 @@ skal fades tilbake til black ved 100%*/
   border-radius: 3px;
   background-color: lightskyblue;
 }
-#house3 {
+#house3{
   width: 30px;
   top: 250px;
   left: 22px;
   transform: rotate(5deg);
 }
-.houseBlock2 {
+.houseBlock2{
   position: absolute;
   height: 25px;
   border: 1px solid black;
   border-radius: 3px;
   background-color: lightyellow;
 }
-#house4 {
+#house4{
   width: 40px;
   top: 80px;
   left: 453px;
   transform: rotate(-50deg);
 }
-#house5 {
+#house5{
   width: 60px;
   top: 56px;
   left: 427px;
   transform: rotate(-54deg);
 }
-#houseWindow5 {
+#houseWindow5{
   position: absolute;
   width: 15px;
   height: 15px;
@@ -1921,19 +1902,19 @@ skal fades tilbake til black ved 100%*/
   border-radius: 3px;
   background-color: lightskyblue;
 }
-#house6 {
+#house6{
   width: 40px;
   top: 49px;
   left: 408px;
   transform: rotate(-60deg);
 }
-#house7 {
+#house7{
   width: 50px;
   top: 32px;
   left: 380px;
   transform: rotate(-67deg);
 }
-#houseWindow7 {
+#houseWindow7{
   position: absolute;
   width: 15px;
   height: 15px;
@@ -1943,26 +1924,26 @@ skal fades tilbake til black ved 100%*/
   border-radius: 3px;
   background-color: lightskyblue;
 }
-.houseBlock3 {
+.houseBlock3{
   position: absolute;
   height: 25px;
   border: 1px solid black;
   border-radius: 3px;
   background-color: rgb(252, 124, 124);
 }
-#house8 {
+#house8{
   width: 40px;
   top: 50px;
   left: 150px;
   transform: rotate(-117deg);
 }
-#house9 {
+#house9{
   width: 50px;
   top: 35px;
   left: 167px;
   transform: rotate(-114deg);
 }
-#houseWindow9 {
+#houseWindow9{
   position: absolute;
   width: 15px;
   height: 15px;
@@ -1972,13 +1953,13 @@ skal fades tilbake til black ved 100%*/
   border-radius: 3px;
   background-color: lightskyblue;
 }
-#house10 {
+#house10{
   width: 70px;
   top: 16px;
   left: 178px;
   transform: rotate(-111deg);
 }
-#houseWindow10 {
+#houseWindow10{
   position: absolute;
   width: 12px;
   height: 12px;
@@ -1988,7 +1969,7 @@ skal fades tilbake til black ved 100%*/
   border-radius: 3px;
   background-color: lightskyblue;
 }
-#houseWindow100 {
+#houseWindow100{
   position: absolute;
   width: 12px;
   height: 12px;
@@ -1998,13 +1979,13 @@ skal fades tilbake til black ved 100%*/
   border-radius: 3px;
   background-color: lightskyblue;
 }
-#house11 {
+#house11{
   width: 50px;
   top: 18px;
   left: 217px;
   transform: rotate(-105deg);
 }
-#houseWindow11 {
+#houseWindow11{
   position: absolute;
   width: 15px;
   height: 15px;
@@ -2014,32 +1995,32 @@ skal fades tilbake til black ved 100%*/
   border-radius: 3px;
   background-color: lightskyblue;
 }
-#house12 {
+#house12{
   width: 40px;
   top: 18px;
   left: 250px;
   transform: rotate(-98deg);
 }
-.houseBlock4 {
+.houseBlock4{
   position: absolute;
   height: 25px;
   border: 1px solid black;
   border-radius: 3px;
   background-color: rgb(255, 186, 82);
 }
-#house13 {
+#house13{
   width: 30px;
   top: 197px;
   left: 534px;
   transform: rotate(-20deg);
 }
-#house14 {
+#house14{
   width: 50px;
   top: 170px;
   left: 523px;
   transform: rotate(-25deg);
 }
-#houseWindow14 {
+#houseWindow14{
   position: absolute;
   width: 15px;
   height: 15px;
@@ -2049,26 +2030,26 @@ skal fades tilbake til black ved 100%*/
   border-radius: 3px;
   background-color: lightskyblue;
 }
-.houseBlock5 {
+.houseBlock5{
   position: absolute;
   height: 25px;
   border: 1px solid black;
   border-radius: 3px;
   background-color: rgb(221, 136, 255);
 }
-#house15 {
+#house15{
   width: 60px;
   top: 450px;
   left: 43px;
   transform: rotate(-35deg);
 }
-#house16 {
+#house16{
   width: 40px;
   top: 465px;
   left: 76px;
   transform: rotate(-38deg);
 }
-#houseWindow16 {
+#houseWindow16{
   position: absolute;
   width: 15px;
   height: 15px;
@@ -2078,14 +2059,15 @@ skal fades tilbake til black ved 100%*/
   border-radius: 3px;
   background-color: lightskyblue;
 }
-#house17 {
+#house17{
   width: 60px;
   top: 490px;
   left: 76px;
   transform: rotate(-43deg);
 }
 /*--END, buildings--*/
-.crate {
+/*--crate--*/
+.crate{
   position: absolute;
   width: 50px;
   height: 50px;
@@ -2093,21 +2075,22 @@ skal fades tilbake til black ved 100%*/
   border-radius: 15px;
   background-color: rgb(238, 128, 38);
 }
-#crate1 {
+#crate1{
   left: 480px;
   top: 380px;
   transform: rotate(-20deg);
 }
-#crate2 {
+#crate2{
   left: 300px;
   top: 500px;
   transform: rotate(-50deg);
 }
-#crate3 {
+#crate3{
   left: 400px;
   top: 470px;
   transform: rotate(-75deg);
 }
+/*--crate--*/
 /*--marsStars--*/
 #marsStar1{
   top: 20px;
@@ -2151,14 +2134,14 @@ skal fades tilbake til black ved 100%*/
 }
 /*--END, marsStars--*/
 /*-ufo-*/
-#ufo {
+#ufo{
   position: absolute;
   height: 20px;
   left: 290px;
   top: 25px;
   transform: rotate(0deg);
 }
-#ufo:hover ~ #ufoTekst{
+#ufo:hover ~ #ufoText{
   display: inline-block;
   transition-duration: 0;
 }
@@ -2166,18 +2149,17 @@ skal fades tilbake til black ved 100%*/
   position: absolute;
   animation: rotateSolarsystem 30s reverse linear infinite;
 }
-/*--ufoTekst--*/
-#ufoTekst{
+/*--ufoText--*/
+#ufoText{
   display: inline-block;
   display: none;
 }
-#ufoTekst p{
+#ufoText p{
   position: absolute;
   background-color: whitesmoke;
   left: 255px;
   top: -5%;
 }
-/*--END, ufoTekst--*/
+/*--END, ufoText--*/
 /*-END, ufo-*/
-/*-END, Scene 5*/
-/*-END, SIDE 3-*/
+/*--END, SIDE5--*/

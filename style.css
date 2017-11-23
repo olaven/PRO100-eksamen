@@ -765,7 +765,7 @@ z-index: 100;
   margin-top: 0px;
   overflow: visible;
 }
-#controlPanelContainerChildTest{
+#controlPanelContainerChild{
   position: relative;
   background-color: lightskyblue;
   z-index: 98;
@@ -1001,7 +1001,7 @@ z-index: 100;
   width: 40px;
   height: 170px;
   left: 730px;
-  bottom: 30px;
+  bottom: 69px;
 }
 #launchBackground{
   position: absolute;
@@ -1022,20 +1022,20 @@ z-index: 100;
   left: 295px;
   transition-duration: 15s;
 }
-#launchHidden:hover ~ #controlPanelContainerChildTest #blockClick{
+#launchHidden:hover ~ #controlPanelContainerChild #blockClick{
     z-index: 119;
 }
-#launchHidden:hover ~ #controlPanelContainerChildTest #launchBackground{
+#launchHidden:hover ~ #controlPanelContainerChild #launchBackground{
   bottom: -800px;
   background-color: black;
 }
-#launchHidden:hover ~ #controlPanelContainerChildTest{
+#launchHidden:hover ~ #controlPanelContainerChild{
   animation-play-state: running;
 }
-#launchHidden:hover ~ #controlPanelContainerChildTest #nextSide{
+#launchHidden:hover ~ #controlPanelContainerChild #nextSide{
     z-index: 110;
 }
-#launchHidden:hover ~ #controlPanelContainerChildTest #leverPart2{
+#launchHidden:hover ~ #controlPanelContainerChild #leverPart2{
     bottom: 82px;
 }
 #nextSide {

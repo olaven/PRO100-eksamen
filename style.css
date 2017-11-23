@@ -1,4 +1,8 @@
-
+/*
+  KOMMENTAR ref. mail:
+  Løsningen fungerer i Chrome. Vi får noe problemer
+  med zoom og animation i Safari.
+*/
 html, body {
   background-color: black;
   height: 100%;

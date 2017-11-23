@@ -140,6 +140,7 @@ a:visited{
   top: -100px;
   width: 200px;
   height: 200px;
+  z-index: 1; 
   /*animation-name settes ved hover på bildet*/
   animation-duration: 2s;
   animation-direction: forwards;

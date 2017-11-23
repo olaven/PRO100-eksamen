@@ -39,6 +39,16 @@ a:visited{
   text-decoration: underline;
 }
 /*--END, dato--*/
+/*--aftenposten--*/
+#paperHeader{
+  position: absolute;
+  display: block;
+  left: 570px;
+  top: -15px;
+  font-size: 3em;
+  text-decoration: underline;
+}
+/*--END, aftenposten--*/
 /*--bilder til artikkel--*/
 .articleImages{
   position: absolute;

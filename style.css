@@ -347,7 +347,6 @@ background-color: rgb(200, 190, 191);
 /*-Scene 2-*/
 #boardingContainer{
   background-color: lightskyblue;
-  z-index: 200px;
 }
 /*-background-*/
 /*rainbow*/
@@ -836,7 +835,7 @@ z-index: 100;
   animation-play-state: paused;
 }
 
-/*-text-*/
+/*--fremtidensArkText--*/
 #fremtidensArkText {
   position: absolute;
   text-align: center;
@@ -851,7 +850,7 @@ z-index: 100;
   top: -25px;
   z-index: 150;
 }
-/*-END, text-*/
+/*--END, fremtidensArkText--*/
 
 /*-windowFrame-*/
 .windowFrame {
@@ -1658,7 +1657,7 @@ z-index: 100;
   border-radius: 50%;
   z-index: 41;
 
-  animation-name: systemStarglow;
+  animation-name: systemStarGlow;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
@@ -1752,7 +1751,7 @@ z-index: 100;
   left: 200px;
   top: 650px;
 }
-@keyframes systemStarglow {
+@keyframes systemStarGlow {
   from{
     background-color: rgba(255,255,255,0.5);
     transform: scaleX(1.2);

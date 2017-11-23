@@ -29,7 +29,7 @@ a:visited{
 /*--dato--*/
 #dato{
   position: absolute;
-  top: 0;
+  top: 15px;
   left: 875px;
   margin: 10px;
   padding: 10px;

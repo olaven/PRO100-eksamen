@@ -1433,7 +1433,7 @@ z-index: 100;
   animation-name: shipAnimation;
   animation-duration: 15s;
   animation-fill-mode: forwards;
-}12
+}
 .planets, .spots{
   position: absolute;
   border-radius: 50%;

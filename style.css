@@ -1222,7 +1222,7 @@ z-index: 100;
 
 
 #nextSide {
-    background-color: green;
+    background-color: rgb(77, 230, 46);
     transition-property: all;
     transition-delay: 0s;
     transition-duration: 50s;
@@ -1544,7 +1544,7 @@ z-index: 100;
     border: 0px;
   }
   50% {
-    border: 3px solid green;
+    border: 3px solid rgb(77, 230, 46);
   }
   100% {
     border: 0px;
